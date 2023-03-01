@@ -38,7 +38,7 @@ My [statement text](https://www.bam.de/Content/DE/Interviews/Women-in-Science-Da
 29th July 2022
 ## Dissertation published online
 
-[![Diss](https://quantumchemist.github.io/utils/YbMn2Sb2.png)](https://publications.rwth-aachen.de/record/849333)
+[![Diss](https://quantumchemist.github.io/utils/YbMn2Sb2.png)](https://publications.rwth-aachen.de/record/849333){:style="float: right;margin-right: 7px;margin-top: 7px;"}
 
 My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German) 
 #### On the electronic structure of solid-state functional materials and their characterization using local bonding indicators 
