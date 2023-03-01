@@ -242,4 +242,5 @@ Reviewer for:
 <dt>Copyright</dt>
 <dd></dd>
 </dl>
-&copy; Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" />
+&copy; 2023 
+Christina Ertural <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" clear="left" /> 
