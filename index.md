@@ -24,7 +24,7 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 Find my [poster](https://twitter.com/cer5814012/status/1630547004462858240) for the [#RSCPoster](https://twitter.com/search?q=%23RSCPoster&src=recent_search_click) twitter conference here.
 
-[![CartoonAbstract2023](https://pbs.twimg.com/media/FqD0hWHXsAA4pkd?format=jpg&name=small)](https://twitter.com/ErrantScience/status/1630572054767386624)
+[![CartoonAbstract2023](https://pbs.twimg.com/media/FqD0hWHXsAA4pkd?format=jpg&name=small){width=250}](https://twitter.com/ErrantScience/status/1630572054767386624)
 
 The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience/status/1630572054767386624) made by [ErrantScience](https://errantscience.com/)! :)
 
