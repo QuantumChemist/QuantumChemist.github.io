@@ -31,21 +31,46 @@ The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience
 11th February 2023
 ## #WomenInScienceDay
 
-[![WIS](https://www.bam.de/_SharedDocs/DE/Bilder/Pressebilder/2023-02-11-int-tag-frauen-wiss-aufmacher-collage.jpg?__blob=poster)](https://www.bam.de/Content/EN/Press-Releases/2023/Career/2023-01-11-women-in-science-day-bam.html)
+[<img src="https://www.bam.de/_SharedDocs/DE/Bilder/Pressebilder/2023-02-11-int-tag-frauen-wiss-aufmacher-collage.jpg?__blob=poster" width="50%" height=auto />](https://www.bam.de/Content/EN/Press-Releases/2023/Career/2023-01-11-women-in-science-day-bam.html)
 
 My [statement text](https://www.bam.de/Content/DE/Interviews/Women-in-Science-Day/ertural-christina.html) (in German) was featured as part of the celebration of the [#WomenInScienceDay](https://twitter.com/BAMResearch/status/1624344955190751234) at BAM.
 
 29th July 2022
 ## Dissertation published online
 
-[![Diss](https://quantumchemist.github.io/utils/YbMn2Sb2.png)](https://publications.rwth-aachen.de/record/849333)
+[<img src="https://quantumchemist.github.io/utils/YbMn2Sb2.png" width="30%" height=auto />](https://publications.rwth-aachen.de/record/849333)
 
 My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German) 
 #### On the electronic structure of solid-state functional materials and their characterization using local bonding indicators 
 is now available online.
 
+31st March 2022
+## Wiley Top Cited Article 2020--2021
+
+[<img src="https://quantumchemist.github.io/utils/WileyTopCitedArticle2020-2021.png" width="50%" height=auto />](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26353)
+
+The [article](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26353) by Ryky Nelson, Christina Ertural, [Janine George](https://twitter.com/MolecularXtal/status/1512381358202667010), Volker L. Deringer, Geoffroy Hautier and Richard Dronskowski was recognized as [#TopCitedArticle](https://twitter.com/search?q=%23TopCitedArticle&src=typed_query&f=top) in the [Journal of Computational Chemistry](https://onlinelibrary.wiley.com/journal/1096987x).
+
+28th March 2022
+## Inside Back Cover
+
+[<img src="https://pbs.twimg.com/media/FPAkstFWYAIlxQr?format=png&name=small" width="30%" height=auto />](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202204053)
+
+The [article](https://onlinelibrary.wiley.com/doi/10.1002/anie.202115778) by Jan Hempelmann, Peter C. Müller, Christina Ertural and Richard Dronskowski was featured [#OnTheCover]([https://twitter.com/search?q=%23OnTheCover&src=typed_query&f=top](https://twitter.com/angew_chem/status/1508746226824581129)) ([inside back cover](https://onlinelibrary.wiley.com/cms/asset/46a80e96-ab84-4482-9d7f-703b46562ced/anie202204053-toc-0001-m.jpg)) of the [Angewandte Chemie](https://onlinelibrary.wiley.com/journal/15213773) April issue.
+
+3rd March 2020
+## RSC Twitter Poster 2020
+
+[<img src="https://quantumchemist.github.io/utils/Poster_RSCTwitter.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/Poster_RSCTwitter.pdf)
+
+Find my [poster](https://twitter.com/cer5814012/status/1234969917784412161) for the RSC Poster Session 2020 on Twitter.
+
+# General:
+
 <!--
 #### Header 4
+
+[<img src=" " width="30%" height=auto />]()
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
