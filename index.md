@@ -8,6 +8,8 @@ Hi, I'm [Christina Ertural](https://g.co/kgs/Bi3Bdb), an active scientist in the
 
 My research interests involve different areas of theoretical, quantum and computational chemistry such as the development and improvement of [well-established](https://doi.org/10.1039/C9RA05190B) and [innovative](https://doi.org/10.1021/acs.jpcc.1c00718) methods. Another important aspect in my research is the application of different quantum chemical approaches to solid-state and materials chemistry concerning compounds like [Zintl phases](https://doi.org/10.1039/C9RA05190B), especially [thermoelectrical materials](https://doi.org/10.1002/jcc.25822), [cathode and anode materials](https://doi.org/10.1021/acs.chemmater.1c03349) for battery technology or [phase-change materials](https://doi.org/10.1002/anie.202115778).
 
+
+
  
 <!--
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
@@ -25,9 +27,13 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 Find my [poster](https://twitter.com/cer5814012/status/1630547004462858240) for the [#RSCPoster](https://twitter.com/search?q=%23RSCPoster&src=recent_search_click) twitter conference here.
 
+
+
 [<img src="https://pbs.twimg.com/media/FqD0hWHXsAA4pkd?format=jpg&name=small" width="50%" height=auto />](https://twitter.com/ErrantScience/status/1630572054767386624)
 
 The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience/status/1630572054767386624) made by [ErrantScience](https://errantscience.com/)! :)
+
+
 
 
 11th February 2023
@@ -36,6 +42,8 @@ The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience
 [<img src="https://www.bam.de/_SharedDocs/DE/Bilder/Pressebilder/2023-02-11-int-tag-frauen-wiss-aufmacher-collage.jpg?__blob=poster" width="50%" height=auto />](https://www.bam.de/Content/EN/Press-Releases/2023/Career/2023-01-11-women-in-science-day-bam.html)
 
 My [statement text](https://www.bam.de/Content/DE/Interviews/Women-in-Science-Day/ertural-christina.html) (in German) was featured as part of the celebration of the [#WomenInScienceDay](https://twitter.com/BAMResearch/status/1624344955190751234) at BAM.
+
+
 
 
 29th July 2022
@@ -48,12 +56,17 @@ My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German)
 is now available online.
 
 
+
+
+
 31st March 2022
 ## Wiley Top Cited Article 2020--2021
 
 [<img src="https://quantumchemist.github.io/utils/WileyTopCitedArticle2020-2021.png" width="50%" height=auto />](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26353)
 
 The [article](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26353) by Ryky Nelson, Christina Ertural, [Janine George](https://twitter.com/MolecularXtal/status/1512381358202667010), Volker L. Deringer, Geoffroy Hautier and Richard Dronskowski was recognized as [#TopCitedArticle](https://twitter.com/search?q=%23TopCitedArticle&src=typed_query&f=top) in the [Journal of Computational Chemistry](https://onlinelibrary.wiley.com/journal/1096987x).
+
+
 
 
 
@@ -65,12 +78,16 @@ The [article](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26353) by Ryky
 The [article](https://onlinelibrary.wiley.com/doi/10.1002/anie.202115778) by Jan Hempelmann, Peter C. Müller, Christina Ertural and Richard Dronskowski was featured [#OnTheCover]([https://twitter.com/search?q=%23OnTheCover&src=typed_query&f=top](https://twitter.com/angew_chem/status/1508746226824581129)) ([inside back cover](https://onlinelibrary.wiley.com/cms/asset/46a80e96-ab84-4482-9d7f-703b46562ced/anie202204053-toc-0001-m.jpg)) of the [Angewandte Chemie](https://onlinelibrary.wiley.com/journal/15213773) April issue.
 
 
+
+
 3rd March 2020
 ## RSC Twitter Poster 2020
 
 [<img src="https://quantumchemist.github.io/utils/Poster_RSCTwitter.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/Poster_RSCTwitter.pdf)
 
 Find my [poster](https://twitter.com/cer5814012/status/1234969917784412161) for the RSC Poster Session 2020 on Twitter.
+
+
 
 
 # General:
