@@ -18,7 +18,7 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 # Miscellaneous:
 
 28th February 2023
-### RSC Twitter Poster 2023
+## RSC Twitter Poster 2023
 
 [![RSCposter2023](https://quantumchemist.github.io/utils/poster.gif)](https://quantumchemist.github.io/utils/poster.gif)
 
@@ -28,8 +28,22 @@ Find my [poster](https://twitter.com/cer5814012/status/1630547004462858240) for 
 
 The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience/status/1630572054767386624) made by [ErrantScience](https://errantscience.com/)! :)
 
+11th February 2023
+## #WomenInScienceDay
 
+[![WIS](https://www.bam.de/_SharedDocs/DE/Bilder/Pressebilder/2023-02-11-int-tag-frauen-wiss-aufmacher-collage.jpg?__blob=poster)](https://www.bam.de/Content/EN/Press-Releases/2023/Career/2023-01-11-women-in-science-day-bam.html)
 
+My [statement text](https://www.bam.de/Content/DE/Interviews/Women-in-Science-Day/ertural-christina.html) (in German) was featured as part of the celebration of the [#WomenInScienceDay](https://twitter.com/BAMResearch/status/1624344955190751234) at BAM.
+
+29th July 2022
+## Dissertation published online
+
+[![Diss](https://quantumchemist.github.io/utils/YbMn2Sb2.png)](https://publications.rwth-aachen.de/record/849333)
+
+My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German) # On the electronic structure of solid-state functional materials and their characterization using local bonding indicators 
+is now available online.
+
+<!--
 #### Header 4
 
 *   This is an unordered list following a header.
@@ -92,6 +106,7 @@ The poster even got its own [cartoon abstract](https://twitter.com/ErrantScience
 ### Large image
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
+-->
 
 ```js
 // Javascript code with syntax highlighting.
