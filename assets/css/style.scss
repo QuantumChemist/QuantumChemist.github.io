@@ -2,3 +2,10 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+img {
+  max-width: 50%;
+  height: auto;
+  float: left;
+  margin: 0 10px 10px 0;
+}
