@@ -219,12 +219,7 @@ Reviewer for:
 
 <dl>
 <dt>Email &#9993;</dt>
-<dd><a href="mailto:christina.ertural@rwth-aachen.de">christina.ertural&commat;bam.de</a></dd>
-</dl>
-
-####### Social media:
-
-<dl>
+<dd><a href="mailto:christina.ertural@bam.de">christina.ertural&commat;bam.de</a></dd>
 <dt>GitHub</dt>
 <dd><a href="https://github.com/QuantumChemist">QuantumChemist</a></dd>
 <dt>Twitter</dt>
@@ -243,11 +238,8 @@ Reviewer for:
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
-The final element.
-```
-
 <dl>
-<dt>Copyright &copy; </dt>
-<dd>Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
+<dt>Copyright</dt>
+<dd>&copy; Christina Ertural 2023</dd>
 </dl>
+<img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" />
