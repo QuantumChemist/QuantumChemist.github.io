@@ -3,9 +3,7 @@
 
 @import 'jekyll-theme-hacker';
 
-img {
-  max-width: 20%;
-  height: auto;
+.float-container img {
   float: left;
   margin: 0 10px 10px 0;
 }
