@@ -40,7 +40,8 @@ My [statement text](https://www.bam.de/Content/DE/Interviews/Women-in-Science-Da
 
 [![Diss](https://quantumchemist.github.io/utils/YbMn2Sb2.png)](https://publications.rwth-aachen.de/record/849333)
 
-My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German) # On the electronic structure of solid-state functional materials and their characterization using local bonding indicators 
+My [Dissertation](https://publications.rwth-aachen.de/record/849333) (in German) 
+# On the electronic structure of solid-state functional materials and their characterization using local bonding indicators 
 is now available online.
 
 <!--
