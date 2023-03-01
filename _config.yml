@@ -1,7 +1,7 @@
 title: Dr. Christina Ertural | Scientist
 email: christina.ertural(at)bam.de
 description: Personal site about my research.
-<link rel="icon" href="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png">
+icon: https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png
 show_downloads: false
 google_analytics:
 baseurl: "" # the subpath of your site, e.g. /blog
