@@ -218,14 +218,25 @@ Reviewer for:
 ### Definition lists can be used with HTML syntax.
 
 <dl>
-<dt>Copyright &copy; </dt>
-<dd>Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<dt>Email &#9993;</dt>
+<dd><a href="mailto:christina.ertural@rwth-aachen.de">christina.ertural&commat;bam.de</a></dd>
+</dl>
+
+####### Social media:
+
+<dl>
+<dt>GitHub</dt>
+<dd><a href="https://github.com/QuantumChemist">QuantumChemist</a></dd>
+<dt>Twitter</dt>
+<dd><a href="https://twitter.com/cer5814012">@cer5814012</a></dd>
+<dt>LinkedIn</dt>
+<dd><a href="https://www.linkedin.com/in/christina-ertural/">christina-ertural</a></dd>
+<dt>ResearchGate</dt>
+<dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Christina-Ertural</a></dd>
+<dt>Google</dt>
+<dd><a href="https://g.co/kgs/Bi3Bdb">Christina Ertural &#10003;</a></dd>
+<dt>YouTube</dt>
+<dd><a href="https://www.youtube.com/QuantumChemist">QuantumChemist</a></dd>
 </dl>
 
 ```
