@@ -218,8 +218,8 @@ Reviewer for:
 ### Definition lists can be used with HTML syntax.
 
 <dl>
-<dt>Name</dt>
-<dd>Christina Ertural <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
+<dt>Copyright &copy; </dt>
+<dd>Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
 <dt>Born</dt>
 <dd>1952</dd>
 <dt>Birthplace</dt>
@@ -235,3 +235,8 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+<dl>
+<dt>Copyright &copy; </dt>
+<dd>Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
+</dl>
