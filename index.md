@@ -103,7 +103,7 @@ Find my [poster](https://twitter.com/cer5814012/status/1234969917784412161) for 
 
 [<img src="https://raw.githubusercontent.com/JaGeo/LobsterPy/main/LobsterPyLogo.png" width="30%" height=auto />](https://github.com/JaGeo/LobsterPy)
 
-20" height="20%" align="left"></a>  LobsterPy is an open-source Python-based software package that enables automatic plotting of [LOBSTER](http://www.cohp.de/) outputs. Install it by ´pip install lobsterpy´.
+LobsterPy is an open-source Python-based software package that enables automatic plotting of [LOBSTER](http://www.cohp.de/) outputs. Install it by `pip install lobsterpy`.
 
 
 
