@@ -219,7 +219,7 @@ Reviewer for:
 
 <dl>
 <dt>Name</dt>
-<dd>Christina Ertural [<img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" />](https://github.com/BeratE/lix)</dd>
+<dd>Christina Ertural <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" /></dd>
 <dt>Born</dt>
 <dd>1952</dd>
 <dt>Birthplace</dt>
