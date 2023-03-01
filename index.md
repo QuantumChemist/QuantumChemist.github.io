@@ -215,7 +215,7 @@ Reviewer for:
 
 
 
-### Definition lists can be used with HTML syntax.
+### How you can contact me
 
 <dl>
 <dt>Email &#9993;</dt>
@@ -235,11 +235,11 @@ Reviewer for:
 </dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+時は移り、人も移る。それは 水の流れにも似て、決して とどまる事はない。幼き心は、気高き大志に。幼き恋は、深き慈愛へ。澄んだ水面は 成長をうつす鏡。
 ```
 
 <dl>
 <dt>Copyright</dt>
-<dd>&copy; Christina Ertural 2023</dd>
+<dd></dd>
 </dl>
-<img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" />
+&copy; Christina Ertural 2023 <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" />
