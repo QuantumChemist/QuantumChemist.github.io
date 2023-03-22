@@ -134,9 +134,10 @@ See my publication list on [Google Scholar](https://scholar.google.de/citations?
 <br clear="left"/>
 
 
-[Reviewer](https://www.webofscience.com/wos/author/record/GZH-1097-2022) for:
+Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 ============
 * [Physical Chemistry Chemical Physics (PCCP)](https://www.rsc.org/journals-books-databases/about-journals/pccp/)
+* [Materials Horizons](https://www.rsc.org/journals-books-databases/about-journals/materials-horizons/)
 * [Journal of Materials Chemistry A](https://www.rsc.org/journals-books-databases/about-journals/journal-of-materials-chemistry-a/)
 * [Inorganic Chemistry Frontiers](https://www.rsc.org/journals-books-databases/about-journals/inorganic-chemistry-frontiers/)
 
