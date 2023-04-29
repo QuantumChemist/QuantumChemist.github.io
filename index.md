@@ -25,6 +25,8 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 I'm visiting the [Deringer group Oxford](https://twitter.com/VLDGroupOx?t=bQvdbFi34Zs6XCtqCeBBOw&s=09) for three weeks to exchange expertise and experience in the field of automated (high-throughput) DFT calculations and machine-learned interatomic potentials. :D
 
+<br clear="left"/>
+
 28th February 2023
 ## RSC Twitter Poster 2023
 
