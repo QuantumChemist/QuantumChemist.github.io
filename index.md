@@ -19,6 +19,11 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 
 # Miscellaneous:
+17th April -- 6th May 2023
+## Visit in Oxford 
+[<img src="https://twitter.com/vl_deringer/status/1648367177429401600?t=HmjBgNE5OVQibEx8Yq9k2Q&s=19" width="30%" height=auto />](https://twitter.com/cer5814012/status/1648391761880924163?t=GCPOefS10Ja7mLIX9mEZjg&s=19) 
+
+I'm visiting the [Deringer group Oxford](https://twitter.com/VLDGroupOx?t=bQvdbFi34Zs6XCtqCeBBOw&s=09) for three weeks to exchange expertise and experience in the field of automated (high-throughput) DFT calculations and machine-learned interatomic potentials. :D
 
 28th February 2023
 ## RSC Twitter Poster 2023
