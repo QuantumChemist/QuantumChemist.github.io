@@ -6,7 +6,7 @@ layout: default
 
 Hi, I'm [Christina Ertural](https://g.co/kgs/Bi3Bdb), an active scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) in Berlin in the junior group of [Dr. Janine George](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
 
-<br clear="left"/>
+<br clear="right"/>
 	
 [![Battery](https://quantumchemist.github.io/utils/bat.png)](https://doi.org/10.1021/acs.chemmater.1c03349) 
 
