@@ -21,6 +21,14 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 [Link to another page](./another-page.html).
 -->
 
+# News!
+2nd & 3rd November 2023
+## Berlin PostDoc Day 2023
+[<img src="https://quantumchemist.github.io/utils/pdd.png" width="20%" height=auto />](https://www.mdc-berlin.de/postdoc-day) 
+
+The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporaching fast! This year it is supposed to take place from 2nd to 3rd November 2023. Make sure to register and send your abstract. More information can also be found on [Twitter](https://twitter.com/PDDBerlin)!
+
+<br clear="left"/>
 
 # Miscellaneous:
 17th April -- 6th May 2023
