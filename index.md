@@ -161,6 +161,7 @@ See my publication list on [Google Scholar](https://scholar.google.de/citations?
 
 Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 ============
+* [Angewandte Chemie](https://onlinelibrary.wiley.com/journal/15213773)
 * [Physical Chemistry Chemical Physics (PCCP)](https://www.rsc.org/journals-books-databases/about-journals/pccp/)
 * [Materials Horizons](https://www.rsc.org/journals-books-databases/about-journals/materials-horizons/)
 * [Journal of Materials Chemistry A](https://www.rsc.org/journals-books-databases/about-journals/journal-of-materials-chemistry-a/)
