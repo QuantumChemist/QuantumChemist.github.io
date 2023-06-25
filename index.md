@@ -238,6 +238,8 @@ Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 ### Large image
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" clear="left" /> 
 -->
 
 
@@ -270,4 +272,4 @@ Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 <dd></dd>
 </dl>
 &copy; 2023 
-Christina Ertural <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" clear="left" /> 
+Christina Ertural 
