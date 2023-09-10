@@ -272,8 +272,6 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 <dd><a href="mailto:christina.ertural@bam.de">christina.ertural&commat;bam.de</a></dd>
 <dt>GitHub</dt>
 <dd><a href="https://github.com/QuantumChemist">QuantumChemist</a></dd>
-<dt>Twitter</dt>
-<dd><a href="https://twitter.com/cer5814012">@cer5814012</a></dd>
 <dt>LinkedIn</dt>
 <dd><a href="https://www.linkedin.com/in/christina-ertural/">christina-ertural</a></dd>
 <dt>ResearchGate</dt>
