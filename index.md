@@ -37,6 +37,26 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 <br clear="left"/>
 
 # Miscellaneous:
+
+7th August 2023
+## I’m a science girl in a science world: Aqua does science
+
+[<img src="[https://errantscience.com/wp-content/uploads/230802_-_Barbie_Comp.Chem_.png]" width="30%" height=auto />](https://errantscience.com/blog/2023/08/07/im-a-science-girl-in-a-science-world-aqua-does-science/?fbclid=PAAabh2hgQhIzpbFdGWArb7AAhrSg1tKj9mRrd-q8Z9ybEgf8AC0gZnbY-Kl0)
+
+Blog post by [ErrantScience](https://errantscience.com/) with my "Barbie girl" inspired parody lyrics on the life as a theoretical chemist. 
+
+<br clear="left"/>
+
+3rd -- 6th July 2023
+## 16th International conference on materials chemistry (MC16) at UCD in Dublin
+
+[<img src="https://quantumchemist.github.io/utils/DublinPosterSession.png" width="24%" height=auto />](https://quantumchemist.github.io/utils/DublinPosterSession.png)
+[<img src="https://quantumchemist.github.io/utils/MC16.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/MC16.pdf)
+
+I presented my recent, preliminary reults at the MC16, organized by RSC, at the UCD in Dublin! It was a very unique and nice chance for peer-exchange.
+
+<br clear="left"/>
+
 17th April -- 6th May 2023
 ## Visit in Oxford 
 [<img src="https://pbs.twimg.com/media/FuAtNVLXwAob3-y?format=jpg&name=medium" width="30%" height=auto />](https://twitter.com/cer5814012/status/1648391761880924163?t=GCPOefS10Ja7mLIX9mEZjg&s=19) 
@@ -162,6 +182,7 @@ See my publication list on [Google Scholar](https://scholar.google.de/citations?
 Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 ============
 * [Angewandte Chemie](https://onlinelibrary.wiley.com/journal/15213773)
+* [npj Computational Materials](https://www.nature.com/npjcompumats/)
 * [Physical Chemistry Chemical Physics (PCCP)](https://www.rsc.org/journals-books-databases/about-journals/pccp/)
 * [Materials Horizons](https://www.rsc.org/journals-books-databases/about-journals/materials-horizons/)
 * [Journal of Materials Chemistry A](https://www.rsc.org/journals-books-databases/about-journals/journal-of-materials-chemistry-a/)
