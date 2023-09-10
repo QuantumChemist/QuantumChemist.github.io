@@ -41,7 +41,7 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 7th August 2023
 ## I’m a science girl in a science world: Aqua does science
 
-[<img src="[https://errantscience.com/wp-content/uploads/230802_-_Barbie_Comp.Chem_.png]" width="30%" height=auto />](https://errantscience.com/blog/2023/08/07/im-a-science-girl-in-a-science-world-aqua-does-science/?fbclid=PAAabh2hgQhIzpbFdGWArb7AAhrSg1tKj9mRrd-q8Z9ybEgf8AC0gZnbY-Kl0)
+[<img src="https://errantscience.com/wp-content/uploads/230802_-_Barbie_Comp.Chem_.png" width="30%" height=auto />](https://errantscience.com/blog/2023/08/07/im-a-science-girl-in-a-science-world-aqua-does-science/?fbclid=PAAabh2hgQhIzpbFdGWArb7AAhrSg1tKj9mRrd-q8Z9ybEgf8AC0gZnbY-Kl0)
 
 Blog post by [ErrantScience](https://errantscience.com/) with my "Barbie girl" inspired parody lyrics on the life as a theoretical chemist. 
 
@@ -53,7 +53,7 @@ Blog post by [ErrantScience](https://errantscience.com/) with my "Barbie girl" i
 [<img src="https://quantumchemist.github.io/utils/DublinPosterSession.png" width="24%" height=auto />](https://quantumchemist.github.io/utils/DublinPosterSession.png)
 [<img src="https://quantumchemist.github.io/utils/MC16.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/MC16.pdf)
 
-I presented my recent, preliminary reults at the MC16, organized by RSC, at the UCD in Dublin! It was a very unique and nice chance for peer-exchange.
+I presented my recent, preliminary results at the MC16, organized by RSC, at the UCD in Dublin! It was a very unique and nice chance for peer-exchange.
 
 <br clear="left"/>
 
