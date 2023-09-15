@@ -43,7 +43,7 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 
 [<img src="https://quantumchemist.github.io/utils/salsa.jpg" width="24%" height=auto />](https://quantumchemist.github.io/utils/salsa.jpg)
 
-I presented my recent, preliminary results on "Automation of machine learning driven interatomic potential generation for predicting vibrational properties" at the SALSA Make and Measure conference! I had very many very lovely discussions.
+I presented my recent, preliminary results on "Automation of machine learning driven interatomic potential generation for predicting vibrational properties" at the SALSA Make and Measure conference! I had very many very lovely discussions. Photo kindly provided by [Aakash Naik](https://www.aakashnaik23.de/) :)
 
 <br clear="left"/>
 
