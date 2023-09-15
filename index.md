@@ -38,6 +38,13 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 
 # Miscellaneous:
 
+13th -- 15th September 2023
+## SALSA Make and Measure 2023: Interfaces 
+
+[<img src="https://quantumchemist.github.io/utils/salsa.jpg" width="24%" height=auto />](https://quantumchemist.github.io/utils/salsa.jpg)
+
+I presented my recent, preliminary results on "Automation of machine learning driven interatomic potential generation for predicting vibrational properties" at the SALSA Make and Measure conference! I had very many very lovely discussions.
+
 7th August 2023
 ## I’m a science girl in a science world: Aqua does science
 
@@ -53,7 +60,7 @@ Blog post by [ErrantScience](https://errantscience.com/) with my "Barbie girl" i
 [<img src="https://quantumchemist.github.io/utils/DublinPosterSession.png" width="24%" height=auto />](https://quantumchemist.github.io/utils/DublinPosterSession.png)
 [<img src="https://quantumchemist.github.io/utils/MC16.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/MC16.pdf)
 
-I presented my recent, preliminary results at the MC16, organized by RSC, at the UCD in Dublin! It was a very unique and nice chance for peer-exchange.
+I presented my recent, preliminary results  on "Automation of machine learning driven interatomic potential generation for predicting vibrational properties" at the MC16, organized by RSC, at the UCD in Dublin! It was a very unique and nice chance for peer-exchange.
 
 <br clear="left"/>
 
