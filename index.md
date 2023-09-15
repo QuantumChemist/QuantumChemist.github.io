@@ -45,6 +45,8 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 
 I presented my recent, preliminary results on "Automation of machine learning driven interatomic potential generation for predicting vibrational properties" at the SALSA Make and Measure conference! I had very many very lovely discussions.
 
+<br clear="left"/>
+
 7th August 2023
 ## I’m a science girl in a science world: Aqua does science
 
