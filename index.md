@@ -8,9 +8,11 @@ Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid
 
 <br clear="left"/>
 	
-[<img src="https://quantumchemist.github.io/utils/bat.png" width="30%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349) 
+[<img src="https://quantumchemist.github.io/utils/QClogohighres.png" width="30%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349) 
 
 My research interests involve different areas of theoretical, quantum and computational chemistry such as the development and improvement of [well-established](https://doi.org/10.1039/C9RA05190B) and [innovative](https://doi.org/10.1021/acs.jpcc.1c00718) methods. Another important aspect in my research is the application of different quantum chemical approaches to solid-state and materials chemistry concerning compounds like [Zintl phases](https://doi.org/10.1039/C9RA05190B), especially [thermoelectrical materials](https://doi.org/10.1002/jcc.25822), [cathode and anode materials](https://doi.org/10.1021/acs.chemmater.1c03349) for battery technology or [phase-change materials](https://doi.org/10.1002/anie.202115778).
+
+[<img src="https://quantumchemist.github.io/utils/bat.png" width="30%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349)
 
 <br clear="left"/>
 
