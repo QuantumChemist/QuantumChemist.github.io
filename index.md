@@ -191,7 +191,7 @@ See my publication list on [Google Scholar](https://scholar.google.de/citations?
 
 Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 ============
-[<img src="https://quantumchemist.github.io/utils/bat.png" align="right" width="30%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349)
+[<img src="https://quantumchemist.github.io/utils/bat.png" width="20%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349)
 * [Angewandte Chemie](https://onlinelibrary.wiley.com/journal/15213773)
 * [npj Computational Materials](https://www.nature.com/npjcompumats/)
 * [Physical Chemistry Chemical Physics (PCCP)](https://www.rsc.org/journals-books-databases/about-journals/pccp/)
