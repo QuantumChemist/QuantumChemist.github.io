@@ -283,9 +283,9 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 <dt>GitHub</dt>
 <dd><a href="https://github.com/QuantumChemist">QuantumChemist</a></dd>
 <dt>LinkedIn</dt>
-<dd><a href="https://www.linkedin.com/in/christina-ertural/">christina-ertural</a></dd>
+<dd><a href="https://www.linkedin.com/in/christina-ertural/">Dr. Christina Ertural</a></dd>
 <dt>ResearchGate</dt>
-<dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Christina-Ertural</a></dd>
+<dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Dr. Christina Ertural</a></dd>
 <dt>Google</dt>
 <dd><a href="https://g.co/kgs/Bi3Bdb">Christina Ertural &#10003;</a></dd>
 <dt>YouTube</dt>
