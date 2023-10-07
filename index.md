@@ -154,7 +154,7 @@ Find my [poster](https://twitter.com/cer5814012/status/1234969917784412161) for 
 
 # General:
 
-## LobsterPy Download
+## LobsterPy 
 
 [<img src="https://raw.githubusercontent.com/JaGeo/LobsterPy/main/LobsterPyLogo.png" width="20%" height=auto />](https://github.com/JaGeo/LobsterPy)
 
@@ -170,11 +170,20 @@ pip install .
 
 <br clear="left"/>
 
-## LOBSTER Download
+## LOBSTER 
 
 [<img src="https://pbs.twimg.com/media/DgOG-fuWAAEpISl?format=jpg&name=small" width="30%" height=auto />](http://schmeling.ac.rwth-aachen.de/cohp/index.php?menuID=6)
 
 LOBSTER (Local-Orbital Basis Suite Towards Electronic-Structure Reconstruction) is a quantum-mechanical tool for post-processing plane-wave DFT calculations on solid-state chemistry. Download it from [cohp.de](http://www.cohp.de/).
+
+<br clear="left"/>
+
+## LobsterPyGUI 
+	
+[<img src="https://quantumchemist.github.io/utils/lpg.png" width="30%" height=auto />](https://github.com/QuantumChemist/LobsterPyGUI)
+
+If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, I made a [GUI](https://github.com/QuantumChemist/LobsterPyGUI) for you, providing the very basic functionalities of LobsterPy. Requires a GTK+ 3.0 library or you compile the bonary from source. :)
+
 
 <br clear="left"/>
 
