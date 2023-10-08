@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Table</title>
+    <title>Some table</title>
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         table, th, td {
@@ -17,7 +17,7 @@
         }
 
         .new-row {
-            height: 50px;
+            height: 25px;
         }
 
         .warning {
@@ -30,29 +30,33 @@
 
 <section id="main_content">{{ content }}</section>
 
-<h1>Editable Table</h1>
+<h1>Some Table</h1>
 
 <table id="editable-table">
     <thead>
         <tr>
-            <th>Header 1 (String)</th>
-            <th>Header 2 (Integer)</th>
-            <th>Header 3 (Float)</th>
+            <th>Name (String)</th>
+            <th>Sample Name (String)</th>
+            <th>Data Nr. (Integer)</th>
+            <th>Data (Float)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td contenteditable="true">Sample Text</td>
+             <td contenteditable="true">Sample Text</td>
             <td contenteditable="true">42</td>
             <td contenteditable="true">3.14</td>
         </tr>
         <tr>
             <td contenteditable="true">Another Text</td>
+             <td contenteditable="true">Sample Text</td>
             <td contenteditable="true">123</td>
             <td contenteditable="true">5.67</td>
         </tr>
         <tr>
             <td contenteditable="true">More Text</td>
+             <td contenteditable="true">Sample Text</td>
             <td contenteditable="true">789</td>
             <td contenteditable="true">8.91</td>
         </tr>
@@ -92,6 +96,7 @@
         const rows = Array.from(editableTable.getElementsByTagName('tr'));
         const data = rows.map(row => Array.from(row.getElementsByTagName('td')).map(td => td.innerText));
         const formattedData = data.map(row => [
+            isValidString(row[0]) ? row[0] : '',
             isValidString(row[0]) ? row[0] : '',
             isValidInteger(row[1]) ? parseInt(row[1]) : '',
             isValidFloat(row[2]) ? parseFloat(row[2]) : ''
