@@ -8,4 +8,4 @@ layout: none
 <a href="https://quantumchemist.github.io/table" target="_blank"><button>Table</button></a>
 
 
-[back](./)
+<a href="./" target="_blank"><button>back</button></a>
