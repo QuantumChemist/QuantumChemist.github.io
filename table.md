@@ -2,7 +2,7 @@
 layout: dropdown
 ---
 
-## Drop down table
+## Some table
 Enter your data here!
 
 
