@@ -132,9 +132,9 @@
             isValidString(row[4]) ? row[4] : ''
         ]);
 
-        const invalidRow = formattedData.find(row => !row[0] || !row[1] || isNaN(row[2]) || isNaN(row[3]));
+        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || isNaN(row[3]));
         if (invalidRow) {
-            showWarning('Invalid data type or empty cell in the table. Please check your input.');
+            showWarning('Invalid data type in the table. Please check your input.');
             return;
         }
 
@@ -150,7 +150,7 @@
         window.URL.revokeObjectURL(url);
     }
 
-        const sendEmailButton = document.getElementById('send-email-button');
+    const sendEmailButton = document.getElementById('send-email-button');
     const emailInput = document.getElementById('email-input');
 
     function sendEmail() {
@@ -172,9 +172,9 @@
             isValidString(row[4]) ? row[4] : ''
         ]);
 
-        const invalidRow = formattedData.find(row => !row[0] || !row[1] || isNaN(row[2]) || isNaN(row[3]));
+        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || isNaN(row[3]));
         if (invalidRow) {
-            showWarning('Invalid data type or empty cell in the table. Please check your input.');
+            showWarning('Invalid data type in the table. Please check your input.');
             return;
         }
 
