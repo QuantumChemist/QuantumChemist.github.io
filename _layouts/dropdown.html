@@ -17,7 +17,7 @@
         }
 
         .new-row {
-            height: 50px; /* Specify the height for the new rows here */
+            height: 50px;
         }
     </style>
 </head>
@@ -30,9 +30,9 @@
 <table id="editable-table">
     <thead>
         <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
+            <th>Header 1 (String)</th>
+            <th>Header 2 (Integer)</th>
+            <th>Header 3 (Float)</th>
         </tr>
     </thead>
     <tbody>
@@ -48,21 +48,46 @@
     const addRowButton = document.getElementById('add-row-button');
     const downloadButton = document.getElementById('download-button');
 
+    function isValidString(value) {
+        return typeof value === 'string';
+    }
+
+    function isValidInteger(value) {
+        return Number.isInteger(Number(value));
+    }
+
+    function isValidFloat(value) {
+        return !isNaN(parseFloat(value)) && isFinite(value);
+    }
+
     function addRow() {
         const row = document.createElement('tr');
-        row.className = 'new-row'; // Apply the CSS class for the new row
-        for (let i = 0; i < 3; i++) {
-            const cell = document.createElement('td');
-            cell.contentEditable = true;
-            row.appendChild(cell);
-        }
+        row.className = 'new-row';
+        
+        const header1 = document.createElement('td');
+        header1.contentEditable = true;
+        row.appendChild(header1);
+
+        const header2 = document.createElement('td');
+        header2.contentEditable = true;
+        row.appendChild(header2);
+
+        const header3 = document.createElement('td');
+        header3.contentEditable = true;
+        row.appendChild(header3);
+
         editableTable.appendChild(row);
     }
 
     function downloadTable() {
         const rows = Array.from(editableTable.getElementsByTagName('tr'));
         const data = rows.map(row => Array.from(row.getElementsByTagName('td')).map(td => td.innerText));
-        const csvContent = data.map(row => row.join(',')).join('\n');
+        const formattedData = data.map(row => [
+            isValidString(row[0]) ? row[0] : '',
+            isValidInteger(row[1]) ? parseInt(row[1]) : '',
+            isValidFloat(row[2]) ? parseFloat(row[2]) : ''
+        ]);
+        const csvContent = formattedData.map(row => row.join(',')).join('\n');
         const blob = new Blob([csvContent], { type: 'text/csv' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
