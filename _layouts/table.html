@@ -43,25 +43,28 @@
     </thead>
     <tbody>
         <tr>
-            <td contenteditable="true">Sample Text</td>
-             <td contenteditable="true">Sample Text</td>
+            <td contenteditable="true">Example name</td>
+             <td contenteditable="true">Example sample</td>
             <td contenteditable="true">42</td>
             <td contenteditable="true">3.14</td>
         </tr>
         <tr>
-            <td contenteditable="true">Another Text</td>
-             <td contenteditable="true">Sample Text</td>
+            <td contenteditable="true">Chris</td>
+             <td contenteditable="true">stützite</td>
             <td contenteditable="true">123</td>
             <td contenteditable="true">5.67</td>
         </tr>
         <tr>
-            <td contenteditable="true">More Text</td>
-             <td contenteditable="true">Sample Text</td>
+            <td contenteditable="true">Brian</td>
+             <td contenteditable="true">MOFs</td>
             <td contenteditable="true">789</td>
             <td contenteditable="true">8.91</td>
         </tr>
     </tbody>
 </table>
+
+<label for="file-name-input">Enter File Name:</label>
+<input type="text" id="file-name-input" placeholder="table_data">
 
 <button id="add-row-button">Add Row</button>
 <button id="download-button">Download Table Data</button>
@@ -110,10 +113,11 @@
 
         const csvContent = formattedData.map(row => row.join(',')).join('\n');
         const blob = new Blob([csvContent], { type: 'text/csv' });
+        const fileName = (fileNameInput.value || 'table_data') + '.csv';
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'table_data.csv';
+        a.download = fileName;
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
