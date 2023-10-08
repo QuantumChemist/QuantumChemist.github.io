@@ -132,7 +132,7 @@
             isValidString(row[4]) ? row[4] : ''
         ]);
 
-        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || isNaN(row[3]));
+        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || row[3] === '');
         if (invalidRow) {
             showWarning('Invalid data type in the table. Please check your input.');
             return;
@@ -172,7 +172,7 @@
             isValidString(row[4]) ? row[4] : ''
         ]);
 
-        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || isNaN(row[3]));
+        const invalidRow = formattedData.find(row =>!row[0] || !row[1] || row[2] === '' || row[3] === '');
         if (invalidRow) {
             showWarning('Invalid data type in the table. Please check your input.');
             return;
