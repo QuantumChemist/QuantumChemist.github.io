@@ -69,12 +69,18 @@
 
 <button id="add-row-button">Add Row</button>
 <button id="download-button">Download Table Data</button>
+<button id="send-email-button">Send Email</button>
 <div id="warning-message" class="warning"></div>
 
 <br clear="left"/>
 
 <label for="file-name-input">Enter Download File Name:</label>
 <input type="text" id="file-name-input" placeholder="table_data">
+
+<br clear="left"/>
+
+<label for="email-input">Enter Email Address:</label>
+<input type="email" id="email-input" placeholder="example@example.com">
 
 <script>
     const editableTable = document.getElementById('editable-table').getElementsByTagName('tbody')[0];
@@ -144,8 +150,57 @@
         window.URL.revokeObjectURL(url);
     }
 
+        const sendEmailButton = document.getElementById('send-email-button');
+    const emailInput = document.getElementById('email-input');
+
+    function sendEmail() {
+        const email = emailInput.value;
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            showWarning('Invalid email address.');
+            return;
+        }
+
+        const headers = Array.from(document.querySelectorAll('#editable-table th')).map(header => header.textContent);
+        const rows = Array.from(editableTable.getElementsByTagName('tr'));
+        const data = rows.map(row => Array.from(row.getElementsByTagName('td')).map(td => td.innerText));
+
+        const formattedData = data.map(row => [
+            isValidString(row[0]) ? row[0] : '',
+            isValidString(row[1]) ? row[1] : '',
+            isValidInteger(row[2]) ? parseInt(row[2]) : '',
+            isValidFloat(row[3]) ? parseFloat(row[3]) : '',
+            isValidString(row[4]) ? row[4] : ''
+        ]);
+
+        const invalidRow = formattedData.find(row => !row[0] || !row[1] || isNaN(row[2]) || isNaN(row[3]));
+        if (invalidRow) {
+            showWarning('Invalid data type or empty cell in the table. Please check your input.');
+            return;
+        }
+
+        const csvContent = [headers.join(','), ...formattedData.map(row => row.join(','))].join('\n');
+        const fileName = (fileNameInput.value || 'table_data') + '.csv';
+        const blob = new Blob([csvContent], { type: 'text/csv' });
+
+        const emailBody = 'Here is your CSV file.';
+        const emailSubject = 'Some Table CSV File';
+
+        const emailUrl = `mailto:${email}?subject=${emailSubject}&body=${emailBody}`;
+        const fileUrl = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = emailUrl;
+        a.download = fileName;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(fileUrl);
+        document.body.removeChild(a);
+    }
+
     addRowButton.addEventListener('click', addRow);
     downloadButton.addEventListener('click', downloadTable);
+    sendEmailButton.addEventListener('click', sendEmail);
 </script>
 
 </body>
