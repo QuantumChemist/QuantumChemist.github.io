@@ -1,5 +1,5 @@
 ---
-layout: dropdown
+layout: table
 ---
 
 ## Some table
