@@ -2,7 +2,7 @@
 layout: table
 ---
 
-## Some table
+# Some table
 Enter your data here! Please strictly comply to the data types.
 
 
