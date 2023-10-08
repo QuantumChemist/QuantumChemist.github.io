@@ -182,7 +182,7 @@
         const fileName = (fileNameInput.value || 'table_data') + '.csv';
         const blob = new Blob([csvContent], { type: 'text/csv' });
 
-        const emailBody = 'Here is your CSV file:\n\n${csvContent}';
+        const emailBody = `Here is your CSV file:\n\n${csvContent}`;
         const emailSubject = 'Some Table CSV File';
 
         const emailUrl = `mailto:${email}?subject=${emailSubject}&body=${emailBody}`;
