@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A drop down table</title>
+    <title>Editable Table</title>
     <style>
         table {
             width: 100%;
@@ -17,7 +17,12 @@
         }
 
         .new-row {
-            height: 25px;
+            height: 50px;
+        }
+
+        .warning {
+            color: red;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -42,11 +47,13 @@
 
 <button id="add-row-button">Add Row</button>
 <button id="download-button">Download Table Data</button>
+<div id="warning-message" class="warning"></div>
 
 <script>
     const editableTable = document.getElementById('editable-table').getElementsByTagName('tbody')[0];
     const addRowButton = document.getElementById('add-row-button');
     const downloadButton = document.getElementById('download-button');
+    const warningMessage = document.getElementById('warning-message');
 
     function isValidString(value) {
         return typeof value === 'string';
@@ -60,10 +67,17 @@
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
+    function showWarning(message) {
+        warningMessage.textContent = message;
+        setTimeout(() => {
+            warningMessage.textContent = '';
+        }, 3000);
+    }
+
     function addRow() {
         const row = document.createElement('tr');
         row.className = 'new-row';
-        
+
         const header1 = document.createElement('td');
         header1.contentEditable = true;
         row.appendChild(header1);
@@ -87,6 +101,13 @@
             isValidInteger(row[1]) ? parseInt(row[1]) : '',
             isValidFloat(row[2]) ? parseFloat(row[2]) : ''
         ]);
+
+        const invalidRow = formattedData.find(row => !row[0] || row[1] === '' || isNaN(row[2]));
+        if (invalidRow) {
+            showWarning('Invalid data type in the table. Please check your input.');
+            return;
+        }
+
         const csvContent = formattedData.map(row => row.join(',')).join('\n');
         const blob = new Blob([csvContent], { type: 'text/csv' });
         const url = URL.createObjectURL(blob);
@@ -104,4 +125,5 @@
 
 </body>
 </html>
+
 
