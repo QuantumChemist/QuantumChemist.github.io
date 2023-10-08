@@ -115,7 +115,6 @@
         const headers = Array.from(document.querySelectorAll('#editable-table th')).map(header => header.textContent);
         const rows = Array.from(editableTable.getElementsByTagName('tr'));
         const data = rows.map(row => Array.from(row.getElementsByTagName('td')).map(td => td.innerText));
-
         const formattedData = data.map(row => [
             isValidString(row[0]) ? row[0] : '',
             isValidString(row[1]) ? row[1] : '',
@@ -123,6 +122,12 @@
             isValidFloat(row[3]) ? parseFloat(row[3]) : '',
             isValidString(row[4]) ? row[4] : ''
         ]);
+
+        const invalidRow = formattedData.find(row => !row[0] || row[1] === '' || isNaN(row[2]));
+        if (invalidRow) {
+            showWarning('Invalid data type in the table. Please check your input.');
+            return;
+        }
 
         const csvContent = [headers.join(','), ...formattedData.map(row => row.join(','))].join('\n');
         const fileName = (fileNameInput.value || 'table_data') + '.csv';
