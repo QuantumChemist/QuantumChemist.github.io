@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Table</title>
+    <title>Editable Table</title>
     <style>
         table {
             width: 100%;
@@ -19,79 +18,9 @@
     </style>
 </head>
 <body>
-
-<h1>Dropdown Table</h1>
-
-<label for="table-selector">Select a Table:</label>
-<select id="table-selector">
-    <option value="table1">Table 1</option>
-    <option value="table2">Table 2</option>
-</select>
-
-<table id="selected-table">
-    <thead>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Table data will be populated here based on user selection -->
-    </tbody>
-</table>
-
-<button id="download-button">Download Table Data</button>
-
-<script>
-    const tableSelector = document.getElementById('table-selector');
-    const selectedTable = document.getElementById('selected-table').getElementsByTagName('tbody')[0];
-    const downloadButton = document.getElementById('download-button');
-
-    const tableData = {
-        table1: [
-            ['Row 1 Data 1', 'Row 1 Data 2', 'Row 1 Data 3'],
-            ['Row 2 Data 1', 'Row 2 Data 2', 'Row 2 Data 3']
-        ],
-        table2: [
-            ['Row A Data 1', 'Row A Data 2', 'Row A Data 3'],
-            ['Row B Data 1', 'Row B Data 2', 'Row B Data 3']
-        ]
-    };
-
-    function populateTable(tableId) {
-        selectedTable.innerHTML = '';
-        const data = tableData[tableId];
-        data.forEach(rowData => {
-            const row = document.createElement('tr');
-            rowData.forEach(cellData => {
-                const cell = document.createElement('td');
-                cell.textContent = cellData;
-                row.appendChild(cell);
-            });
-            selectedTable.appendChild(row);
-        });
-    }
-
-    tableSelector.addEventListener('change', () => {
-        const selectedTableId = tableSelector.value;
-        populateTable(selectedTableId);
-    });
-
-    downloadButton.addEventListener('click', () => {
-        const selectedTableId = tableSelector.value;
-        const data = tableData[selectedTableId];
-        const csvContent = data.map(row => row.join(',')).join('\n');
-        const blob = new Blob([csvContent], { type: 'text/csv' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'table_data.csv';
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-    });
-</script>
-
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
 </body>
 </html>
