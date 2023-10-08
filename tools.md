@@ -7,4 +7,6 @@ layout: none
 <a href="https://github.com/QuantumChemist/LobsterPyGUI" class="btn btn-github"><span class="icon"></span>LobsterPyGUI</a>
 <a href="https://quantumchemist.github.io/dropdown" class="btn btn-github"><span class="icon"></span>DropDown</a>
 
+<button name="button" onclick="http://www.google.com">Click me</button>
+
 [back](./)
