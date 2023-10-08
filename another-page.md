@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: default
 ---
 
 ## Welcome to another page
