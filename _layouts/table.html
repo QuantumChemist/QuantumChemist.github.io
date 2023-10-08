@@ -8,7 +8,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         table, th, td {
@@ -17,7 +17,7 @@
         }
 
         .new-row {
-            height: 25px;
+            height: 50px;
         }
 
         .warning {
@@ -39,6 +39,7 @@
             <th>Sample Name (String)</th>
             <th>Data Nr. (Integer)</th>
             <th>Data (Float)</th>
+            <th>Header 5 (Comments)</th>
         </tr>
     </thead>
     <tbody>
@@ -47,18 +48,21 @@
              <td contenteditable="true">Example sample</td>
             <td contenteditable="true">42</td>
             <td contenteditable="true">3.14</td>
+            <td contenteditable="true">Some comments</td>
         </tr>
         <tr>
             <td contenteditable="true">Chris</td>
              <td contenteditable="true">stützite</td>
             <td contenteditable="true">123</td>
             <td contenteditable="true">5.67</td>
+            <td contenteditable="true">study theo chem!</td>
         </tr>
         <tr>
             <td contenteditable="true">Brian</td>
              <td contenteditable="true">MOFs</td>
             <td contenteditable="true">789</td>
             <td contenteditable="true">8.91</td>
+            <td contenteditable="true">I need more samples</td>
         </tr>
     </tbody>
 </table>
@@ -78,15 +82,15 @@
     const warningMessage = document.getElementById('warning-message');
 
     function isValidString(value) {
-        return typeof value === 'string';
+        return typeof value === 'string' || value === '';
     }
 
     function isValidInteger(value) {
-        return Number.isInteger(Number(value));
+        return value === '' || (!isNaN(value) && Number.isInteger(Number(value)));
     }
 
     function isValidFloat(value) {
-        return !isNaN(parseFloat(value)) && isFinite(value);
+        return value === '' || (!isNaN(parseFloat(value)) && isFinite(value));
     }
 
     function showWarning(message) {
@@ -99,7 +103,7 @@
     function addRow() {
         const newRow = document.createElement('tr');
         newRow.className = 'new-row';
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
             const cell = document.createElement('td');
             cell.contentEditable = true;
             newRow.appendChild(cell);
@@ -108,22 +112,19 @@
     }
 
     function downloadTable() {
+        const headers = Array.from(document.querySelectorAll('#editable-table th')).map(header => header.textContent);
         const rows = Array.from(editableTable.getElementsByTagName('tr'));
         const data = rows.map(row => Array.from(row.getElementsByTagName('td')).map(td => td.innerText));
+
         const formattedData = data.map(row => [
             isValidString(row[0]) ? row[0] : '',
-            isValidString(row[1]) ? row[1] : ''
+            isValidString(row[1]) ? row[1] : '',
             isValidInteger(row[2]) ? parseInt(row[2]) : '',
-            isValidFloat(row[3]) ? parseFloat(row[3]) : ''
+            isValidFloat(row[3]) ? parseFloat(row[3]) : '',
+            isValidString(row[4]) ? row[4] : ''
         ]);
 
-        const invalidRow = formattedData.find(row => !row[0] || row[1] === '' || isNaN(row[2]));
-        if (invalidRow) {
-            showWarning('Invalid data type in the table. Please check your input.');
-            return;
-        }
-
-        const csvContent = formattedData.map(row => row.join(',')).join('\n');
+        const csvContent = [headers.join(','), ...formattedData.map(row => row.join(','))].join('\n');
         const fileName = (fileNameInput.value || 'table_data') + '.csv';
         const blob = new Blob([csvContent], { type: 'text/csv' });
         const url = URL.createObjectURL(blob);
