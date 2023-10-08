@@ -4,9 +4,8 @@ layout: none
 
 ## Tools
 
-<button name="button" onclick="https://github.com/QuantumChemist/LobsterPyGUI">[LobsterPyGUI](https://github.com/QuantumChemist/LobsterPyGUI)</button>
-<button name="button" onclick="https://quantumchemist.github.io/dropdown">[DropDown](https://quantumchemist.github.io/dropdown)</button>
-<a href="http://www.google.com" target="_blank"><button>Click me</button></a>
+<a href="https://github.com/QuantumChemist/LobsterPyGUI" target="_blank"><button>LobsterPyGUI</button></a>
+<a href="https://quantumchemist.github.io/dropdown" target="_blank"><button>DropDown</button></a>
 
 
 [back](./)
