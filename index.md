@@ -207,6 +207,7 @@ Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 * [Materials Horizons](https://www.rsc.org/journals-books-databases/about-journals/materials-horizons/)
 * [Journal of Materials Chemistry A](https://www.rsc.org/journals-books-databases/about-journals/journal-of-materials-chemistry-a/)
 * [Inorganic Chemistry Frontiers](https://www.rsc.org/journals-books-databases/about-journals/inorganic-chemistry-frontiers/)
+* [RSC Advances](https://www.rsc.org/journals-books-databases/about-journals/rsc-advances/)
 
 <br clear="left"/>
 
@@ -310,7 +311,6 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 ```
 時は移り、人も移る。それは 水の流れにも似て、決して とどまる事はない。幼き心は、気高き大志に。幼き恋は、深き慈愛へ。澄んだ水面は 成長をうつす鏡。
 ```
-[.](https://quantumchemist.github.io/utils/mv.mp4)
 
 <dl>
 <dt>Copyright</dt>
