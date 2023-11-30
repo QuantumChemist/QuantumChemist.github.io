@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img hspace="20" align="right" src="https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic2.png?raw=true" width="30%" height="10%"/>
+<img hspace="20" align="right" src="https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic2.png?raw=true" width="25%" height="10%"/>
 
 Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) in Berlin in the junior group of [Prof. Janine George](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
 
