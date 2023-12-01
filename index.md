@@ -6,11 +6,15 @@ layout: default
 
 Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) in Berlin in the junior group of [Prof. Janine George](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
 
+I was also part of organizing the [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) in my role as amateur graphic designer mostly, and I'm active in several small volunteer projects. 
+
 <br clear="left"/>
 	
 [<img src="https://quantumchemist.github.io/utils/QClogohighres.png" width="15%" height=auto />](https://doi.org/10.1021/acs.chemmater.1c03349) 
 
-My research interests involve different areas of theoretical, quantum and computational chemistry such as the development and improvement of [well-established](https://doi.org/10.1039/C9RA05190B) and [innovative](https://doi.org/10.1021/acs.jpcc.1c00718) methods. Another important aspect in my research is the application of different quantum chemical approaches to solid-state and materials chemistry concerning compounds like [Zintl phases](https://doi.org/10.1039/C9RA05190B), especially [thermoelectrical materials](https://doi.org/10.1002/jcc.25822), [cathode and anode materials](https://doi.org/10.1021/acs.chemmater.1c03349) for battery technology or [phase-change materials](https://doi.org/10.1002/anie.202115778).
+My research interests involve different areas of theoretical, quantum and computational chemistry as well as material informatics such as the development of scientific software and improvement of [well-established](https://doi.org/10.1039/C9RA05190B) and [innovative](https://doi.org/10.1021/acs.jpcc.1c00718) methods. Another important aspect in my research is the application of different quantum chemical approaches to solid-state and materials chemistry concerning compounds like [Zintl phases](https://doi.org/10.1039/C9RA05190B), especially [thermoelectrical materials](https://doi.org/10.1002/jcc.25822), [cathode and anode materials](https://doi.org/10.1021/acs.chemmater.1c03349) for battery technology or [phase-change materials](https://doi.org/10.1002/anie.202115778).
+
+In my postdoc, I'm working on a Python-based software package to automate and accelerate machine-learned interatomic potential fitting and benchmarking with DFT data, in collaboration with the Deringer group from Oxford. We aim to predict phononic properties faster than before for discovering new low thermal conductivity thermoelectric materials.
 
 <br clear="left"/>
 
