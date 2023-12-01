@@ -6,7 +6,7 @@ layout: default
 
 Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) in Berlin in the junior group of [Prof. Janine George](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
 
-I was also part of organizing the [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) in my role as amateur graphic designer mostly, and I'm active in several small volunteer projects. 
+I was also part of organizing the [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) as part of the [Berlin Science Week](https://berlinscienceweek.com/event/postdoc-day-berlin-2023/2023-11-03/) in my role as amateur graphic designer mostly, and I'm active in several small volunteer projects. 
 
 <br clear="left"/>
 	
