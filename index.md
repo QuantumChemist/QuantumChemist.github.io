@@ -191,7 +191,7 @@ LOBSTER (Local-Orbital Basis Suite Towards Electronic-Structure Reconstruction) 
 	
 [<img align="left" src="https://quantumchemist.github.io/utils/lpg.png" width="30%" height=auto />](https://github.com/QuantumChemist/LobsterPyGUI)
 
-If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, I made a [GUI](https://github.com/QuantumChemist/LobsterPyGUI) for you, providing the very basic functionalities of LobsterPy. Requires a GTK+ 3.0 library or you compile the binary from source. :)
+If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, I made a [GUI](https://github.com/QuantumChemist/LobsterPyGUI) for you, providing the very basic functionalities of LobsterPy. :)
 
 
 <br clear="left"/>
