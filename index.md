@@ -329,5 +329,5 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 <dt>Copyright</dt>
 <dd></dd>
 </dl>
-&copy; 2023 
+&copy; 2020 -- 2024 
 Christina Ertural 
