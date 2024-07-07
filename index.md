@@ -214,6 +214,7 @@ Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 * [Physical Chemistry Chemical Physics (PCCP)](https://www.rsc.org/journals-books-databases/about-journals/pccp/)
 * [Materials Horizons](https://www.rsc.org/journals-books-databases/about-journals/materials-horizons/)
 * [Journal of Materials Chemistry A](https://www.rsc.org/journals-books-databases/about-journals/journal-of-materials-chemistry-a/)
+* [Materials Chemistry Frontiers](https://www.rsc.org/journals-books-databases/about-journals/materials-chemistry-frontiers/)
 * [Inorganic Chemistry Frontiers](https://www.rsc.org/journals-books-databases/about-journals/inorganic-chemistry-frontiers/)
 * [RSC Advances](https://www.rsc.org/journals-books-databases/about-journals/rsc-advances/)
 
