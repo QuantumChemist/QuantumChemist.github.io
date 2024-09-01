@@ -303,6 +303,12 @@ Reviewer for [:](https://www.webofscience.com/wos/author/record/GZH-1097-2022)
 Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.png" viewBox="0 0 16 16" width="16px" height="16px" clear="left" /> 
 -->
 
+# In my free time...
+
+...I also like to code. So I made a chatbot and a Discord server in homage to the video game Portal.
+
+<iframe src="https://discord.com/widget?id=1277030477303382026&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 
 
 ### How you can contact me
