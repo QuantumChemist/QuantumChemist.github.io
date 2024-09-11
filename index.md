@@ -50,7 +50,7 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 10th -- 12th September 2024
 ## Faraday Discussion: Data-driven discovery in the chemical sciences in Oxford
 
-[<img src="https://quantumchemist.github.io/utils/FDpic.png" width="24%" height=auto />](https://quantumchemist.github.io/utils/FDpic.png)
+[<img src="https://quantumchemist.github.io/utils/FDpic.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/FDpic.png)
 [<img src="https://quantumchemist.github.io/utils/FaraDPoster.png" width="30%" height=auto />](https://quantumchemist.github.io/utils/FaraDposter.pdf)
 
 I presented my recent, preliminary results  on "Phonon-accurate machine-learning potentials from automated workflows" at the Faraday Discussion, organized by RSC, taking place for the 20th time in Oxford!
