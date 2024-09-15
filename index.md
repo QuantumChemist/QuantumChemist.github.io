@@ -4,7 +4,7 @@ layout: default
 
 <img hspace="20" align="right" src="https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true" width="20%" height="10%"/> 
 
-Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) in Berlin in the junior group of [Prof. Janine George](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
+Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) ([George group](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html)) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
 
 I was also part of the organizing team behind the [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) as part of the [Berlin Science Week 2023](https://berlinscienceweek.com/event/postdoc-day-berlin-2023/2023-11-03/) in my role as amateur graphic designer mostly, and I'm active in several small volunteer projects. 
 
