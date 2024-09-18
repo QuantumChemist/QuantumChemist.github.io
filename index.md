@@ -46,7 +46,7 @@ The [Berlin PostDoc Day 2023](https://www.mdc-berlin.de/postdoc-day) is apporach
 <br clear="left"/>
 
 You can watch a summary of the event here:
-[<video autoplay loop muted src="https://quantumchemist.github.io/utils/PDD23.mp4" width="20%" height=auto />](https://quantumchemist.github.io/utils/PDD23.mp4)
+[<video autoplay loop muted src="https://quantumchemist.github.io/utils/PDD2023.mp4" width="20%" height=auto />](https://quantumchemist.github.io/utils/PDD2023.mp4)
 
 <br clear="left"/>
 
