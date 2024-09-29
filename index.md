@@ -331,15 +331,6 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 
 <br clear="left"/>
 
-<iframe src="https://discord.com/widget?id=1277030477303382026&theme=dark" 
-	width="350" height="150" 
-	allowtransparency="true" 
-	frameborder="0" 
-	sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-</iframe>
-
-<br clear="left"/>
-
 <a href="https://discord.com/application-directory/12765301394125661866" target="_blank">View OpenGLaDOS on Discord App Discovery!</a>
 
 Feel free to add my bot to your server!
