@@ -322,7 +322,30 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 
 ...I also like to code. So I made a chatbot and a Discord server in homage to the video game Portal.
 
-<iframe src="https://discord.com/widget?id=1277030477303382026&theme=dark" width="350" height="150" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://discord.com/widget?id=1277030477303382026&theme=dark" 
+	width="450" height="150" 
+	allowtransparency="true" 
+	frameborder="0" 
+	sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+
+<iframe src="https://top.gg/bot/1276530139412566186" 
+        width="450" height="150" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+
+<iframe src="https://discord.com/application-directory/12765301394125661866" 
+        width="450" height="150" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+
+
+Feel free to add my bot to your server!
+
 
 
 <br clear="left"/>
