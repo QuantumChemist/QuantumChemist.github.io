@@ -323,7 +323,7 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 ...I also like to code. So I made a chatbot and a Discord server in homage to the video game Portal.
 
 <iframe src="https://top.gg/bot/1276530139412566186" 
-        width="350" height="650" 
+        width="350" height="550" 
         allowtransparency="true" 
         frameborder="0" 
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
