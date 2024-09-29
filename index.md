@@ -336,7 +336,7 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 <br clear="left"/>
 
 <iframe src="https://top.gg/bot/1276530139412566186" 
-        width="350" height="550" 
+        width="350" height="750" 
         allowtransparency="true" 
         frameborder="0" 
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
