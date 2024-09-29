@@ -329,15 +329,19 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 	sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
 </iframe>
 
+<br clear="left"/>
+
 <iframe src="https://top.gg/bot/1276530139412566186" 
-        width="450" height="150" 
+        width="450" height="650" 
         allowtransparency="true" 
         frameborder="0" 
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
 </iframe>
 
+<br clear="left"/>
+
 <iframe src="https://discord.com/application-directory/12765301394125661866" 
-        width="450" height="150" 
+        width="450" height="650" 
         allowtransparency="true" 
         frameborder="0" 
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
