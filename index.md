@@ -331,7 +331,7 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 
 <br clear="left"/>
 
-<iframe src="https://discord.com/application-directory/1276530139412566186" 
+<iframe src="https://top.gg/bot/1276530139412566186" 
         width="350" height="750" 
         allowtransparency="true" 
         frameborder="0" 
@@ -340,7 +340,7 @@ Icon <img src="https://raw.githubusercontent.com/QuantumChemist/lix/master/LiX.p
 
 <br clear="left"/>
 
-<iframe src="https://top.gg/bot/1276530139412566186" 
+<iframe src="https://discord.com/application-directory/1276530139412566186" 
         width="350" height="750" 
         allowtransparency="true" 
         frameborder="0" 
