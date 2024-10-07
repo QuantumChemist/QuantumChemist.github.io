@@ -1,0 +1,35 @@
+/* Custom styles to override old CSS or add new ones */
+
+body {
+    padding: 20px;
+    font-size: 18px;
+    color: #c5c5c5;
+    background-color: #202020;
+}
+
+h1, h2 {
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container div {
+    flex: 1 1 45%; /* Adjust the width */
+    margin: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
