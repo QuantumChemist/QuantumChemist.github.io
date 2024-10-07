@@ -8,9 +8,9 @@ body.appendChild(container); // Append container to body
 // Create a paragraph for introduction
 const introParagraph = document.createElement('p');
 introParagraph.innerHTML = `
-    Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, 
+    Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, <br>
     currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
-    (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>)
+    (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>) <br>
     and former <a href="http://www.cohp.de/">LOBSTER</a> developer. Here you can find more information about my research.
 `;
 container.appendChild(introParagraph);
@@ -18,8 +18,8 @@ container.appendChild(introParagraph);
 // Add a circular image (research-related)
 const researchImg = document.createElement('img');
 researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true";
-researchImg.classList.add('left-align'); // Floating the image to the left
-researchImg.style.maxWidth = "300px";  // Set a maximum width
+researchImg.classList.add('right-align'); // Floating the image to the right
+researchImg.style.maxWidth = "100px";  // Set a maximum width
 researchImg.style.height = "auto";     // Maintain aspect ratio
 container.appendChild(researchImg);
 
@@ -28,16 +28,36 @@ const lobsterSectionHeader = document.createElement('h2');
 lobsterSectionHeader.innerText = "LobsterPyGUI";
 container.appendChild(lobsterSectionHeader);
 
+const lobsterParagraph = document.createElement('p');
+lobsterParagraph.innerHTML = `
+    Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, <br>
+    currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
+    (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>) <br>
+    and former <a href="http://www.cohp.de/">LOBSTER</a> developer. Here you can find more information about my research.
+`;
+container.appendChild(lobsterParagraph);
+
 // Add LobsterPyGUI video
 const lobsterVideo = document.createElement('video');
 lobsterVideo.src = "https://quantumchemist.github.io/utils/lpglogo.mp4";
 lobsterVideo.autoplay = true;
 lobsterVideo.loop = true;
 lobsterVideo.muted = true;
-lobsterVideo.classList.add('left-align'); // Floating the video to the left
-lobsterVideo.style.maxWidth = "300px";    // Set a maximum width
+lobsterVideo.classList.add('right-align'); // Floating the video to the right
+lobsterVideo.style.maxWidth = "100px";    // Set a maximum width
 lobsterVideo.style.height = "auto";       // Maintain aspect ratio
 container.appendChild(lobsterVideo);
+
+// Section: LobsterPyGUI
+const topggSectionHeader = document.createElement('h2');
+topggSectionHeader.innerText = "In my free time...";
+container.appendChild(topggSectionHeader);
+
+const topggParagraph = document.createElement('p');
+topggParagraph.innerHTML = `
+    ...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!
+`;
+container.appendChild(topggParagraph);
 
 // Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
 const topggIframe = document.createElement('iframe');
@@ -45,7 +65,7 @@ topggIframe.src = "https://top.gg/bot/1276530139412566186";
 topggIframe.width = "350";
 topggIframe.height = "750";
 topggIframe.allowTransparency = "true";
-topggIframe.frameBorder = "0";
+topggIframe["frameBorder"] = "0";
 topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 container.appendChild(topggIframe);
 
