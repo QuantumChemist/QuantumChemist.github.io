@@ -46,15 +46,15 @@ lobsterVideo.muted = true;
 lobsterVideo.classList.add('left-align'); // Floating the video to the left
 container.appendChild(lobsterVideo);
 
-// Add Discord widget
-const discordWidget = document.createElement('iframe');
-discordWidget.src = "https://discord.com/widget?id=1277030477303382026&theme=dark";
-discordWidget.width = "350";
-discordWidget.height = "150";
-discordWidget.allowtransparency = true;
-discordWidget["frameBorder"] = "0";
-discordWidget.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
-container.appendChild(discordWidget);
+// Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
+const topggIframe = document.createElement('iframe');
+topggIframe.src = "https://top.gg/bot/1276530139412566186";
+topggIframe.width = "350";
+topggIframe.height = "750";
+topggIframe.allowTransparency = "true";
+topggIframe.frameBorder = "0";
+topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
+container.appendChild(topggIframe);
 
 // Contact section
 const contactHeader = document.createElement('h3');
@@ -77,7 +77,7 @@ container.appendChild(contactList);
 
 // Footer
 const footer = document.createElement('footer');
-footer.innerHTML = `&copy; 2020 -- 2024 Christina Ertural`;
+footer.innerHTML = `&copy; 2024 -- 2025 Christina Ertural`;
 container.appendChild(footer);
 
 // Clear any floats to prevent overlap
