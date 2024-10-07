@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="scripts/custom.css">
+
 # Welcome to my GitHub Pages site!
 
 <script src="scripts/index.js"></script>
