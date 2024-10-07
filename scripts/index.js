@@ -32,20 +32,6 @@ researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/bl
 researchImg.classList.add('left-align'); // Floating the image to the left
 container.appendChild(researchImg);
 
-// Add a research description
-const researchDescription = document.createElement('p');
-researchDescription.innerHTML = `
-    My research interests involve different areas of theoretical, quantum, and computational chemistry as well as material informatics...
-    [thermoelectrical materials](https://doi.org/10.1002/jcc.25822), [cathode and anode materials](https://doi.org/10.1021/acs.chemmater.1c03349) for battery technology, 
-    or [phase-change materials](https://doi.org/10.1002/anie.202115778).
-`;
-container.appendChild(researchDescription);
-
-// Add a custom Japanese message
-const japaneseMessage = document.createElement('p');
-japaneseMessage.innerText = "いつも和独のタンデムパートナーを探しています。(⁠ ⁠ꈍ⁠ᴗ⁠ꈍ⁠)";
-container.appendChild(japaneseMessage);
-
 // Section: LobsterPyGUI
 const lobsterSectionHeader = document.createElement('h2');
 lobsterSectionHeader.innerText = "LobsterPyGUI";
@@ -66,7 +52,7 @@ discordWidget.src = "https://discord.com/widget?id=1277030477303382026&theme=dar
 discordWidget.width = "350";
 discordWidget.height = "150";
 discordWidget.allowtransparency = true;
-discordWidget.frameBorder = "0";
+discordWidget["frameBorder"] = "0";
 discordWidget.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 container.appendChild(discordWidget);
 
