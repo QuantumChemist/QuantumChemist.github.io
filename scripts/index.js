@@ -1,69 +1,92 @@
 // Select the body where you'll append the content
 const body = document.body;
 
-// Create a container to hold all the elements, centered using flexbox
-const container = document.createElement('div');
-container.style.display = 'flex';
-container.style.flexDirection = 'column'; // Stack items vertically
-container.style.alignItems = 'center';    // Center items horizontally
-container.style.maxWidth = '800px';       // Optional: limit the width
-container.style.margin = '0 auto';        // Center the container on the page
-body.appendChild(container); // Append container to body
+// Create a container for the whole page
+const mainContainer = document.createElement('div');
+mainContainer.style.maxWidth = '800px';  // Set the max width for the whole container
+mainContainer.style.margin = '0 auto';   // Center the container on the page
+body.appendChild(mainContainer);
 
-// Add a circular image (research-related)
-const researchImg = document.createElement('img');
-researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true";
-researchImg.style.maxWidth = "100px";  // Set a maximum width
-researchImg.style.height = "auto";     // Maintain aspect ratio
-researchImg.style.marginBottom = "15px"; // Add some space between image and text
-container.appendChild(researchImg);
+// Function to create a box with text on the left and image on the right
+function createBoxWithTextLeftAndImageRight(imgSrc, imgWidth, textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.justifyContent = 'space-between';  // Push text and image to opposite sides
+    box.style.alignItems = 'center';             // Vertically align text and image
+    box.style.marginBottom = '20px';             // Space between boxes
+    box.style.border = '1px solid #333';         // Optional: border around the box
+    box.style.padding = '10px';                  // Optional: padding inside the box
+    box.style.width = '100%';                    // Ensure boxes fill the width of the container
 
-// Create a paragraph for introduction
-const introParagraph = document.createElement('p');
-introParagraph.innerHTML = `
-    Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, <br>
-    currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
-    (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>) <br>
-    and former <a href="http://www.cohp.de/">LOBSTER</a> developer. Here you can find more information about my research.
-`;
-introParagraph.style.textAlign = 'center'; // Center the text
-container.appendChild(introParagraph);
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.flex = '1';  // Text takes up remaining space
+    text.style.textAlign = 'left'; // Ensure text is aligned to the left
+    text.style.marginRight = '20px'; // Add space between the text and the image
 
-// Section: LobsterPyGUI
-const lobsterSectionHeader = document.createElement('h2');
-lobsterSectionHeader.innerText = "LobsterPyGUI";
-container.appendChild(lobsterSectionHeader);
+    // Create the image element
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.style.maxWidth = imgWidth + 'px';  // Set the image width
+    img.style.height = 'auto';             // Maintain aspect ratio
 
-// Add LobsterPyGUI video
-const lobsterVideo = document.createElement('video');
-lobsterVideo.src = "https://quantumchemist.github.io/utils/lpglogo.mp4";
-lobsterVideo.autoplay = true;
-lobsterVideo.loop = true;
-lobsterVideo.muted = true;
-lobsterVideo.style.maxWidth = "100px";    // Set a maximum width
-lobsterVideo.style.height = "auto";       // Maintain aspect ratio
-lobsterVideo.style.marginBottom = "15px"; // Add some space between video and text
-container.appendChild(lobsterVideo);
+    // Append text and image to the box
+    box.appendChild(text);
+    box.appendChild(img);
 
-const lobsterParagraph = document.createElement('p');
-lobsterParagraph.innerHTML = `
-    If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, <br>
-    I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)
-`;
-lobsterParagraph.style.textAlign = 'center'; // Center the text
-container.appendChild(lobsterParagraph);
+    return box;
+}
 
-// Section: Free time
-const topggSectionHeader = document.createElement('h2');
-topggSectionHeader.innerText = "In my free time...";
-container.appendChild(topggSectionHeader);
+// Function to create a box with text only (no image)
+function createTextOnlyBox(textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.justifyContent = 'center';  // Center the text inside the box
+    box.style.alignItems = 'center';      // Vertically align text
+    box.style.marginBottom = '20px';      // Space between boxes
+    box.style.border = '1px solid #333';  // Optional: border around the box
+    box.style.padding = '10px';           // Optional: padding inside the box
+    box.style.width = '100%';             // Ensure the box fills the width of the container
 
-const topggParagraph = document.createElement('p');
-topggParagraph.innerHTML = `
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.textAlign = 'center';      // Center the text in the box
+
+    // Append the text to the box
+    box.appendChild(text);
+
+    return box;
+}
+
+// Add the introduction section (text left, image right)
+const introBox = createBoxWithTextLeftAndImageRight(
+    'https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true',
+    100,
+    `Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, 
+     currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
+     (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>)
+     and former <a href="http://www.cohp.de/">LOBSTER</a> developer. Here you can find more information about my research.`
+);
+mainContainer.appendChild(introBox);
+
+// Add the LobsterPyGUI section (video right, text left)
+const lobsterBox = createBoxWithTextLeftAndImageRight(
+    'https://quantumchemist.github.io/utils/lpglogo.mp4',
+    100,
+    `If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, 
+    I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)`
+);
+mainContainer.appendChild(lobsterBox);
+
+// Add the "In my free time" section (text-only box)
+const freeTimeBox = createTextOnlyBox(`
     ...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!
-`;
-topggParagraph.style.textAlign = 'center'; // Center the text
-container.appendChild(topggParagraph);
+`);
+mainContainer.appendChild(freeTimeBox);
 
 // Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
 const topggIframe = document.createElement('iframe');
@@ -73,12 +96,12 @@ topggIframe.height = "750";
 topggIframe.allowTransparency = "true";
 topggIframe.frameBorder = "0";
 topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
-container.appendChild(topggIframe);
+mainContainer.appendChild(topggIframe);
 
 // Contact section
 const contactHeader = document.createElement('h3');
 contactHeader.innerText = "How you can contact me";
-container.appendChild(contactHeader);
+mainContainer.appendChild(contactHeader);
 
 // Create contact list
 const contactList = document.createElement('dl');
@@ -90,17 +113,11 @@ contactList.innerHTML = `
     <dt>ResearchGate</dt>
     <dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Dr. Christina Ertural</a></dd>
 `;
-contactList.style.textAlign = 'center'; // Center the contact list
-container.appendChild(contactList);
+mainContainer.appendChild(contactList);
 
 // Footer
 const footer = document.createElement('footer');
 footer.innerHTML = `&copy; 2024 -- 2025 Christina Ertural`;
 footer.style.marginTop = "40px";
 footer.style.textAlign = 'center'; // Center the footer
-container.appendChild(footer);
-
-// Clear any floats to prevent overlap (this is mostly unnecessary with flexbox)
-const clearDiv = document.createElement('div');
-clearDiv.style.clear = 'both';
-container.appendChild(clearDiv);
+mainContainer.appendChild(footer);
