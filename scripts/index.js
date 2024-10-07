@@ -1,6 +1,10 @@
 // Select the body or main container where you'll append the content
 const body = document.body;
 
+// Create a container to hold all the elements
+const container = document.createElement('div');
+body.appendChild(container); // Append container to body
+
 // Create a paragraph for introduction
 const introParagraph = document.createElement('p');
 introParagraph.innerHTML = `
@@ -53,8 +57,6 @@ container.appendChild(contactHeader);
 // Create contact list
 const contactList = document.createElement('dl');
 contactList.innerHTML = `
-    <dt>Email &#9993;</dt>
-    <dd><a href="mailto:christina.ertural@bam.de">christina.ertural&commat;bam.de</a></dd>
     <dt>GitHub</dt>
     <dd><a href="https://github.com/QuantumChemist">QuantumChemist</a></dd>
     <dt>LinkedIn</dt>
