@@ -1,21 +1,6 @@
 // Select the body or main container where you'll append the content
 const body = document.body;
 
-// Create a container for all content
-const container = document.createElement('div');
-container.classList.add('flex-container');
-document.body.appendChild(container);
-
-// Create a header
-const header = document.createElement('h1');
-header.innerText = "Welcome to my GitHub Pages site!";
-container.appendChild(header);
-
-// Add subheading or subtitle
-const subHeader = document.createElement('p');
-subHeader.innerHTML = 'Visit the <a href="https://g.co/kgs/Bi3Bdb">2020 – 2024 website!</a>';
-container.appendChild(subHeader);
-
 // Create a paragraph for introduction
 const introParagraph = document.createElement('p');
 introParagraph.innerHTML = `
