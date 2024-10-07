@@ -2,6 +2,8 @@
 
 # Welcome to my GitHub Pages site!
 
-<script src="scripts/index.js"></script>
+<div class="container">
+    <script src="scripts/index.js"></script>
+</div>
 
 Visit the [2020 -- 2024 website](./index_old.md)!

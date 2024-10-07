@@ -2,16 +2,17 @@
 body {
     font-size: 18px;
     background-color: #202020;
-    padding: 40px;
-    line-height: 1.6;
+    padding: 0;
     margin: 0;
+    line-height: 1.6;
 }
 
 /* Center the content and limit its width */
 .container {
-    max-width: 1200px; /* Set a max width to limit how wide the content gets */
-    margin: 0 auto;    /* Center the content horizontally */
-    padding: 20px;     /* Add some padding for spacing */
+    max-width: 1000px;  /* Adjust this width if needed */
+    margin: 0 auto;     /* Center the content */
+    padding: 20px;      /* Add some padding */
+    overflow: hidden;   /* Clear any floating elements inside */
 }
 
 /* Headings */
@@ -90,8 +91,9 @@ footer {
 blockquote {
     margin: 20px 0;
     padding: 10px 20px;
-    background-color: #333;
-    border-left: 5px solid #00ff00;
+    /* You can remove background and border if not needed */
+    background-color: transparent; /* Optional: Makes the background transparent */
+    border-left: none; /* Optional: Removes the left border */
 }
 
 /* Contact section */
