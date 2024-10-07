@@ -3,7 +3,7 @@ const body = document.body;
 
 // Create a container for the whole page
 const mainContainer = document.createElement('div');
-mainContainer.style.maxWidth = '1200px';  // Set the max width for the whole container
+mainContainer.style.maxWidth = '1000px';  // Set the max width for the whole container
 mainContainer.style.margin = '0 auto';   // Center the container on the page
 body.appendChild(mainContainer);
 
