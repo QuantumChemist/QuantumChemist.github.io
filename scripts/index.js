@@ -5,6 +5,14 @@ const body = document.body;
 const container = document.createElement('div');
 body.appendChild(container); // Append container to body
 
+// Add a circular image (research-related)
+const researchImg = document.createElement('img');
+researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true";
+researchImg.classList.add('right-align'); // Floating the image to the right
+researchImg.style.maxWidth = "100px";  // Set a maximum width
+researchImg.style.height = "auto";     // Maintain aspect ratio
+container.appendChild(researchImg);
+
 // Create a paragraph for introduction
 const introParagraph = document.createElement('p');
 introParagraph.innerHTML = `
@@ -15,25 +23,10 @@ introParagraph.innerHTML = `
 `;
 container.appendChild(introParagraph);
 
-// Add a circular image (research-related)
-const researchImg = document.createElement('img');
-researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true";
-researchImg.classList.add('right-align'); // Floating the image to the right
-researchImg.style.maxWidth = "100px";  // Set a maximum width
-researchImg.style.height = "auto";     // Maintain aspect ratio
-container.appendChild(researchImg);
-
 // Section: LobsterPyGUI
 const lobsterSectionHeader = document.createElement('h2');
 lobsterSectionHeader.innerText = "LobsterPyGUI";
 container.appendChild(lobsterSectionHeader);
-
-const lobsterParagraph = document.createElement('p');
-lobsterParagraph.innerHTML = `
-    If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, <br>
-    I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)
-`;
-container.appendChild(lobsterParagraph);
 
 // Add LobsterPyGUI video
 const lobsterVideo = document.createElement('video');
@@ -45,6 +38,13 @@ lobsterVideo.classList.add('right-align'); // Floating the video to the right
 lobsterVideo.style.maxWidth = "100px";    // Set a maximum width
 lobsterVideo.style.height = "auto";       // Maintain aspect ratio
 container.appendChild(lobsterVideo);
+
+const lobsterParagraph = document.createElement('p');
+lobsterParagraph.innerHTML = `
+    If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, <br>
+    I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)
+`;
+container.appendChild(lobsterParagraph);
 
 // Section: LobsterPyGUI
 const topggSectionHeader = document.createElement('h2');
