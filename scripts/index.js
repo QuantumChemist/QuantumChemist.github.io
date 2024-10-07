@@ -30,8 +30,8 @@ container.appendChild(introParagraph);
 const researchImg = document.createElement('img');
 researchImg.src = "https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true";
 researchImg.classList.add('left-align'); // Floating the image to the left
-researchImg.style.width = "200px"; // Adjust the width
-researchImg.style.height = "auto"; // Maintain aspect ratio
+researchImg.style.maxWidth = "300px";  // Set a maximum width
+researchImg.style.height = "auto";     // Maintain aspect ratio
 container.appendChild(researchImg);
 
 // Section: LobsterPyGUI
@@ -46,8 +46,8 @@ lobsterVideo.autoplay = true;
 lobsterVideo.loop = true;
 lobsterVideo.muted = true;
 lobsterVideo.classList.add('left-align'); // Floating the video to the left
-lobsterVideo.style.width = "300px"; // Adjust the video width
-lobsterVideo.style.height = "auto"; // Maintain aspect ratio
+lobsterVideo.style.maxWidth = "300px";    // Set a maximum width
+lobsterVideo.style.height = "auto";       // Maintain aspect ratio
 container.appendChild(lobsterVideo);
 
 // Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
