@@ -1,35 +1,132 @@
-/* Custom styles to override old CSS or add new ones */
-
+/* Body styling */
 body {
-    padding: 20px;
     font-size: 18px;
-    color: #c5c5c5;
+    color: #dcdcdc;
     background-color: #202020;
+    padding: 40px;
+    line-height: 1.6;
 }
 
+/* Headings */
 h1, h2 {
     color: #00ff00;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
+/* Paragraphs */
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
 img {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.container {
+/* Left and right aligned images */
+.right-align {
+    float: right;
+    margin-left: 20px;
+}
+
+.left-align {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Flexbox container for better layout alignment */
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.container div {
-    flex: 1 1 45%; /* Adjust the width */
+.flex-item {
+    flex: 1 1 45%;
+    margin: 15px;
+}
+
+/* Styling for widgets (Discord, etc.) */
+iframe {
+    border: none;
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer section */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Specific styles for the contact section */
+#contact {
+    color: #00ff00;
+    margin-top: 40px;
+}
+
+#contact dt {
+    font-weight: bold;
+}
+
+#contact dd {
+    margin-bottom: 10px;
+}
+
+/* Button styles for curriculum vitae, GitHub, etc. */
+button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
     margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-p {
-    margin-bottom: 15px;
+button:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Miscellaneous improvements */
+.container {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    border-left: 5px solid #00ff00;
+}
+
+code {
+    background-color: #333;
+    color: #00ff00;
+    padding: 5px;
+    border-radius: 5px;
 }
