@@ -1,5 +1,5 @@
-// Clear the body before adding content to prevent duplication
-document.body.innerHTML = '';
+// Select the body or main container where you'll append the content
+const body = document.body;
 
 // Create a container for all content
 const container = document.createElement('div');
