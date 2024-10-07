@@ -15,7 +15,7 @@ function createBoxWithTextLeftAndImageRight(imgSrc, imgWidth, textHTML) {
     box.style.justifyContent = 'space-between';  // Push text and image to opposite sides
     box.style.alignItems = 'center';             // Vertically align text and image
     box.style.marginBottom = '20px';             // Space between boxes
-    box.style.border = '1px solid #333';         // Optional: border around the box
+//    box.style.border = '1px solid #333';         // Optional: border around the box
     box.style.padding = '10px';                  // Optional: padding inside the box
     box.style.width = '100%';                    // Ensure boxes fill the width of the container
 
@@ -39,6 +39,42 @@ function createBoxWithTextLeftAndImageRight(imgSrc, imgWidth, textHTML) {
     return box;
 }
 
+// Function to create a box with text on the left and image/video on the right
+function createBoxWithTextLeftAndVideoRight(videoSrc, videoWidth, textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.justifyContent = 'space-between';  // Push text and video to opposite sides
+    box.style.alignItems = 'center';             // Vertically align text and video
+    box.style.marginBottom = '20px';             // Space between boxes
+ //   box.style.border = '1px solid #333';         // Optional: border around the box
+    box.style.padding = '10px';                  // Optional: padding inside the box
+    box.style.width = '100%';                    // Ensure boxes fill the width of the container
+
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.flex = '1';  // Text takes up remaining space
+    text.style.textAlign = 'left'; // Ensure text is aligned to the left
+    text.style.marginRight = '20px'; // Add space between the text and the video
+
+    // Create the video element
+    const video = document.createElement('video');
+    video.src = videoSrc;
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.style.maxWidth = videoWidth + 'px';  // Set the video width
+    video.style.height = 'auto';               // Maintain aspect ratio
+    video.controls = true;                     // Add video controls for better UX
+
+    // Append text and video to the box
+    box.appendChild(text);
+    box.appendChild(video);
+
+    return box;
+}
+
 // Function to create a box with text only (no image)
 function createTextOnlyBox(textHTML) {
     // Create a box container
@@ -47,14 +83,14 @@ function createTextOnlyBox(textHTML) {
     box.style.justifyContent = 'center';  // Center the text inside the box
     box.style.alignItems = 'center';      // Vertically align text
     box.style.marginBottom = '20px';      // Space between boxes
-    box.style.border = '1px solid #333';  // Optional: border around the box
+  //  box.style.border = '1px solid #333';  // Optional: border around the box
     box.style.padding = '10px';           // Optional: padding inside the box
     box.style.width = '100%';             // Ensure the box fills the width of the container
 
     // Create the text element (paragraph)
     const text = document.createElement('p');
     text.innerHTML = textHTML;
-    text.style.textAlign = 'center';      // Center the text in the box
+    text.style.textAlign = 'left';      // Center the text in the box
 
     // Append the text to the box
     box.appendChild(text);
@@ -74,7 +110,7 @@ const introBox = createBoxWithTextLeftAndImageRight(
 mainContainer.appendChild(introBox);
 
 // Add the LobsterPyGUI section (video right, text left)
-const lobsterBox = createBoxWithTextLeftAndImageRight(
+const lobsterBox = createBoxWithTextLeftAndVideoRight(
     'https://quantumchemist.github.io/utils/lpglogo.mp4',
     100,
     `If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, 
@@ -94,7 +130,7 @@ topggIframe.src = "https://top.gg/bot/1276530139412566186";
 topggIframe.width = "350";
 topggIframe.height = "750";
 topggIframe.allowTransparency = "true";
-topggIframe.frameBorder = "0";
+topggIframe["frameBorder"] = "0";
 topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 mainContainer.appendChild(topggIframe);
 
