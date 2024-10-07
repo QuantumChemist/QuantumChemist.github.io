@@ -1,4 +1,4 @@
-<!-- <link rel="stylesheet" href="scripts/custom.css"> -->
+<link rel="stylesheet" href="scripts/custom.css">
 
 # Welcome to my GitHub Pages site!
 
