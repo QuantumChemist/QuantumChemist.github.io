@@ -1,7 +1,7 @@
----
+<!-- ---
 layout: default
 title: "Dr. Christina Ertural"
----
+--- -->
 <!-- Link the CSS file -->
 <link rel="stylesheet" href="scripts/custom.css">
 

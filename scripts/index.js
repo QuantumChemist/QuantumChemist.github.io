@@ -1,5 +1,35 @@
 // Select the body where you'll append the content
-const body = document.body;
+// const body = document.body;
+
+// Clear the body before adding content to prevent duplication
+document.body.innerHTML = '';
+
+// Create a container for all content
+const container = document.createElement('div');
+container.classList.add('flex-container');
+document.body.appendChild(container);
+
+// Create a header
+const header = document.createElement('h1');
+header.innerText = "./ Christina Ertural";
+container.appendChild(header);
+
+// Add the "Researcher" subheading in smaller, grey font
+const researcherSubheading = document.createElement('p');
+researcherSubheading.innerText = "Researcher";
+researcherSubheading.style.fontSize = "16px";  // Smaller font size
+researcherSubheading.style.color = "#808080";  // Grey color
+container.appendChild(researcherSubheading);
+
+// Add a dotted line after the header and subheading
+const dottedLine = document.createElement('hr');
+dottedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
+container.appendChild(dottedLine);
+
+// Add subheading or subtitle
+const subHeader = document.createElement('p');
+subHeader.innerHTML = 'Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
+container.appendChild(subHeader);
 
 // Create a container for the whole page
 const mainContainer = document.createElement('div');
