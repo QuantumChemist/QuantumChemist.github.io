@@ -141,6 +141,35 @@ function createBoxWithHeadlineTextLeftAndVideoRight(headlineText, videoSrc, vide
     return box;
 }
 
+// Function to create a box with a headline and text only (no image)
+function createTextOnlyBoxWithHeadline(headlineText, textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.flexDirection = 'column';  // Stacks the headline and content vertically
+    box.style.justifyContent = 'center';
+    box.style.alignItems = 'center';
+    box.style.marginBottom = '20px';
+    box.style.padding = '10px';
+    box.style.width = '100%';
+
+    // Create the headline
+    const headline = document.createElement('h2');
+    headline.innerText = headlineText;
+    headline.style.textAlign = 'left';
+    box.appendChild(headline); // Add the headline to the box
+
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.textAlign = 'left';
+
+    // Append the text to the box
+    box.appendChild(text);
+
+    return box;
+}
+
 // Add the introduction section (headline, text left, image right)
 const introBox = createBoxWithHeadlineTextLeftAndImageRight(
     'Introduction',
@@ -156,7 +185,7 @@ mainContainer.appendChild(introBox);
 // Add the LobsterPyGUI section (headline, text left, video right)
 const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
     'LobsterPyGUI',
-    'https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/lpglogo.mp4',
+    'https://quantumchemist.github.io/utils/lpglogo.mp4',
     100,
     `If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, 
     I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)`
@@ -164,23 +193,10 @@ const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
 mainContainer.appendChild(lobsterBox);
 
 // Add the "In my free time" section (headline, text only)
-const freeTimeBox = document.createElement('div');
-freeTimeBox.style.display = 'flex';
-freeTimeBox.style.flexDirection = 'column';  // Stacks the headline and content vertically
-freeTimeBox.style.marginBottom = '20px';
-freeTimeBox.style.padding = '10px';
-freeTimeBox.style.width = '100%';
-
-const freeTimeHeadline = document.createElement('h2');
-freeTimeHeadline.innerText = 'In my free time...';
-freeTimeHeadline.style.textAlign = 'left';
-freeTimeBox.appendChild(freeTimeHeadline);
-
-const freeTimeText = document.createElement('p');
-freeTimeText.innerHTML = `...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!`;
-freeTimeText.style.textAlign = 'left';
-freeTimeBox.appendChild(freeTimeText);
-
+const freeTimeBox = createTextOnlyBoxWithHeadline(
+    'In my free time...',
+    `...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!`
+);
 mainContainer.appendChild(freeTimeBox);
 
 // Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
