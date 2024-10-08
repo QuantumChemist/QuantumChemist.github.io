@@ -1,3 +1,48 @@
+    // Create the content wrapper for text and video
+    const contentWrapper = document.createElement('div');
+    contentWrapper.style.display = 'flex';
+    contentWrapper.style.justifyContent = 'space-between';
+    contentWrapper.style.alignItems = 'center';
+    contentWrapper.style.width = '100%';
+
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.flex = '1';
+    text.style.textAlign = 'left';
+    text.style.marginRight = '20px';
+
+    // Create the video element
+    const video = document.createElement('video');
+    video.src = videoSrc;
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.style.maxWidth = videoWidth + 'px';
+    video.style.height = 'auto';
+    video.controls = true;
+
+    // Append text and video to the content wrapper
+    contentWrapper.appendChild(text);
+    contentWrapper.appendChild(video);
+
+    // Append the content wrapper to the box
+    box.appendChild(contentWrapper);
+
+    return box;
+}
+
+// Add the introduction section (headline, text left, image right)
+const introBox = createBoxWithHeadlineTextLeftAndImageRight(
+    'Introduction',
+    'https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true',
+    100,
+    `Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, 
+     currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
+     (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>)
+     and former <a href="http://www.cohp.de/">LOBSTER</a> developer.`
+);
+mainContainer.appendChild(introBox);
 // Clear the body before adding content to prevent duplication
 document.body.innerHTML = '';
 
@@ -164,12 +209,23 @@ const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
 mainContainer.appendChild(lobsterBox);
 
 // Add the "In my free time" section (headline, text only)
-const freeTimeBox = createBoxWithHeadlineTextLeftAndImageRight(
-    'In my free time...',
-    '',
-    0,
-    `...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!`
-);
+const freeTimeBox = document.createElement('div');
+freeTimeBox.style.display = 'flex';
+freeTimeBox.style.flexDirection = 'column';  // Stacks the headline and content vertically
+freeTimeBox.style.marginBottom = '20px';
+freeTimeBox.style.padding = '10px';
+freeTimeBox.style.width = '100%';
+
+const freeTimeHeadline = document.createElement('h2');
+freeTimeHeadline.innerText = 'In my free time...';
+freeTimeHeadline.style.textAlign = 'left';
+freeTimeBox.appendChild(freeTimeHeadline);
+
+const freeTimeText = document.createElement('p');
+freeTimeText.innerHTML = `...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!`;
+freeTimeText.style.textAlign = 'left';
+freeTimeBox.appendChild(freeTimeText);
+
 mainContainer.appendChild(freeTimeBox);
 
 // Embed the iframe for the top.gg bot link (after LobsterPyGUI section)
