@@ -1,6 +1,3 @@
-// Select the body where you'll append the content
-// const body = document.body;
-
 // Clear the body before adding content to prevent duplication
 document.body.innerHTML = '';
 
@@ -9,7 +6,7 @@ const container = document.createElement('div');
 container.classList.add('flex-container');
 document.body.appendChild(container);
 
-// Create a header
+// Create a header for "./ Christina Ertural"
 const header = document.createElement('h1');
 header.innerText = "./ Christina Ertural";
 container.appendChild(header);
@@ -26,7 +23,7 @@ const dottedLine = document.createElement('hr');
 dottedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
 container.appendChild(dottedLine);
 
-// Add subheading or subtitle
+// Add subheading or subtitle for the website link
 const subHeader = document.createElement('p');
 subHeader.innerHTML = 'Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
 container.appendChild(subHeader);
@@ -35,7 +32,7 @@ container.appendChild(subHeader);
 const mainContainer = document.createElement('div');
 mainContainer.style.maxWidth = '1000px';  // Set the max width for the whole container
 mainContainer.style.margin = '0 auto';   // Center the container on the page
-body.appendChild(mainContainer);
+container.appendChild(mainContainer);  // Append it to the main container, not body
 
 // Function to create a box with a headline, text on the left, and image on the right
 function createBoxWithHeadlineTextLeftAndImageRight(headlineText, imgSrc, imgWidth, textHTML) {
@@ -85,87 +82,6 @@ function createBoxWithHeadlineTextLeftAndImageRight(headlineText, imgSrc, imgWid
     return box;
 }
 
-// Function to create a box with a headline, text on the left, and video on the right
-function createBoxWithHeadlineTextLeftAndVideoRight(headlineText, videoSrc, videoWidth, textHTML) {
-    // Create a box container
-    const box = document.createElement('div');
-    box.style.display = 'flex';
-    box.style.flexDirection = 'column';  // Stacks the headline and content vertically
-    box.style.justifyContent = 'space-between';
-    box.style.alignItems = 'center';
-    box.style.marginBottom = '20px';
-    box.style.padding = '10px';
-    box.style.width = '100%';
-
-    // Create the headline
-    const headline = document.createElement('h2');
-    headline.innerText = headlineText;
-    headline.style.textAlign = 'left';
-    box.appendChild(headline); // Add the headline to the box
-
-    // Create the content wrapper for text and video
-    const contentWrapper = document.createElement('div');
-    contentWrapper.style.display = 'flex';
-    contentWrapper.style.justifyContent = 'space-between';
-    contentWrapper.style.alignItems = 'center';
-    contentWrapper.style.width = '100%';
-
-    // Create the text element (paragraph)
-    const text = document.createElement('p');
-    text.innerHTML = textHTML;
-    text.style.flex = '1';
-    text.style.textAlign = 'left';
-    text.style.marginRight = '20px';
-
-    // Create the video element
-    const video = document.createElement('video');
-    video.src = videoSrc;
-    video.autoplay = true;
-    video.loop = true;
-    video.muted = true;
-    video.style.maxWidth = videoWidth + 'px';
-    video.style.height = 'auto';
-    video.controls = true;
-
-    // Append text and video to the content wrapper
-    contentWrapper.appendChild(text);
-    contentWrapper.appendChild(video);
-
-    // Append the content wrapper to the box
-    box.appendChild(contentWrapper);
-
-    return box;
-}
-
-// Function to create a box with a headline and text only (no image)
-function createTextOnlyBoxWithHeadline(headlineText, textHTML) {
-    // Create a box container
-    const box = document.createElement('div');
-    box.style.display = 'flex';
-    box.style.flexDirection = 'column';  // Stacks the headline and content vertically
-    box.style.justifyContent = 'center';
-    box.style.alignItems = 'center';
-    box.style.marginBottom = '20px';
-    box.style.padding = '10px';
-    box.style.width = '100%';
-
-    // Create the headline
-    const headline = document.createElement('h2');
-    headline.innerText = headlineText;
-    headline.style.textAlign = 'left';
-    box.appendChild(headline); // Add the headline to the box
-
-    // Create the text element (paragraph)
-    const text = document.createElement('p');
-    text.innerHTML = textHTML;
-    text.style.textAlign = 'left';
-
-    // Append the text to the box
-    box.appendChild(text);
-
-    return box;
-}
-
 // Add the introduction section (headline, text left, image right)
 const introBox = createBoxWithHeadlineTextLeftAndImageRight(
     'Introduction',
@@ -179,9 +95,9 @@ const introBox = createBoxWithHeadlineTextLeftAndImageRight(
 mainContainer.appendChild(introBox);
 
 // Add the LobsterPyGUI section (headline, text left, video right)
-const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
+const lobsterBox = createBoxWithHeadlineTextLeftAndImageRight(
     'LobsterPyGUI',
-    'https://quantumchemist.github.io/utils/lpglogo.mp4',
+    'https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/lpglogo.mp4',
     100,
     `If you are a very beginner in using command line interfaces (cli) and/or LOBSTER/LobsterPy, 
     I made a <a href=https://github.com/QuantumChemist/LobsterPyGUI>GUI</a> for you, providing the very basic functionalities of LobsterPy. :)`
@@ -189,8 +105,10 @@ const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
 mainContainer.appendChild(lobsterBox);
 
 // Add the "In my free time" section (headline, text only)
-const freeTimeBox = createTextOnlyBoxWithHeadline(
+const freeTimeBox = createBoxWithHeadlineTextLeftAndImageRight(
     'In my free time...',
+    '',
+    0,
     `...I also like to code. <br> So I made a chatbot and a Discord server in homage to the video game Portal. <br> Feel free to add my bot to your server!`
 );
 mainContainer.appendChild(freeTimeBox);
