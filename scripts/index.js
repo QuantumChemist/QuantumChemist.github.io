@@ -130,11 +130,14 @@ topggIframe["frameBorder"] = "0";
 topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 mainContainer.appendChild(topggIframe);
 
+container.appendChild(dottedLine)
+
 // Contact section
 const contactHeader = document.createElement('h3');
 contactHeader.innerText = "How you can contact me";
+contactHeader.style.paddingLeft = "20px";
 contactHeader.style.textAlign = 'left';
-mainContainer.appendChild(contactHeader);
+container.appendChild(contactHeader);
 
 // Create contact list
 const contactList = document.createElement('dl');
@@ -146,8 +149,9 @@ contactList.innerHTML = `
     <dt>ResearchGate</dt>
     <dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Dr. Christina Ertural</a></dd>
 `;
+contactList.style.paddingLeft = "20px";
 contactList.style.textAlign = 'left';
-mainContainer.appendChild(contactList);
+container.appendChild(contactList);
 
 // Footer
 const footer = document.createElement('footer');
