@@ -144,7 +144,7 @@ const introBox = createBoxWithHeadlineTextLeftAndImageRight(
     `Hi, I'm <a href="https://g.co/kgs/Bi3Bdb">Chris</a>, scientist in the theoretical and solid-state chemistry community, 
      currently PostDoc in materials chemistry and materials informatics at <a href="https://www.bam.de/">BAM</a> 
      (<a href="https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html">George group</a>)
-     and former <a href="http://www.cohp.de/">LOBSTER</a> developer. Here you can find more information about my research.`
+     and former <a href="http://www.cohp.de/">LOBSTER</a> developer.`
 );
 mainContainer.appendChild(introBox);
 
