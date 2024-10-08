@@ -1,3 +1,64 @@
+// Clear the body before adding content to prevent duplication
+document.body.innerHTML = '';
+
+// Create a container for all content
+const container = document.createElement('div');
+container.classList.add('flex-container');
+document.body.appendChild(container);
+
+// Create a header for "./ Christina Ertural"
+const header = document.createElement('h1');
+header.innerText = "./ Christina Ertural";
+header.style.paddingLeft = "20px";
+container.appendChild(header);
+
+// Add the "Researcher" subheading in smaller, grey font
+const researcherSubheading = document.createElement('p');
+researcherSubheading.innerText = "Researcher";
+researcherSubheading.style.paddingLeft = "20px";
+researcherSubheading.style.fontSize = "16px";  // Smaller font size
+researcherSubheading.style.color = "#808080";  // Grey color
+container.appendChild(researcherSubheading);
+
+// Add a dotted line after the header and subheading
+const dottedLine = document.createElement('hr');
+dottedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
+container.appendChild(dottedLine);
+
+// Add subheading or subtitle for the website link
+const subHeader = document.createElement('p');
+subHeader.innerHTML = 'Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
+subHeader.style.paddingLeft = "20px";
+container.appendChild(subHeader);
+
+// Create a container for the whole page
+const mainContainer = document.createElement('div');
+mainContainer.style.maxWidth = '1000px';  // Set the max width for the whole container
+mainContainer.style.margin = '0 auto';   // Center the container on the page
+mainContainer.style.display = 'flex';
+mainContainer.style.flexDirection = 'column';
+mainContainer.style.alignItems = 'center';  // Center the iframe and other contents horizontally
+mainContainer.style.justifyContent = 'center';  // Center the iframe vertically (if needed)
+container.appendChild(mainContainer);  // Append it to the main container, not body
+
+// Function to create a box with a headline, text on the left, and image on the right
+function createBoxWithHeadlineTextLeftAndImageRight(headlineText, imgSrc, imgWidth, textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.flexDirection = 'column';  // Stacks the headline and content vertically
+    box.style.justifyContent = 'space-between';
+    box.style.alignItems = 'center';
+    box.style.marginBottom = '20px';
+    box.style.padding = '10px';
+    box.style.width = '100%';
+
+    // Create the headline
+    const headline = document.createElement('h2');
+    headline.innerText = headlineText;
+    headline.style.textAlign = 'left';
+    box.appendChild(headline); // Add the headline to the box
+    
     // Create the content wrapper for text and video
     const contentWrapper = document.createElement('div');
     contentWrapper.style.display = 'flex';
