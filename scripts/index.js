@@ -8,12 +8,14 @@ document.body.appendChild(container);
 
 // Create a header for "./ Christina Ertural"
 const header = document.createElement('h1');
-header.innerText = "    ./ Christina Ertural";
+header.innerText = "./ Christina Ertural";
+header.style.paddingLeft = "20px";
 container.appendChild(header);
 
 // Add the "Researcher" subheading in smaller, grey font
 const researcherSubheading = document.createElement('p');
-researcherSubheading.innerText = "    Researcher";
+researcherSubheading.innerText = "Researcher";
+researcherSubheading.style.paddingLeft = "20px";
 researcherSubheading.style.fontSize = "16px";  // Smaller font size
 researcherSubheading.style.color = "#808080";  // Grey color
 container.appendChild(researcherSubheading);
@@ -25,7 +27,8 @@ container.appendChild(dottedLine);
 
 // Add subheading or subtitle for the website link
 const subHeader = document.createElement('p');
-subHeader.innerHTML = '    Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
+subHeader.innerHTML = 'Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
+subHeader.style.paddingLeft = "20px";
 container.appendChild(subHeader);
 
 // Create a container for the whole page
@@ -130,6 +133,7 @@ mainContainer.appendChild(topggIframe);
 // Contact section
 const contactHeader = document.createElement('h3');
 contactHeader.innerText = "How you can contact me";
+contactHeader.style.textAlign = 'left';
 mainContainer.appendChild(contactHeader);
 
 // Create contact list
@@ -142,6 +146,7 @@ contactList.innerHTML = `
     <dt>ResearchGate</dt>
     <dd><a href="https://www.researchgate.net/profile/Christina-Ertural/">Dr. Christina Ertural</a></dd>
 `;
+contactList.style.textAlign = 'left';
 mainContainer.appendChild(contactList);
 
 // Footer
