@@ -130,7 +130,9 @@ topggIframe["frameBorder"] = "0";
 topggIframe.sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 mainContainer.appendChild(topggIframe);
 
-container.appendChild(dottedLine)
+const dotttedLine = document.createElement('hr');
+dotttedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
+container.appendChild(dotttedLine);
 
 // Contact section
 const contactHeader = document.createElement('h3');
