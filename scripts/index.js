@@ -8,12 +8,12 @@ document.body.appendChild(container);
 
 // Create a header for "./ Christina Ertural"
 const header = document.createElement('h1');
-header.innerText = "./ Christina Ertural";
+header.innerText = "    ./ Christina Ertural";
 container.appendChild(header);
 
 // Add the "Researcher" subheading in smaller, grey font
 const researcherSubheading = document.createElement('p');
-researcherSubheading.innerText = "Researcher";
+researcherSubheading.innerText = "    Researcher";
 researcherSubheading.style.fontSize = "16px";  // Smaller font size
 researcherSubheading.style.color = "#808080";  // Grey color
 container.appendChild(researcherSubheading);
@@ -25,13 +25,17 @@ container.appendChild(dottedLine);
 
 // Add subheading or subtitle for the website link
 const subHeader = document.createElement('p');
-subHeader.innerHTML = 'Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
+subHeader.innerHTML = '    Visit the <a href="https://quantumchemist.github.io/index_old.html">2020 – 2024 website!</a>';
 container.appendChild(subHeader);
 
 // Create a container for the whole page
 const mainContainer = document.createElement('div');
 mainContainer.style.maxWidth = '1000px';  // Set the max width for the whole container
 mainContainer.style.margin = '0 auto';   // Center the container on the page
+mainContainer.style.display = 'flex';
+mainContainer.style.flexDirection = 'column';
+mainContainer.style.alignItems = 'center';  // Center the iframe and other contents horizontally
+mainContainer.style.justifyContent = 'center';  // Center the iframe vertically (if needed)
 container.appendChild(mainContainer);  // Append it to the main container, not body
 
 // Function to create a box with a headline, text on the left, and image on the right
