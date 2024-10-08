@@ -89,6 +89,58 @@ function createBoxWithHeadlineTextLeftAndImageRight(headlineText, imgSrc, imgWid
     return box;
 }
 
+// Function to create a box with a headline, text on the left, and video on the right
+function createBoxWithHeadlineTextLeftAndVideoRight(headlineText, videoSrc, videoWidth, textHTML) {
+    // Create a box container
+    const box = document.createElement('div');
+    box.style.display = 'flex';
+    box.style.flexDirection = 'column';  // Stacks the headline and content vertically
+    box.style.justifyContent = 'space-between';
+    box.style.alignItems = 'center';
+    box.style.marginBottom = '20px';
+    box.style.padding = '10px';
+    box.style.width = '100%';
+
+    // Create the headline
+    const headline = document.createElement('h2');
+    headline.innerText = headlineText;
+    headline.style.textAlign = 'left';
+    box.appendChild(headline); // Add the headline to the box
+
+    // Create the content wrapper for text and video
+    const contentWrapper = document.createElement('div');
+    contentWrapper.style.display = 'flex';
+    contentWrapper.style.justifyContent = 'space-between';
+    contentWrapper.style.alignItems = 'center';
+    contentWrapper.style.width = '100%';
+
+    // Create the text element (paragraph)
+    const text = document.createElement('p');
+    text.innerHTML = textHTML;
+    text.style.flex = '1';
+    text.style.textAlign = 'left';
+    text.style.marginRight = '20px';
+
+    // Create the video element
+    const video = document.createElement('video');
+    video.src = videoSrc;
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.style.maxWidth = videoWidth + 'px';
+    video.style.height = 'auto';
+    video.controls = true;
+
+    // Append text and video to the content wrapper
+    contentWrapper.appendChild(text);
+    contentWrapper.appendChild(video);
+
+    // Append the content wrapper to the box
+    box.appendChild(contentWrapper);
+
+    return box;
+}
+
 // Add the introduction section (headline, text left, image right)
 const introBox = createBoxWithHeadlineTextLeftAndImageRight(
     'Introduction',
@@ -102,7 +154,7 @@ const introBox = createBoxWithHeadlineTextLeftAndImageRight(
 mainContainer.appendChild(introBox);
 
 // Add the LobsterPyGUI section (headline, text left, video right)
-const lobsterBox = createBoxWithHeadlineTextLeftAndImageRight(
+const lobsterBox = createBoxWithHeadlineTextLeftAndVideoRight(
     'LobsterPyGUI',
     'https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/lpglogo.mp4',
     100,
