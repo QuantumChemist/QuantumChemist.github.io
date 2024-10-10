@@ -23,6 +23,8 @@ container.appendChild(researcherSubheading);
 // Add a dotted line after the header and subheading
 const dottedLine = document.createElement('hr');
 dottedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
+dottedLine.style.marginLeft = "-20px";
+dottedLine.style.marginRight = "-20px";
 container.appendChild(dottedLine);
 
 // Add subheading or subtitle for the website link
@@ -211,6 +213,8 @@ mainContainer.appendChild(topggIframe);
 
 const dotttedLine = document.createElement('hr');
 dotttedLine.style.borderTop = "1px dotted #808080";  // Dotted line in grey
+dotttedLine.style.marginLeft = "-20px";
+dotttedLine.style.marginRight = "-20px";
 container.appendChild(dotttedLine);
 
 // Contact section
