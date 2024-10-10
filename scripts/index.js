@@ -1,6 +1,6 @@
 // Clear the body before adding content to prevent duplication
 document.body.innerHTML = '';
-
+document.body.style.padding = "20px";
 // Create a container for all content
 const container = document.createElement('div');
 container.classList.add('flex-container');
