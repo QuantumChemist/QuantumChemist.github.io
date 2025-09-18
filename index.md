@@ -17,6 +17,6 @@ Create a container for the JavaScript-generated content
 <!--<script src="scripts/index.js"></script> -->
 
 
-<meta http-equiv="refresh" content="0; url=https://quantumchemist.de">
-If you are not redirected automatically, follow this [link to quantumchemist.de](https://quantumchemist.de).
+<!--<meta http-equiv="refresh" content="0; url=https://quantumchemist.de">  -->
+Follow this [link to quantumchemist.de](https://quantumchemist.de).
 
