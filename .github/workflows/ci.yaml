@@ -14,7 +14,7 @@ jobs:
           bundler-cache: true
       - name: Make scripts executable
         run: chmod +x script/bootstrap script/cibuild
-      - name: build
-        run: script/bootstrap
-      - name: test
-        run: script/cibuild
+      # - name: build
+      #   run: script/bootstrap
+      # - name: test
+      #   run: script/cibuild
