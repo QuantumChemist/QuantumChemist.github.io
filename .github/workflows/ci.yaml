@@ -11,7 +11,9 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
-          bundler-cache: true
+          bundler-cache: false
+      - name: Install compatible bundler
+        run: gem install bundler -v 2.4.22
       - name: Make scripts executable
         run: chmod +x script/bootstrap script/cibuild
       - name: build
