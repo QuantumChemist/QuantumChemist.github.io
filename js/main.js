@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       // e.preventDefault();
-      alert('Thank you for your message! I will get back to you as soon as possible.');
+      alert('Please send your message via email. Thank you! I will get back to you as soon as possible.');
       // contactForm.reset();
     });
   }
