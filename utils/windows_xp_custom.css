@@ -125,7 +125,7 @@ main {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "ðŸ™‚ Mood";
+	content: "🙂 Mood";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
@@ -176,7 +176,7 @@ nav:after {
 	font-size: 0;
 }
 .profile .contact .heading h4:after {
-	content: "ðŸ’¬ start";
+	content: "💬 start";
 	font-size: 1.4rem;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -292,7 +292,7 @@ nav:after {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "ðŸ“ notepad";
+	content: "📝 Notepad";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
@@ -327,7 +327,7 @@ nav:after {
 	color: #FFF;
 }
 .profile .right .blurbs .heading h4:before{
-	content: "ðŸ’» ";
+	content: "💻 ";
 }
 .profile .right .comments-table{
 	height:300px;
