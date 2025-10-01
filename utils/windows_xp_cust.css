@@ -125,7 +125,7 @@ main {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "🙂 Mood";
+	content: "🙂 mood";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
@@ -292,7 +292,7 @@ nav:after {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "📝 Notepad";
+	content: "📝 notepad";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
