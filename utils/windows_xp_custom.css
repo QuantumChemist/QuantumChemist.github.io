@@ -292,7 +292,7 @@ nav:after {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "ðŸ“ Notepad";
+	content: "ðŸ“ notepad";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
