@@ -92,7 +92,7 @@ main {
 	background: var(--blue-gradient);
 	margin-bottom: 0;
 }
-.profile .left {
+.profile .right {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -108,7 +108,7 @@ main {
 .general-about .profile-pic {
 	margin: 0 1em 0 0;
 }
-.profile .left .mood {
+.profile .right .mood {
 	margin-top: 1em;
 	background: #FFF;
 	border-radius: 11px 11px 0 0;
@@ -117,15 +117,15 @@ main {
 	border-right: 2px solid #1B44B8;
 	border-bottom: 2px solid #1B44B8;
 }
-.profile .left .mood p {
+.profile .right .mood p {
 	margin-left: 1em;
 	margin-top: 1em;
 }
-.profile .left .mood:before {
+.profile .right .mood:before {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "🙂 Mood";
+	content: "🙂 mood";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
@@ -150,7 +150,7 @@ nav:after {
 	margin-top: .5em;
 	margin-right: .5em;
 }
-.left .contact {
+.right .contact {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -159,7 +159,7 @@ nav:after {
 	padding: 0;
 	z-index: 10;
 }
-.left .contact {
+.right .contact {
 	border: 0;
 	background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
 }
@@ -169,6 +169,7 @@ nav:after {
 	border-radius: 0 40px 50px 0;
 	align-items: center;
 	-webkit-filter: drop-shadow(0px 0px 7px #000);
+	filter: drop-shadow(0px 0px 7px #000);
 	box-shadow: -2px -2px 10px rgba(0,0,0,.25) inset, 2px 2px 10px rgba(0,0,0,0.5) inset;
 	margin-right: .5em;
 }
@@ -216,16 +217,16 @@ nav:after {
 .profile .url-info p {
 	text-align: center;
 }
-.left .table-section {
+.right .table-section {
 	border-radius: 10px 10px 0 0;
 	border: 2px solid #1B44B8;
 	box-shadow: 5px 8px 10px #0006;
 }
-.left .table-section .details-table tr {
+.right .table-section .details-table tr {
 	display: flex;
 	flex-direction: column;
 }
-.left .table-section .heading {
+.right .table-section .heading {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
@@ -237,44 +238,44 @@ nav:after {
 	border-radius: 10px 10px 0 0;
 	color: #FFF;
 }
-.left .table-section .inner, .left .table-section .details-table td, .left .table-section .details-table td:first-child {
+.right .table-section .inner, .right .table-section .details-table td, .right .table-section .details-table td:first-child {
 	width: 100%;
 	background: #E7E4CF;
 }
-.left .table-section .details-table td:first-child p {
+.right .table-section .details-table td:first-child p {
 	padding: .3em .3em 1em .3em;
 	border-bottom: 2px ridge #E7E4CF;
 }
-.left .table-section .details-table td p {
+.right .table-section .details-table td p {
 	padding: .3em;
 	line-height: initial;
 }
-.profile .left .table-section:last-child .details-table tbody {
+.profile .right .table-section:last-child .details-table tbody {
 	display: flex;
 	flex-direction:column;
 }
-.profile .left .table-section:last-child .details-table tbody tr {
+.profile .right .table-section:last-child .details-table tbody tr {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	line-height: 0;
 }
-.profile .left .table-section:last-child .details-table tbody tr td {
+.profile .right .table-section:last-child .details-table tbody tr td {
 	width: 100%!important;
 	text-align: left;
 	background: none;
 }
-.profile .left .table-section:last-child .details-table tbody tr td p a {
+.profile .right .table-section:last-child .details-table tbody tr td p a {
 	font-size: 0;
 	transition: all .3s
 }
-.profile .left .table-section:last-child .details-table tbody tr td p img {
+.profile .right .table-section:last-child .details-table tbody tr td p img {
 	font-size: 64px;
 	height: auto;
 	margin: 0;
 }
 
-.profile .right .blog-preview {
+.profile .left .blog-preview {
 	margin-top: 1em;
 	background: #FFF;
 	border-radius: 11px 11px 0 0;
@@ -283,16 +284,16 @@ nav:after {
 	border-right: 2px solid #1B44B8;
 	border-bottom: 2px solid #1B44B8;
 }
-.profile .right .blog-preview p, .profile .right .blog-preview h4 {
+.profile .left .blog-preview p, .profile .left .blog-preview h4 {
 	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
 	margin-left: 1em;
 	margin-top: 1em;
 }
-.profile .right .blog-preview:before {
+.profile .left .blog-preview:before {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	content: "📝 Notepad";
+	content: "📝 notepad";
 	display: block;
 	padding: .5em;
 	border: 2px solid #1B44B8;
@@ -303,7 +304,7 @@ nav:after {
 	border-radius: 10px 10px 0 0;
 	color: #FFF;
 }
-.profile .right .blurbs, .profile .right .friends{
+.profile .left .blurbs, .profile .left .friends{
 	margin-top: 1em;
 	background: #FFF;
 	border-radius: 11px 11px 0 0;
@@ -312,7 +313,7 @@ nav:after {
 	border-right: 2px solid #1B44B8;
 	border-bottom: 2px solid #1B44B8;
 }
-.profile .right .blurbs .heading, .profile .right .friends .heading{
+.profile .left .blurbs .heading, .profile .left .friends .heading{
 	-moz-background-attachment-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
@@ -326,10 +327,10 @@ nav:after {
 	border-radius: 10px 10px 0 0;
 	color: #FFF;
 }
-.profile .right .blurbs .heading h4:before{
+.profile .left .blurbs .heading h4:before{
 	content: "💻 ";
 }
-.profile .right .comments-table{
+.profile .left .comments-table{
 	height:300px;
 	overflow-y:scroll;
 	display:block;
@@ -338,7 +339,7 @@ nav:after {
 .comments-table td{
 	background:#FFFFFF;
 }
-.profile .right .comments-table td:first-child{
+.profile .left .comments-table td:first-child{
 	background:#F8F6F0;
 	border-right:1px solid #BEBBAA;
 	border-bottom:1px solid #BEBBAA;
