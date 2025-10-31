@@ -2,7 +2,6 @@
 layout: default
 ---
 
-´´´html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,7 +38,6 @@ layout: default
     <footer><p>yo</p></footer>
   </body>
 </html>
-´´´
 
 <img hspace="20" align="right" src="https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true" width="20%" height="10%"/> 
 
