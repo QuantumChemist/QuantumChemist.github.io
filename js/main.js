@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
       alert(alertLines.join('\n'));
       window.location.href = mailtoLink;
       contactForm.reset();
+      // Reload page after 500ms to allow mailto link to trigger first
       setTimeout(() => {
         window.location.reload();
       }, 500);
