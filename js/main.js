@@ -87,13 +87,32 @@ document.addEventListener('DOMContentLoaded', function() {
         return; // Honeypot triggered, silently abort submission.
       }
 
-      const subject = encodeURIComponent(`Website Kontakt von ${name || 'Unbekannt'} (${email || 'keine E-Mail'})`);
+      const subject = encodeURIComponent(`Website contact from ${name || 'Unknown'} (${email || 'no email'})`);
+
+      const introSegments = [];
+      if (name) {
+        introSegments.push(`my name is ${name}`);
+      }
+      if (email) {
+        introSegments.push(`you can reach me at ${email}`);
+      }
+
+      const introLine = introSegments.length
+        ? `I wish you the outmost wonderful day, Dr. Ertural, ${introSegments.join(' and ')}.`
+        : 'I wish you the outmost wonderful day, Dr. Ertural, I am reaching out via your website contact form.';
+
       const bodyLines = [
-        message ? `Nachricht:\n${message}` : '',
+        introLine,
         '',
-        name ? `Name: ${name}` : '',
-        email ? `E-Mail: ${email}` : ''
-      ].filter(Boolean);
+        'I hope this message finds you well. I would appreciate your attention to the following inquiry:',
+        '',
+        message || '[No inquiry text was provided.]',
+        '',
+        'Thank you very much for your time.',
+        '',
+        'Kind regards,',
+        name || 'A website visitor'
+      ];
       const body = encodeURIComponent(bodyLines.join('\n'));
       const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
 
