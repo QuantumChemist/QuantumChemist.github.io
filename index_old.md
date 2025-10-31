@@ -2,6 +2,45 @@
 layout: default
 ---
 
+´´´html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a survey form.</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" name="name" required placeholder="some name"><br>
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" name="email" required type="email" placeholder="some email"><br>
+        <label for="number" id="number-label">Number:</label>
+        <input id="number" name="number" required min="5" max="9" type="number" placeholder="0"><br>
+        <label for="dropdown">Choose one:</label>
+        <select id="dropdown" name="dropdown">
+          <option>1</option>
+          <option>2</option>
+        </select><br>
+        <!-- Radio Button Group: at least 2 with same name -->
+        <label>Choose one:</label>
+        <input type="radio" value="0" name="option">yo
+        <input type="radio" value="1" name="option">yeah<br>
+        <!-- Checkboxes can be single -->
+        <input type="checkbox" value="0" name="checkyo">yo
+        <input type="checkbox" value="1" name="checkyeah">yeah<br>
+        <textarea>yeah</textarea><br>
+        <button id="submit" type="submit">Submit<br>
+      </form>
+    </section>
+    <footer><p>yo</p></footer>
+  </body>
+</html>
+´´´
+
 <img hspace="20" align="right" src="https://github.com/QuantumChemist/QuantumChemist.github.io/blob/main/utils/pic3.png?raw=true" width="20%" height="10%"/> 
 
 Hi, I'm [Chris](https://g.co/kgs/Bi3Bdb), scientist in the theoretical and solid-state chemistry community, currently PostDoc in materials chemistry and materials informatics at [BAM](https://www.bam.de/) ([George group](https://www.bam.de/Content/EN/Standard-Articles/About-us/Jobs-and-Careers/Young-Science/junior-research-group-george-computational-materials-design.html)) and former [LOBSTER](http://www.cohp.de/) developer. Here you find for more information about my research.
