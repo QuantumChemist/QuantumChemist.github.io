@@ -167,57 +167,51 @@
     </section>
 
     <section id="contact">
-    <h2>Contact</h2>
-
-    <form id="contact-form">
-        <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll"><i class="fas fa-envelope"></i> Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <p><i class="fas fa-envelope"></i><a class="primary" href="mailto:christina.ertural@quantumchemist.de"> Christina Ertural</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>Berlin, Germany</p>
+                <div class="social-info animate-on-scroll">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/christina-ertural/" class="social-link icon-circle"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.de/citations?user=AvLDhd8AAAAJ&hl=de" class="social-link icon-circle"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a href="https://www.researchgate.net/profile/Christina-Ertural" class="social-link icon-circle"><i class="fab fa-researchgate"></i></a>
+                        <a href="https://orcid.org/0000-0002-7696-5824" class="social-link icon-circle"><i class="fab fa-orcid"></i></a>
+                        <a href="https://communities.springernature.com/users/christina-ertural" class="social-link icon-circle"><i class="fas fa-leaf"></i></a>
+                        <a href="https://github.com/QuantumChemist" class="social-link icon-circle"><i class="fab fa-github"></i></a>
+                    </div>   
+                </div>                 
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form action="mailto:christina.ertural@quantumchemist.de" method="GET" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                            <!-- Honeypot field -->
+                        <div style="display:none;">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" autocomplete="off" tabindex="-1">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button">Contact me via email!</button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <img src="./images/pic3.png" alt="Contact Image" class="contact-image animate-on-scroll" style="width: 256px;">
+                </div>
+            </div>
         </div>
-
-        <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        </div>
-
-        <!-- Honeypot -->
-        <div style="display:none;">
-        <label for="website">Website</label>
-        <input type="text" id="website" name="website" autocomplete="off" tabindex="-1">
-        </div>
-
-        <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="button">Contact me!</button>
-    </form>
-
-    <!-- You can place the script here -->
-    <script>
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const name = encodeURIComponent(document.getElementById("name").value);
-        const email = encodeURIComponent(document.getElementById("email").value);
-        const message = encodeURIComponent(document.getElementById("message").value);
-        const honeypot = document.getElementById("website").value;
-
-        // stop bots
-        if (honeypot) return;
-
-        // mailto link
-        const subject = `Contact from ${name} (${email})`;
-        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-        const mailto = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${encodeURIComponent(body)}`;
-
-        // open mail client
-        window.location.href = mailto;
-    });
-    </script>
     </section>
-
 
     <footer>
         <div class="container">
