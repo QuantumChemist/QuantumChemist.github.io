@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         introSegments.push(`My name is ${name}`);
       }
       if (email) {
-        introSegments.push(`you can reach me at ${email} (mailto:${email})`);
+        introSegments.push(`you can reach me at <a href="mailto:${email}">${email}</a>`);
       }
 
       const introLine = introSegments.length
@@ -108,13 +108,14 @@ document.addEventListener('DOMContentLoaded', function() {
         '',
         message || '[No inquiry text was provided.]',
         '',
-  email ? `For your convenience, here is a direct link to my email: mailto:${email}` : '',
-  '',
+        email ? `For your convenience, here is a direct link to my email: <a href="mailto:${email}">${email}</a>` : '',
+        '',
         'Thank you very much for your time.',
         '',
         'Kind regards,',
         name || 'A website visitor'
       ];
+
       const body = encodeURIComponent(bodyLines.join('\n'));
       const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
 
