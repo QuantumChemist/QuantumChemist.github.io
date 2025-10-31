@@ -130,7 +130,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       alert(alertLines.join('\n'));
       window.location.href = mailtoLink;
-      // contactForm.reset();
+      contactForm.reset();
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
     });
   }
   
