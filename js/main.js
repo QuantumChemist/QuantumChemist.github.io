@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       const introLine = introSegments.length
-        ? `I wish you the outmost wonderful day, Dr. Ertural, ${introSegments.join(' and ')}.`
-        : 'I wish you the outmost wonderful day, Dr. Ertural, I am reaching out via your website contact form.';
+        ? `Hello, Dr. Ertural! I wish you the outmost wonderful day, ${introSegments.join(' and ')}.`
+        : 'Hello, Dr. Ertural! I wish you the outmost wonderful day, I am reaching out via your website contact form.';
 
       const bodyLines = [
         introLine,
