@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
 
       const alertLines = [
-        'Please send your message via email. Thank you! I will get back to you as soon as possible. After you click "OK", your email client will open with a pre-filled email.',
+        'Please send your message via email. Thank you! I will get back to you as soon as possible. \nAfter you click "OK", your email client will open with a pre-filled email.',
         '',
         `Your stats:\nForm validation result: ${wasValid ? 'valid' : 'invalid'}.`,
         name ? `Your name was: ${name}` : 'No name provided.',
