@@ -70,7 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
+      // e.preventDefault();
       e.preventDefault();
+
+      const wasValid = contactForm.reportValidity();
+      if (!wasValid) {
+        return;
+      }
 
       const name = contactForm.querySelector('#name')?.value.trim() || '';
       const email = contactForm.querySelector('#email')?.value.trim() || '';
@@ -91,7 +97,16 @@ document.addEventListener('DOMContentLoaded', function() {
       const body = encodeURIComponent(bodyLines.join('\n'));
       const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
 
-      alert('Please send your message via email. Thank you! I will get back to you as soon as possible.');
+      const alertLines = [
+        'Please send your message via email. Thank you! I will get back to you as soon as possible.',
+        '',
+        `Form validation result: ${wasValid ? 'valid' : 'invalid'}.`,
+        name ? `Your name was: ${name}` : 'No name provided.',
+        email ? `Your email was: ${email}` : 'No email provided.',
+        message ? `Your message was:\n${message}` : 'No message provided.'
+      ];
+
+      alert(alertLines.join('\n'));
       window.location.href = mailtoLink;
       // contactForm.reset();
     });
