@@ -70,8 +70,29 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-      // e.preventDefault();
+      e.preventDefault();
+
+      const name = contactForm.querySelector('#name')?.value.trim() || '';
+      const email = contactForm.querySelector('#email')?.value.trim() || '';
+      const message = contactForm.querySelector('#message')?.value.trim() || '';
+      const websiteField = contactForm.querySelector('#website')?.value.trim();
+
+      if (websiteField) {
+        return; // Honeypot triggered, silently abort submission.
+      }
+
+      const subject = encodeURIComponent(`Website Kontakt von ${name || 'Unbekannt'} (${email || 'keine E-Mail'})`);
+      const bodyLines = [
+        message ? `Nachricht:\n${message}` : '',
+        '',
+        name ? `Name: ${name}` : '',
+        email ? `E-Mail: ${email}` : ''
+      ].filter(Boolean);
+      const body = encodeURIComponent(bodyLines.join('\n'));
+      const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
+
       alert('Please send your message via email. Thank you! I will get back to you as soon as possible.');
+      window.location.href = mailtoLink;
       // contactForm.reset();
     });
   }
