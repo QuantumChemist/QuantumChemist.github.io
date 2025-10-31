@@ -1,0 +1,584 @@
+# File tree
+
+```
+pokemon-battle-electron/
+├─ package.json
+├─ tsconfig.json
+├─ electron/
+│  ├─ main.ts
+│  └─ env.ts
+├─ renderer/
+│  ├─ index.html
+│  ├─ vite.config.ts
+│  └─ src/
+│     ├─ main.ts
+│     ├─ battle.ts
+│     ├─ engine.ts
+│     ├─ assets.ts
+│     └─ types.ts
+└─ README.md
+```
+
+---
+
+## package.json
+```json
+{
+  "name": "pokemon-battle-electron",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:renderer\" \"npm:dev:electron\"",
+    "dev:renderer": "vite --config renderer/vite.config.ts",
+    "dev:electron": "ts-node-esm --swc electron/main.ts",
+    "build": "rimraf dist-electron && tsc -p tsconfig.json && vite build --config renderer/vite.config.ts",
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "concurrently": "^9.0.1",
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "ts-node-esm": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {}
+}
+```
+
+---
+
+## tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "outDir": "dist-electron",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["electron/**/*.ts"]
+}
+```
+
+---
+
+## electron/env.ts
+```ts
+export const isDev = !!process.env.VITE_DEV_SERVER_URL || process.env.NODE_ENV !== 'production';
+export const rendererUrl = process.env.VITE_DEV_SERVER_URL ?? 'http://localhost:5173/';
+```
+
+---
+
+## electron/main.ts
+```ts
+import { app, BrowserWindow } from 'electron';
+import path from 'node:path';
+import { isDev, rendererUrl } from './env.js';
+
+let win: BrowserWindow | null = null;
+
+async function createWindow() {
+  win = new BrowserWindow({
+    width: 1024,
+    height: 768,
+    backgroundColor: '#000000',
+    show: false,
+    webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      sandbox: true,
+    }
+  });
+
+  if (isDev) {
+    await win.loadURL(rendererUrl);
+    win.webContents.openDevTools({ mode: 'detach' });
+  } else {
+    await win.loadFile(path.join(process.resourcesPath, 'renderer/index.html'));
+  }
+
+  win.once('ready-to-show', () => win?.show());
+  win.on('closed', () => { win = null; });
+}
+
+app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
+});
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
+});
+```
+
+---
+
+## renderer/vite.config.ts
+```ts
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  root: '.',
+  publicDir: 'renderer/public',
+  server: {
+    port: 5173
+  },
+  build: {
+    outDir: 'dist-renderer',
+    emptyOutDir: true
+  }
+});
+```
+
+---
+
+## renderer/index.html
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruiter & HR: Battle!</title>
+    <style>
+      html, body { height: 100%; margin: 0; background:#000; color:#fff; font-family: monospace; }
+      #hud { position: fixed; top: 8px; left: 8px; font-size: 12px; opacity: .7; }
+      canvas { display:block; margin: 0 auto; image-rendering: pixelated; }
+      .btns { position: fixed; bottom: 12px; left: 0; right: 0; display:flex; gap:8px; justify-content:center; }
+      button { padding: 8px 12px; font-family: inherit; cursor:pointer; }
+    </style>
+  </head>
+  <body>
+    <div id="hud">Press [Enter] to advance text • Arrow keys to choose move</div>
+    <canvas id="battle" width="960" height="540"></canvas>
+    <div class="btns">
+      <button id="auto">Auto-play</button>
+      <button id="reset">Reset</button>
+    </div>
+    <script type="module" src="/renderer/src/main.ts"></script>
+  </body>
+</html>
+```
+
+---
+
+## renderer/src/types.ts
+```ts
+export type StatBlock = {
+  hp: number; maxHp: number; atk: number; def: number; spd: number;
+};
+
+export type Move = {
+  name: string;
+  power: number;         // base power
+  accuracy: number;      // 0..1
+  flavor: string;        // battle text
+};
+
+export type Fighter = {
+  id: string;
+  label: string;
+  sprite?: HTMLImageElement; // optional; placeholder if absent
+  stats: StatBlock;
+  moves: Move[];
+};
+
+export type BattleState = {
+  player: Fighter;
+  enemy: Fighter;
+  turn: 'player' | 'enemy' | 'message';
+  messageQueue: string[];
+  ended: boolean;
+  auto: boolean;
+};
+```
+
+---
+
+## renderer/src/assets.ts
+```ts
+// Minimal placeholder sprites via colored rectangles; 
+// replace with real pixel-art PNGs if you want.
+
+export function drawPlaceholderTrainer(ctx: CanvasRenderingContext2D, x: number, y: number, facing: 'left'|'right', color = '#7aa2f7') {
+  ctx.save();
+  ctx.translate(x, y);
+  if (facing === 'left') ctx.scale(-1, 1);
+  ctx.fillStyle = color;
+  ctx.fillRect(-40, -80, 80, 80); // head/body block
+  ctx.fillRect(-20, 0, 40, 80);   // legs
+  ctx.restore();
+}
+
+export function drawRecruiter(ctx: CanvasRenderingContext2D, x:number, y:number) {
+  drawPlaceholderTrainer(ctx, x, y, 'left', '#c0caf5');
+  // tie
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.fillStyle = '#f7768e';
+  ctx.fillRect(-5, -20, 10, 30);
+  ctx.restore();
+}
+
+export function drawHR(ctx: CanvasRenderingContext2D, x:number, y:number) {
+  drawPlaceholderTrainer(ctx, x, y, 'left', '#9ece6a');
+}
+
+export function drawScientist(ctx: CanvasRenderingContext2D, x:number, y:number) {
+  drawPlaceholderTrainer(ctx, x, y, 'right', '#7dcfff');
+}
+```
+
+---
+
+## renderer/src/engine.ts
+```ts
+import type { BattleState, Fighter, Move } from './types';
+
+export function clamp(n: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, n));
+}
+
+export function calcDamage(attacker: Fighter, defender: Fighter, move: Move): number {
+  const base = move.power * (attacker.stats.atk / Math.max(1, defender.stats.def));
+  const variance = 0.85 + Math.random() * 0.3; // 0.85..1.15
+  return Math.max(1, Math.floor(base * variance));
+}
+
+export function doMove(state: BattleState, attacker: Fighter, defender: Fighter, move: Move) {
+  const hit = Math.random() <= move.accuracy;
+  if (!hit) {
+    state.messageQueue.push(`${attacker.label} used ${move.name}… but it missed!`);
+    return;
+  }
+  const dmg = calcDamage(attacker, defender, move);
+  defender.stats.hp = clamp(defender.stats.hp - dmg, 0, defender.stats.maxHp);
+  state.messageQueue.push(`${attacker.label} used ${move.name}! ${move.flavor}`);
+  state.messageQueue.push(`${defender.label} took ${dmg} damage.`);
+  if (defender.stats.hp === 0) {
+    state.messageQueue.push(`${defender.label} fainted!`);
+    state.ended = true;
+  }
+}
+
+export function pickAIMove(attacker: Fighter): Move {
+  return attacker.moves[Math.floor(Math.random() * attacker.moves.length)];
+}
+```
+
+---
+
+## renderer/src/battle.ts
+```ts
+import type { BattleState, Fighter, Move } from './types';
+import { doMove, pickAIMove, clamp } from './engine';
+import { drawRecruiter, drawHR, drawScientist } from './assets';
+
+export function defaultState(): BattleState {
+  const player: Fighter = {
+    id: 'player',
+    label: 'Christina (Scientist)',
+    stats: { hp: 120, maxHp: 120, atk: 30, def: 22, spd: 28 },
+    moves: [
+      { name: 'Publications', power: 22, accuracy: 0.95, flavor: 'A barrage of citations overwhelms the foe.' },
+      { name: 'Code Review', power: 18, accuracy: 0.98, flavor: 'Bugs flee in terror.' },
+      { name: 'Domain Knowledge', power: 24, accuracy: 0.9, flavor: 'Precision strikes at the weak point.' },
+      { name: 'Calm Persistence', power: 12, accuracy: 1.0, flavor: 'Focus restored.' }
+    ]
+  };
+
+  const enemy: Fighter = Math.random() < 0.5 ? {
+    id: 'recruiter',
+    label: 'Recruiter',
+    stats: { hp: 90, maxHp: 90, atk: 22, def: 16, spd: 20 },
+    moves: [
+      { name: 'Buzzword Storm', power: 16, accuracy: 0.95, flavor: 'You are pelted with vague synergies.' },
+      { name: 'Culture Fit', power: 20, accuracy: 0.85, flavor: 'An intangible force judges you.' },
+      { name: 'Ghosted', power: 0, accuracy: 1.0, flavor: 'Silence… (nothing happens).'},
+      { name: 'Salary Range??', power: 14, accuracy: 0.9, flavor: 'Numbers evaporate into thin air.'}
+    ]
+  } : {
+    id: 'hr',
+    label: 'HR',
+    stats: { hp: 110, maxHp: 110, atk: 20, def: 20, spd: 18 },
+    moves: [
+      { name: 'We\'ll Get Back To You', power: 0, accuracy: 1.0, flavor: 'Turns pass… hope fades.' },
+      { name: 'Policy Wall', power: 18, accuracy: 0.9, flavor: 'Paperwork materializes around you.' },
+      { name: 'Salary Freeze', power: 22, accuracy: 0.8, flavor: 'Your ambition is chilled to the bone.' },
+      { name: 'Feedback? lol', power: 16, accuracy: 0.95, flavor: 'Vague statements deal psychic damage.' }
+    ]
+  };
+
+  return {
+    player,
+    enemy,
+    turn: 'message',
+    messageQueue: [ `A wild ${enemy.label} appeared!` ],
+    ended: false,
+    auto: false,
+  };
+}
+
+export class BattleRenderer {
+  private canvas: HTMLCanvasElement;
+  private ctx: CanvasRenderingContext2D;
+  private state: BattleState;
+  private selIdx = 0;
+  private typewriter = { active: false, shown: '', full: '', idx: 0 };
+
+  constructor(canvas: HTMLCanvasElement, state: BattleState) {
+    this.canvas = canvas;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('no 2d context');
+    this.ctx = ctx;
+    this.state = state;
+    this.loop = this.loop.bind(this);
+    requestAnimationFrame(this.loop);
+  }
+
+  setState(state: BattleState) { this.state = state; }
+
+  enqueue(msg: string) { this.state.messageQueue.push(msg); }
+
+  private drawBackground() {
+    const { ctx, canvas } = this;
+    ctx.fillStyle = '#1a1b26'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // simple arena ovals
+    ctx.fillStyle = '#2e3440';
+    ctx.beginPath(); ctx.ellipse(240, 380, 180, 40, 0, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(720, 220, 160, 30, 0, 0, Math.PI*2); ctx.fill();
+  }
+
+  private drawHP(x: number, y: number, label: string, hp: number, maxHp: number) {
+    const { ctx } = this;
+    ctx.fillStyle = '#fff'; ctx.fillText(label, x, y);
+    ctx.fillText(`HP: ${hp}/${maxHp}`, x, y+14);
+    const w = 200, h = 10; const hpw = Math.floor(w * (hp/maxHp));
+    ctx.fillStyle = '#444'; ctx.fillRect(x, y+20, w, h);
+    ctx.fillStyle = hp/maxHp > 0.5 ? '#9ece6a' : hp/maxHp > 0.2 ? '#e0af68' : '#f7768e';
+    ctx.fillRect(x, y+20, hpw, h);
+  }
+
+  private drawSprites() {
+    const { ctx } = this;
+    // Player back sprite
+    drawScientist(ctx, 240, 320);
+    // Enemy front sprite (Recruiter or HR)
+    if (this.state.enemy.id === 'recruiter') drawRecruiter(ctx, 720, 160);
+    else drawHR(ctx, 720, 160);
+  }
+
+  private drawUI() {
+    const { ctx, canvas } = this;
+    // status boxes
+    this.drawHP(560, 40, this.state.enemy.label, this.state.enemy.stats.hp, this.state.enemy.stats.maxHp);
+    this.drawHP(40, 420, this.state.player.label, this.state.player.stats.hp, this.state.player.stats.maxHp);
+
+    // text box
+    ctx.fillStyle = '#111';
+    ctx.fillRect(0, canvas.height - 140, canvas.width, 140);
+    ctx.strokeStyle = '#555'; ctx.strokeRect(0.5, canvas.height - 140.5, canvas.width-1, 139);
+    ctx.fillStyle = '#fff';
+
+    const text = this.typewriter.active ? this.typewriter.shown : this.peekMessage();
+    this.drawWrappedText(text, 24, canvas.height - 110, 912);
+
+    // move selection when it's player's turn
+    if (this.state.turn === 'player' && !this.typewriter.active && this.state.messageQueue.length === 0) {
+      const moves = this.state.player.moves;
+      const columns = 2; const cellW = 400; const cellH = 28; const baseX = 520; const baseY = canvas.height - 110;
+      ctx.fillStyle = '#aaa'; ctx.fillText('Choose a move:', 24, canvas.height - 38);
+      for (let i = 0; i < moves.length; i++) {
+        const col = i % columns; const row = Math.floor(i / columns);
+        const x = 24 + col * (cellW + 16); const y = canvas.height - 84 + row * (cellH + 8);
+        const selected = i === this.selIdx;
+        ctx.fillStyle = selected ? '#e0af68' : '#c0caf5';
+        ctx.fillText(`${selected ? '▶ ' : ''}${moves[i].name}`, x, y);
+      }
+    }
+  }
+
+  private drawWrappedText(text: string, x: number, y: number, maxWidth: number) {
+    const { ctx } = this;
+    const words = text.split(' ');
+    let line = '', dy = 0;
+    for (const w of words) {
+      const test = line + w + ' ';
+      if (ctx.measureText(test).width > maxWidth) {
+        ctx.fillText(line, x, y + dy);
+        line = w + ' ';
+        dy += 20;
+      } else {
+        line = test;
+      }
+    }
+    ctx.fillText(line, x, y + dy);
+  }
+
+  private peekMessage(): string {
+    return this.state.messageQueue[0] ?? '';
+  }
+
+  private popMessage(): string | undefined {
+    return this.state.messageQueue.shift();
+  }
+
+  private advanceMessage() {
+    if (this.typewriter.active) {
+      // finish instantly
+      this.typewriter.shown = this.typewriter.full;
+      this.typewriter.active = false;
+      return;
+    }
+    const msg = this.popMessage();
+    if (!msg) return;
+    this.startTypewriter(msg);
+  }
+
+  private startTypewriter(full: string) {
+    this.typewriter = { active: true, shown: '', full, idx: 0 };
+  }
+
+  private stepTypewriter() {
+    if (!this.typewriter.active) return;
+    this.typewriter.idx++;
+    this.typewriter.shown = this.typewriter.full.slice(0, this.typewriter.idx);
+    if (this.typewriter.idx >= this.typewriter.full.length) this.typewriter.active = false;
+  }
+
+  handleKey(e: KeyboardEvent) {
+    if (e.key === 'Enter') {
+      if (this.state.messageQueue.length > 0 || this.typewriter.active) {
+        this.advanceMessage();
+        return;
+      }
+      if (this.state.turn === 'player' && !this.state.ended) {
+        const move = this.state.player.moves[this.selIdx];
+        doMove(this.state, this.state.player, this.state.enemy, move);
+        this.state.turn = 'message';
+        return;
+      }
+    }
+    if (this.state.turn === 'player' && !this.typewriter.active) {
+      if (e.key === 'ArrowRight') this.selIdx = clamp(this.selIdx + 1, 0, this.state.player.moves.length - 1);
+      if (e.key === 'ArrowLeft') this.selIdx = clamp(this.selIdx - 1, 0, this.state.player.moves.length - 1);
+      if (e.key === 'ArrowDown') this.selIdx = clamp(this.selIdx + 2, 0, this.state.player.moves.length - 1);
+      if (e.key === 'ArrowUp') this.selIdx = clamp(this.selIdx - 2, 0, this.state.player.moves.length - 1);
+    }
+  }
+
+  private aiTurn() {
+    if (this.state.ended) return;
+    const move = pickAIMove(this.state.enemy);
+    doMove(this.state, this.state.enemy, this.state.player, move);
+    this.state.turn = 'message';
+  }
+
+  private update() {
+    // if messages are over and we are in message mode, switch turn
+    if (!this.typewriter.active && this.state.messageQueue.length === 0) {
+      if (this.state.turn === 'message') {
+        // decide who acts next
+        if (this.state.ended) return;
+        if (this.state.player.stats.spd >= this.state.enemy.stats.spd) {
+          // player then enemy
+          this.state.turn = 'player';
+        } else {
+          // enemy acts first
+          this.aiTurn();
+        }
+      } else if (this.state.turn === 'player' && this.state.auto) {
+        // auto mode chooses a random move for the player
+        const move = this.state.player.moves[Math.floor(Math.random() * this.state.player.moves.length)];
+        doMove(this.state, this.state.player, this.state.enemy, move);
+        this.state.turn = 'message';
+      } else if (this.state.turn === 'enemy') {
+        this.aiTurn();
+      }
+    }
+
+    // typewriter tick
+    this.stepTypewriter();
+  }
+
+  private loop() {
+    this.update();
+    const { ctx } = this;
+    ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    ctx.font = '16px monospace';
+    this.drawBackground();
+    this.drawSprites();
+    this.drawUI();
+    requestAnimationFrame(this.loop);
+  }
+}
+```
+
+---
+
+## renderer/src/main.ts
+```ts
+import { BattleRenderer, defaultState } from './battle';
+
+const canvas = document.getElementById('battle') as HTMLCanvasElement;
+const state = defaultState();
+const renderer = new BattleRenderer(canvas, state);
+
+window.addEventListener('keydown', (e) => renderer.handleKey(e));
+
+document.getElementById('auto')?.addEventListener('click', () => {
+  state.auto = !state.auto;
+  renderer.enqueue(state.auto ? 'Auto-play ON.' : 'Auto-play OFF.');
+});
+
+document.getElementById('reset')?.addEventListener('click', () => {
+  const fresh = defaultState();
+  (renderer as any).setState(fresh);
+  renderer.enqueue('Battle reset.');
+});
+```
+
+---
+
+## README.md
+```md
+# Pokémon-Style Battle (Electron + TS)
+
+A lightweight Electron + Vite + TypeScript mock of a Pokémon battle screen: face off against **Recruiter** or **HR** with custom moves.
+
+## Quick start
+
+```bash
+# 1) Create project folder and paste files accordingly
+npm i
+npm run dev  # starts Vite (renderer) + Electron (main)
+```
+
+- **Controls**: Arrow keys to choose a move • Enter to confirm • Enter to advance text • Buttons for Auto/Reset.
+- Replace the placeholder sprite draw functions in `renderer/src/assets.ts` with PNGs to get the proper look. Load images via `new Image()` and `img.src = '/path.png'` then draw with `ctx.drawImage(...)`.
+
+## Build
+
+```bash
+npm run build
+# then: npm start (to run built) or use electron-builder via `npm run package`
+```
+
+## Customize
+- Add more moves in `battle.ts`.
+- Change stats to tune difficulty.
+- Add more enemy archetypes ("Hiring Manager", "CTO", etc.).
+- Implement a proper turn order and status effects, if desired.
