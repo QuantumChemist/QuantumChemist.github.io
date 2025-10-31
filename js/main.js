@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const introSegments = [];
       if (name) {
-        introSegments.push(`my name is ${name}`);
+        introSegments.push(`My name is ${name}`);
       }
       if (email) {
         introSegments.push(`you can reach me at ${email} (mailto:${email})`);
       }
 
       const introLine = introSegments.length
-        ? `Hello, Dr. Ertural! \n I wish you the outmost wonderful day, ${introSegments.join(' and ')}.`
-        : 'Hello, Dr. Ertural! \n I wish you the outmost wonderful day, I am reaching out via your website contact form.';
+        ? `Hello, Dr. Ertural! \n I wish you the outmost wonderful day. ${introSegments.join(' and ')}.`
+        : 'Hello, Dr. Ertural! \n I wish you the outmost wonderful day. I am reaching out via your website contact form.';
 
       const bodyLines = [
         introLine,
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const alertLines = [
         'Please send your message via email. Thank you! I will get back to you as soon as possible. After you click "OK", your email client will open with a pre-filled email.',
         '',
-        `Form validation result: ${wasValid ? 'valid' : 'invalid'}.`,
+        `Your stats:\nForm validation result: ${wasValid ? 'valid' : 'invalid'}.`,
         name ? `Your name was: ${name}` : 'No name provided.',
         email ? `Your email was: ${email}` : 'No email provided.',
         message ? `Your message was:\n${message}` : 'No message provided.'
