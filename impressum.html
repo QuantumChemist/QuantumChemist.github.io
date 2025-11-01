@@ -17,11 +17,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Impressum</h1>
-  <footer>
-    <h2>Rechtliches</h2>
-    <p><strong>Impressums-Hinweis:</strong><br>
-    Für diese Webseite besteht gemäß den deutschen Vorgaben zur Impressumspflicht (§5 TMG) eine Pflicht zur Bereitstellung der nachfolgenden Informationen.</p>
+<h1>Impressum</h1>
+<h2><strong>Impressums-Hinweis:</strong><h2>
+<p>Für diese Webseite besteht gemäß den deutschen Vorgaben zur Impressumspflicht (§5 TMG) eine Pflicht zur Bereitstellung der nachfolgenden Informationen.</p>
 
 <h2>Angaben gemäß §5 TMG</h2>
 <p>Christina Ertural<br>
@@ -56,7 +54,16 @@ Deutschland</p>
 
 <h2>Haftung für Links</h2>
 <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für diese Inhalte ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Rechtsverletzungen bei Verlinkungen werden umgehend entfernt, sobald sie bekannt werden.</p>
-
-  </footer>
 </body>
+  <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Christina Ertural - All Rights Reserved | <a class="secondary" href="https://github.com/QuantumChemist" target="_blank" rel="noopener noreferrer">QuantumChemist</a> | <a class="secondary" href="https://www.quantumchemist.de/impressum" target="_blank" rel="noopener noreferrer">Impressum</a> </p>
+            <script>  const yearElement = document.getElementById('current-year');
+                const currentYear = new Date().getFullYear();
+                if (currentYear) {
+                    yearElement.textContent = currentYear;
+                }
+            </script>
+        </div>
+    </footer>
 </html>
