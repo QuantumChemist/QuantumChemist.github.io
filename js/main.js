@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const subject = encodeURIComponent(`Website contact from ${name || 'Unknown'} (${email || 'no email'})`);
 
-      const introLine = `Hello, Dr. Ertural!\nI wish you the utmost wonderful day. ${name ? `My name is ${name} and you can reach me at ${email}.` : 'I am reaching out via your website contact form.'}`;
+      const introLine = `Hello, Dr. Ertural!\n\nI wish you the utmost wonderful day. ${name ? `My name is ${name} and you can reach me at ${email}.` : 'I am reaching out via your website contact form.'}`;
 
       let bodyText = `${introLine}\nI hope this message finds you well. I would appreciate your attention to the following inquiry:\n${message || '[No inquiry text was provided.]'}\n`;
 
