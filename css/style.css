@@ -46,12 +46,6 @@ a.secondary {
   transition: var(--transition);
 }
 
-a.ternary {
-  text-decoration: none;
-  color: black;
-  transition: var(--transition);
-}
-
 a:hover {
   color: var(--secondary-color);
 }
@@ -520,6 +514,23 @@ nav {
   color: white;
   box-shadow: var(--shadow);
   transform: translateX(5px);
+}
+
+.contact-info a.ternary {
+  text-decoration: none;
+  color: black;
+  transition: var(--transition);
+}
+
+.contact-info a.ternary:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow);
+  transform: translateX(5px);
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .contact-info i {
