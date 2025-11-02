@@ -1,7 +1,7 @@
 # GitHub Pages
 
 # Christina Ertural - Portfolio Website
-GitHub repo to keep track of the https://quantumchemist.de/ website
+GitHub repo to keep track of the [website](https://quantumchemist.de/).
 
 ## Features
 
