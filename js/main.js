@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         introSegments.push(`My name is ${name}`);
       }
       if (email) {
-        introSegments.push(`you can reach me at <a href="mailto:${email}">${email}</a>`);
+        introSegments.push(`you can reach me at mailto:${email}`);
       }
 
       const introLine = introSegments.length
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '',
         message || '[No inquiry text was provided.]',
         '',
-        email ? `For your convenience, here is a direct link to my email: <a href="mailto:${email}">${email}</a>` : '.\n',
+        email ? `For your convenience, here is a direct link to my email: mailto:${email}` : '.\n',
         '',
         'Thank you very much for your time.\n',
         '',
