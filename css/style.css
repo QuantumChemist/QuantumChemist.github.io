@@ -518,7 +518,7 @@ nav {
 
 .contact-info a.ternary {
   text-decoration: none;
-  color: black;
+  color: inherit;
   transition: var(--transition);
 }
 
