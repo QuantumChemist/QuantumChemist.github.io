@@ -89,29 +89,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const subject = encodeURIComponent(`Website contact from ${name || 'Unknown'} (${email || 'no email'})`);
 
-      const introSegments = [];
-      if (name) {
-        introSegments.push(`My name is ${name}`);
-      }
-      if (email) {
-        introSegments.push(`you can reach me at mailto:${email}`);
-      }
-
       const introLine = introSegments.length
-        ? `Hello, Dr. Ertural! \n I wish you the outmost wonderful day. ${introSegments.join(' and ')}.\n`
-        : 'Hello, Dr. Ertural! \n I wish you the outmost wonderful day. I am reaching out via your website contact form.\n';
+        ? `Hello, Dr. Ertural!\nI wish you the utmost wonderful day. My name is ${name} and you can reach me at ${email}.`
+        : 'Hello, Dr. Ertural!\nI wish you the utmost wonderful day. I am reaching out via your website contact form.';
 
-      const bodyLines = [
-        introLine,
-        'I hope this message finds you well. I would appreciate your attention to the following inquiry:\n',
-        message || '[No inquiry text was provided.]',
-        email ? `For your convenience, here is a direct link to my email: mailto:${email}` : '.\n',
-        'Thank you very much for your time.\n',
-        'Kind regards,\n',
-        name || 'A website visitor'
-      ];
+      let bodyText = `${introLine}\nI hope this message finds you well. I would appreciate your attention to the following inquiry:\n${message || '[No inquiry text was provided.]'}\n`;
 
-      const body = encodeURIComponent(bodyLines.join('\n'));
+      if (email) {
+        bodyText += `Feel free to respond directly at ${email}.\n`;
+      }
+
+      bodyText += `Thank you very much for your time and consideration.\n\nKind regards,\n${name || 'A website visitor'}`;
+
+      const body = encodeURIComponent(bodyText);
       const mailtoLink = `mailto:christina.ertural@quantumchemist.de?subject=${subject}&body=${body}`;
 
       const alertLines = [
