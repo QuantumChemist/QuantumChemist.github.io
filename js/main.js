@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  const emailParts = ['christina.ertural', 'quantumchemist.de'];
-  const mailRecipient = `${emailParts[0]}@${emailParts[1]}`;
+  const emailDomain = window.location.hostname.replace(/^www\./, '');
+  const mailRecipient = `christina.ertural@${emailDomain}`;
 
   const contactLink = document.getElementById('contact-email-link');
   if (contactLink) {
