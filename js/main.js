@@ -66,7 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   const emailDomain = window.location.hostname.replace(/^www\./, '');
-  const mailRecipient = `christina.ertural@${emailDomain}`;
+  const localPart = ['christina', 'ertural'].join('.');
+  const atSymbol = String.fromCharCode(64); // Build the @ at runtime to deter basic scraping
+  const mailRecipient = `${localPart}${atSymbol}${emailDomain}`;
 
   const contactLink = document.getElementById('contact-email-link');
   if (contactLink) {
