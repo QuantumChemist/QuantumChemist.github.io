@@ -484,7 +484,7 @@ nav {
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 3rem;
   max-width: 1000px;
   margin: 0 auto;
