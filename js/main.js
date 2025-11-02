@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let bodyText = `${introLine}\nI hope this message finds you well. I would appreciate your attention to the following inquiry:\n${message || '[No inquiry text was provided.]'}\n`;
 
       if (email) {
-        bodyText += `Feel free to respond directly at ${email}.\n`;
+        bodyText += `Feel free to respond directly at ${email}!\n`;
       }
 
       bodyText += `Thank you very much for your time and consideration.\n\nKind regards,\n${name || 'A website visitor'}`;
