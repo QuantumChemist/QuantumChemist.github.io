@@ -46,6 +46,12 @@ a.secondary {
   transition: var(--transition);
 }
 
+a.ternary {
+  text-decoration: none;
+  color: black;
+  transition: var(--transition);
+}
+
 a:hover {
   color: var(--secondary-color);
 }
