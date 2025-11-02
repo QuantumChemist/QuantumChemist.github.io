@@ -518,7 +518,7 @@ nav {
 
 .contact-info a.ternary {
   text-decoration: none;
-  color: rgb(221, 9, 9);
+  color: black;
   transition: var(--transition);
 }
 
@@ -527,10 +527,6 @@ nav {
   color: white;
   box-shadow: var(--shadow);
   transform: translateX(5px);
-  display: inline-flex;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .contact-info i {
