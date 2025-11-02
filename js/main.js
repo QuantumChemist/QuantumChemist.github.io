@@ -98,21 +98,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       const introLine = introSegments.length
-        ? `Hello, Dr. Ertural! \n I wish you the outmost wonderful day. ${introSegments.join(' and ')}.`
-        : 'Hello, Dr. Ertural! \n I wish you the outmost wonderful day. I am reaching out via your website contact form.';
+        ? `Hello, Dr. Ertural! \n I wish you the outmost wonderful day. ${introSegments.join(' and ')}.\n`
+        : 'Hello, Dr. Ertural! \n I wish you the outmost wonderful day. I am reaching out via your website contact form.\n';
 
       const bodyLines = [
         introLine,
         '',
-        'I hope this message finds you well. I would appreciate your attention to the following inquiry:',
+        'I hope this message finds you well. I would appreciate your attention to the following inquiry:\n',
         '',
         message || '[No inquiry text was provided.]',
         '',
-        email ? `For your convenience, here is a direct link to my email: <a href="mailto:${email}">${email}</a>` : '',
+        email ? `For your convenience, here is a direct link to my email: <a href="mailto:${email}">${email}</a>` : '.\n',
         '',
-        'Thank you very much for your time.',
+        'Thank you very much for your time.\n',
         '',
-        'Kind regards,',
+        'Kind regards,\n',
         name || 'A website visitor'
       ];
 
