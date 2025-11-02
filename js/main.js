@@ -103,15 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const bodyLines = [
         introLine,
-        '',
         'I hope this message finds you well. I would appreciate your attention to the following inquiry:\n',
-        '',
         message || '[No inquiry text was provided.]',
-        '',
         email ? `For your convenience, here is a direct link to my email: mailto:${email}` : '.\n',
-        '',
         'Thank you very much for your time.\n',
-        '',
         'Kind regards,\n',
         name || 'A website visitor'
       ];
