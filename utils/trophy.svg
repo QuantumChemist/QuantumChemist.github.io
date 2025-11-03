@@ -1,7 +1,32 @@
-<svg width="990" height="110" viewBox="0 0 990 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <svg
+      width="990"
+      height="110"
+      viewBox="0 0 990 110"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       
-        <svg x="0" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="0"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   
   
@@ -20,7 +45,7 @@
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">S</text>
   
   </svg>
@@ -42,13 +67,46 @@
       animation: MultiLanguageRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="MultiLanguage-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="MultiLanguage-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="110" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="110"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -88,7 +146,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">S</text>
   
   </svg>
@@ -103,20 +161,53 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         width: 0px;
       }
       to {
-        width: 12.8px;
+        width: 13.280000000000001px;
       }
     }
     #Commits-rank-progress{
       animation: CommitsRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Commits-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Commits-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="220" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="220"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -146,7 +237,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg><svg x="68" y="35" width="65" height="65" viewBox="0 0 30 30" fill="#EB459E" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +246,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -174,7 +265,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -196,13 +287,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: FollowersRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Followers-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Followers-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="330" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="330"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -232,7 +356,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg><svg x="68" y="35" width="65" height="65" viewBox="0 0 30 30" fill="#EB459E" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +365,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -260,7 +384,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -282,13 +406,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: PullRequestRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="PullRequest-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="PullRequest-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="440" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="440"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -318,7 +475,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg><svg x="68" y="35" width="65" height="65" viewBox="0 0 30 30" fill="#EB459E" xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +484,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -346,7 +503,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -368,13 +525,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: RepositoriesRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Repositories-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Repositories-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="550" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="550"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -404,7 +594,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg><svg x="68" y="35" width="65" height="65" viewBox="0 0 30 30" fill="#EB459E" xmlns="http://www.w3.org/2000/svg">
@@ -413,7 +603,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -432,7 +622,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -454,13 +644,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: ExperienceRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Experience-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Experience-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="660" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="660"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -490,7 +713,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -509,7 +732,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -531,13 +754,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: StarsRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Stars-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Stars-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="770" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="770"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -567,7 +823,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -586,7 +842,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -608,13 +864,46 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: IssuesRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Issues-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Issues-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
-        <svg x="880" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#23272A" stroke-opacity="1" fill-opacity="0"/>
+        <svg
+          x="880"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#23272A"
+            stroke-opacity="1"
+            fill-opacity="0"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -644,7 +933,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
     </svg>
@@ -663,7 +952,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#FFFFFF"/>
+    <circle cx="8" cy="6" r="4" fill="#FFFFFF" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#000000">A</text>
   
   </svg>
@@ -685,8 +974,23 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
       animation: ReviewsRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#5865F2"/>
-    <rect id="Reviews-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#5865F2"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#5865F2"
+    />
+    <rect
+      id="Reviews-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#5865F2"
+    />
   
         </svg>
         
