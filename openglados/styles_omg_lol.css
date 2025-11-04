@@ -1,0 +1,89 @@
+```
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ff69b4;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+}
+
+h1 {
+  color: #8b0a1a;
+  text-shadow: 2px 2px 5px #ffff00;
+  font-size: 48px;
+}
+
+h2 {
+  color: #4b0082;
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  color: #00698f;
+  font-size: 18px;
+  text-align: justify;
+}
+
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #6495ed;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #778899;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+  margin: 10px;
+}
+
+.float-right {
+  float: right;
+  margin: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.rainbow {
+  background-image: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neon {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff69b4;
+  color: #ff69b4;
+}
+
+.glitch {
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px
