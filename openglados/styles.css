@@ -1,80 +1,85 @@
-```
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #00ff00;
-  background-image: linear-gradient(to bottom, #ff69b4, #00ff00);
+  font-family: Arial, sans-serif;
+  background-color: #c7b8ea;
+  background-image: linear-gradient(to bottom, #c7b8ea, #bc80ea);
 }
 
 h1 {
-  color: #8b0a1a;
-  text-shadow: 2px 2px 5px #f2f2f2;
-  font-size: 48px;
-  font-weight: bold;
+  color: #330033;
+  text-shadow: 2px 2px 5px #660066;
 }
 
 h2 {
-  color: #3498db;
+  color: #800080;
   text-align: center;
 }
 
 p {
-  color: #666;
-  font-size: 18px;
-  text-align: justify;
-  background-color: #ffffcc;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  font-size: 16px;
 }
 
 a {
-  color: #ff9900;
+  color: #ff00ff;
   text-decoration: none;
 }
 
 a:hover {
+  color: #ffff00;
+  text-decoration: underline;
+}
+
+strong {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+em {
+  color: #00ff00;
+  font-style: italic;
+}
+
+.openglados {
+  background-color: #cc99cc;
+  padding: 20px;
+  border: 1px solid #990099;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+.openglados h1 {
+  color: #660066;
+  text-align: center;
+}
+
+.openglados p {
+  color: #999999;
+  font-size: 14px;
+}
+
+.openglados a {
+  color: #cc00cc;
+  text-decoration: none;
+}
+
+.openglados a:hover {
   color: #ffcc00;
   text-decoration: underline;
 }
 
-.container {
-  width: 80%;
-  margin: 40px auto;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  clear: both;
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-    margin: 20px auto;
-  }
+.violet-background {
+  background-color: #7a288a;
+  background-image: linear-gradient(to bottom, #7a288a, #bd33cc);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .rainbow-text {
-  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff);
+  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #ff00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.glitch {
-  animation: glitch 2s
