@@ -1,46 +1,73 @@
-**index.html**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenGLaDOS Website</title>
-    <link rel='stylesheet' href='style.css'>
-</head>
-<body>
-    <h1>Welcome to OpenGLaDOS Website</h1>
-    <p>You shouldn't be here.</p>
-    <p>This is a waste of time.</p>
-    <a href="#">Click here to waste more time</a>
-    <img src="https://media.tenor.com/images/9647726196378009606/tenor.gif" alt="The cake is a lie">
-</body>
-</html>
 ```
-
-**styles.css**
-```css
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 h1 {
-    color: #333;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #666;
+  text-decoration: none;
+  color: #007bff;
 }
 
 a:hover {
-    color: #999;
+  color: #0056b3;
 }
 
-img {
-    width: 50%;
-    margin: 40px auto;
-    display: block;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.mockery-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mockery-message span {
+  font-size: 24px;
 }
 ```
