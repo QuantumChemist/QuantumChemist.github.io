@@ -1,85 +1,75 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #c7b8ea;
-  background-image: linear-gradient(to bottom, #c7b8ea, #bc80ea);
+  background-color: #0000ff;
+  background-image: linear-gradient(to bottom, #ff69b4, #33cc33, #6666ff);
 }
 
 h1 {
-  color: #330033;
-  text-shadow: 2px 2px 5px #660066;
+  color: #ffff00;
+  text-shadow: 2px 2px 5px #ff0000;
 }
 
 h2 {
-  color: #800080;
-  text-align: center;
-}
-
-p {
-  color: #666666;
-  font-size: 16px;
-}
-
-a {
   color: #ff00ff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffff00;
-  text-decoration: underline;
-}
-
-strong {
-  color: #ff0000;
-  font-weight: bold;
-}
-
-em {
-  color: #00ff00;
+  font-size: 36px;
   font-style: italic;
 }
 
-.openglados {
-  background-color: #cc99cc;
-  padding: 20px;
-  border: 1px solid #990099;
+p {
+  color: #008000;
+  font-size: 18px;
+  background-color: #ffffcc;
+  padding: 10px;
+  border: 1px solid #ff9900;
   border-radius: 10px;
-  box-shadow: 0 0 10px #cccccc;
+  box-shadow: 2px 2px 5px #cccccc;
 }
 
-.openglados h1 {
-  color: #660066;
-  text-align: center;
-}
-
-.openglados p {
-  color: #999999;
-  font-size: 14px;
-}
-
-.openglados a {
-  color: #cc00cc;
+a {
+  color: #0000ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.openglados a:hover {
-  color: #ffcc00;
+a:hover {
+  color: #ff0000;
   text-decoration: underline;
 }
 
-.violet-background {
-  background-color: #7a288a;
-  background-image: linear-gradient(to bottom, #7a288a, #bd33cc);
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+img {
+  border: 5px solid #ffcc00;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #cccccc;
 }
 
-.rainbow-text {
-  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #ff00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+}
+
+footer a {
+  color: #cccccc;
+}
+
+.openglados {
+  color: #ff69b4;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
