@@ -2,72 +2,80 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #ff69b4, #33cc33, #6666ff);
+  animation: glitch 5s infinite;
 }
 
 h1 {
   color: #333;
-}
-
-h2 {
-  color: #444;
-  font-size: 24px;
+  text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00;
+  font-size: 48px;
+  animation: pulse 2s infinite;
 }
 
 p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  color: #666;
+  font-size: 18px;
+  text-align: justify;
+  background-color: #cccccc;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000000;
 }
 
 a {
+  color: #0099ff;
   text-decoration: none;
-  color: #007bff;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #ff9900;
+  text-shadow: 2px 2px 5px #ffffff;
 }
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@keyframes glitch {
+  0% {
+    background-color: #f0f0f0;
+  }
+  25% {
+    background-color: #ff69b4;
+  }
+  50% {
+    background-color: #33cc33;
+  }
+  75% {
+    background-color: #6666ff;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
 }
 
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.header h1 {
-  margin: 0;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  clear: both;
-}
-
-.footer p {
-  margin-bottom: 0;
-}
-
-.mockery-message {
-  font-size: 18px;
-  font-weight: bold;
+.openglados {
   color: #ff0000;
-  text-align: center;
-  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000000;
+  animation: blink 2s infinite;
 }
 
-.mockery-message span {
-  font-size: 24px;
-}
-```
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
