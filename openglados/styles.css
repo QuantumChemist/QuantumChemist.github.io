@@ -1,82 +1,80 @@
 ```
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #ff69b4;
-  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+  background-color: #00ff00;
+  background-image: linear-gradient(to bottom, #ff69b4, #00ff00);
 }
 
 h1 {
-  color: #008000;
-  text-shadow: 2px 2px 5px #000000;
+  color: #8b0a1a;
+  text-shadow: 2px 2px 5px #f2f2f2;
   font-size: 48px;
   font-weight: bold;
-  text-align: center;
 }
 
 h2 {
-  color: #4b0082;
-  font-size: 36px;
-  font-weight: bold;
+  color: #3498db;
   text-align: center;
 }
 
 p {
-  color: #666666;
+  color: #666;
   font-size: 18px;
   text-align: justify;
   background-color: #ffffcc;
   padding: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #aaaaaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 a {
-  color: #00698f;
+  color: #ff9900;
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:hover {
-  color: #ff9900;
+  color: #ffcc00;
   text-decoration: underline;
 }
 
-.openglados {
-  color: #ff0000;
-  font-size: 24px;
-  font-weight: bold;
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
   text-align: center;
-  animation: blink 2s infinite;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
   }
 }
 
-.rainbow {
-  background-image: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
-  background-size: 100% 100%;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.rainbow-text {
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .glitch {
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000000;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  animation:
+  animation: glitch 2s
