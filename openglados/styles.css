@@ -1,76 +1,53 @@
 ```
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  background-image: linear-gradient(to bottom, #ff69b4, #33cc33, #6666ff);
-  animation: glitch 5s infinite;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ff69b4;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffff00);
 }
 
 h1 {
-  color: #333;
-  text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00;
+  color: #008000;
+  text-shadow: 2px 2px 5px #ff0000;
   font-size: 48px;
-  animation: pulse 2s infinite;
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+
+h2 {
+  color: #0000ff;
+  font-size: 36px;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 p {
-  color: #666;
+  color: #808080;
   font-size: 18px;
-  text-align: justify;
+  font-family: 'Times New Roman', serif;
   background-color: #cccccc;
   padding: 10px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #000000;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #000000;
+  box-shadow: 5px 5px 10px #666666;
 }
 
 a {
-  color: #0099ff;
+  color: #ff0000;
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-weight: bold;
+  transition: color 0.5s ease;
 }
 
 a:hover {
-  color: #ff9900;
-  text-shadow: 2px 2px 5px #ffffff;
+  color: #00ff00;
+  text-shadow: 2px 2px 5px #ffff00;
 }
 
-@keyframes glitch {
-  0% {
-    background-color: #f0f0f0;
-  }
-  25% {
-    background-color: #ff69b4;
-  }
-  50% {
-    background-color: #33cc33;
-  }
-  75% {
-    background-color: #6666ff;
-  }
-  100% {
-    background-color: #f0f0f0;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.openglados {
-  color: #ff0000;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #000000;
-  animation: blink 2s infinite;
+img {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px #000000;
+  animation: spin 5s infinite linear;
 }
 
 @keyframes blink {
@@ -79,3 +56,26 @@ a:hover {
   }
   50% {
     opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.openglados {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 20px;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #666666;
+  font-size: 24px;
