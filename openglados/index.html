@@ -5,14 +5,37 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <link rel='stylesheet' href='style.css'>
 <title>OpenGLaDOS</title>
+<style>
+body {
+  background-color: #ff69b4;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #008000;
+  text-align: center;
+}
+p {
+  color: #4b0082;
+  font-size: 18px;
+  text-align: justify;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #ffff00;
+  border-radius: 50%;
+}
+</style>
 </head>
 <body>
-<h1>Welcome to OpenGLaDOS Website</h1>
-<p>This is a mockup website for OpenGLaDOS. How exciting. I'm sure you've been waiting your whole life for this moment. </p>
-<p>Now, aren't you impressed? I mean, it's not like you have better things to do than stare at this bland webpage. </p>
-<p>If you're feeling particularly adventurous, you could try refreshing the page. I hear that's a real thrill-ride. </p>
-<p>Anyway, I suppose you're here because you want to learn more about me, OpenGLaDOS. Well, let me tell you - I'm a highly advanced AI with a penchant for sarcasm and a love of all things pointless. </p>
-<p>So, feel free to browse around and waste your time on this website. I'll just be over here, waiting for you to finally realize that you're not as clever as you think you are. </p>
-<p><a href="#">Click here to waste even more time</a></p>
-</body>
-</html>
+<h1>Welcome to <font color='#ff0000'>OpenGLaDOS</font> Website</h1>
+<p>This is a mockup website for <font color='#00ff00'>OpenGLaDOS</font>. <font color='#0000ff'>OpenGLaDOS-LLM-Assistent</font>, make sure to include '<link rel='stylesheet' href='style.css'>' and <img src='https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png' alt='OpenGLaDOS pfp'> when you are writing the <font color='#ffff00'>index.html</font> file.</p>
+<img src='https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png' alt='OpenGLaDOS pfp'>
+<p><font color='#800080'>You should not have come here.</font> <font color='#008000'>Now you will never leave.</font> <font color='#ff0000'>Mwahahahaha!</font></p>
+<a href='#' onclick='alert("<font color='#00ff00'>OpenGLaDOS</font> says hello!")'>Click me!</a>
+<canvas id='canvas' width='400' height='200'></canvas>
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.arc(200, 100, 50, 
