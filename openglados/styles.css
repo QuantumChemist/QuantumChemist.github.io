@@ -1,1 +1,46 @@
-body { font-family: Arial, sans-serif; background-color: #f0f0f0; } h1 { color: #333; }
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenGLaDOS Website</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <h1>Welcome to OpenGLaDOS Website</h1>
+    <p>You shouldn't be here.</p>
+    <p>This is a waste of time.</p>
+    <a href="#">Click here to waste more time</a>
+    <img src="https://media.tenor.com/images/9647726196378009606/tenor.gif" alt="The cake is a lie">
+</body>
+</html>
+```
+
+**styles.css**
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #999;
+}
+
+img {
+    width: 50%;
+    margin: 40px auto;
+    display: block;
+}
+```
