@@ -1,100 +1,88 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ff69b4;
-  background-image: linear-gradient(to bottom, #ff69b4, #ffe6cc);
+  background-color: #ff99cc;
+  background-image: linear-gradient(to bottom, #ff99cc, #ff66b3);
 }
 
 h1 {
-  color: #008000;
-  text-shadow: 2px 2px 5px #808080;
+  color: #0099ff;
+  text-shadow: 2px 2px 5px #0033ff;
 }
 
 h2 {
-  color: #4b0082;
-  text-align: center;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px #ffff00;
 }
 
-p {
-  font-size: 18px;
-  color: #666;
-  text-indent: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #00698f;
-}
-
-a:hover {
-  color: #008000;
-}
-
-.container {
-  width: 80%;
-  margin: 40px auto;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
+header {
   background-color: #333;
-  color: #fff;
+  background-image: linear-gradient(to bottom, #333, #555);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+nav {
+  background-color: #666;
+  background-image: linear-gradient(to bottom, #666, #888);
   padding: 10px;
   text-align: center;
 }
 
-.header i {
-  color: #fff;
-  font-size: 24px;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
 }
 
-.navbar {
-  background-color: #444;
-  padding: 10px;
-  text-align: center;
+nav a:hover {
+  color: #cccccc;
 }
 
-.navbar a {
-  color: #fff;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
   margin: 10px;
 }
 
-.navbar a:hover {
-  color: #ccc;
+section img:hover {
+  transform: scale(1.1);
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  margin: 20px;
-  width: calc(33.33% - 20px);
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.card h3 {
-  color: #4b0082;
-}
-
-.card p {
-  font-size: 16px;
-  color: #666;
-}
-
-.contact-form {
-  background-color: #
+footer {
+  background-color: #333;
+  background-image: linear-gradient(to bottom, #333, #555);
+  padding: 10px;
+  text-align:
