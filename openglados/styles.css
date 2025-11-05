@@ -1,100 +1,112 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ff99cc;
-  background-image: linear-gradient(to bottom, #ff99cc, #ffff00);
+  background-image: linear-gradient(to bottom, #ff99cc, #ffe6f2);
 }
 
 h1 {
-  color: #008000;
-  text-shadow: 2px 2px 5px #ff0000;
-  font-size: 36px;
+  color: #00698f;
+  text-shadow: 2px 2px 5px #cccccc;
 }
 
 h2 {
-  color: #0000ff;
+  color: #0099ff;
   font-size: 24px;
-  text-align: center;
-}
-
-p {
-  color: #666666;
-  font-size: 18px;
-  text-align: justify;
 }
 
 a {
-  color: #ff0000;
   text-decoration: none;
+  color: #660033;
 }
 
 a:hover {
-  color: #00ff00;
-  text-decoration: underline;
+  color: #ff0066;
 }
 
-.fa {
-  color: #ffff00;
-  font-size: 24px;
-  margin: 10px;
-}
-
-.header {
-  background-color: #333333;
+header {
+  background-color: #333;
   color: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
-.header img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 10px;
+header h1 {
+  margin: 0;
 }
 
-.main {
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #cccccc;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
-.section {
-  background-color: #f0f0f0;
+section {
+  background-color: #f7f7f7;
   padding: 20px;
-  margin: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 10px;
+  margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section img {
-  width: 200px;
-  height: 300px;
-  border-radius: 10px;
-  margin: 10px;
+section h2 {
+  margin-top: 0;
 }
 
-.footer {
-  background-color: #333333;
+footer {
+  background-color: #333;
   color: #ffffff;
   padding: 10px;
   text-align: center;
   clear: both;
 }
 
-.footer i {
-  color: #ffff00;
-  font-size: 18px;
-  margin: 5px;
+footer p {
+  margin-bottom: 10px;
 }
 
-i.fa-facebook {
-  color: #3b5998;
+.fa {
+  margin-right: 10px;
 }
 
-i.fa-twitter {
-  color: #1da1f2;
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(https://picsum.photos/200/300);
+  background-size: cover;
+  margin: 20px;
 }
 
-i.fa-instagram
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin
