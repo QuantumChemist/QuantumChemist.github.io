@@ -8,63 +8,40 @@
 <title>OpenGLaDOS</title>
 <style>
 body {
-  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6cc);
   font-family: Arial, sans-serif;
 }
 h1 {
-  color: #008000;
+  color: #00698f;
   text-align: center;
 }
 .container {
-  width: 80%;
+  max-width: 800px;
   margin: 40px auto;
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.image {
-  width: 100%;
-  height: 300px;
-  background-image: url('https://picsum.photos/600/700');
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px 10px 0 0;
-}
-.content {
-  padding: 20px;
-}
-.content h2 {
-  color: #00698f;
-  margin-top: 0;
-}
-.content p {
-  color: #666;
-}
-.social {
-  margin-top: 20px;
-  text-align: center;
-}
-.social a {
-  margin: 10px;
-  font-size: 24px;
-  color: #337ab7;
-}
-.social a:hover {
-  color: #23527c;
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
 }
 .contact-form {
   margin-top: 40px;
 }
-.contact-form input, .contact-form textarea {
+input, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.contact-form input[type="submit"] {
+input[type="submit"] {
   background-color: #4CAF50;
   color: #fff;
   padding: 10px 20px;
@@ -72,5 +49,13 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
-.contact-form input[type="submit"]:hover {
-  background
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Welcome to the OpenGLaDOS Website <i class="fa fa-robot" aria-hidden="true"></i></h1>
+<img src='https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png' alt='OpenGLaDOS pfp'>
+<p>This is the official website of OpenGLaDOS, the OpenScience Enrichment Center artificial
