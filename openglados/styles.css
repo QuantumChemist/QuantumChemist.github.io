@@ -1,112 +1,93 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #ff99cc;
-  background-image: linear-gradient(to bottom, #ff99cc, #ffe6f2);
+  background-image: linear-gradient(to bottom, #ff99cc, #ff66b3);
 }
 
 h1 {
-  color: #00698f;
+  color: #0099ff;
   text-shadow: 2px 2px 5px #cccccc;
 }
 
 h2 {
-  color: #0099ff;
-  font-size: 24px;
-}
-
-a {
-  text-decoration: none;
-  color: #660033;
-}
-
-a:hover {
-  color: #ff0066;
-}
-
-header {
-  background-color: #333;
-  color: #ffffff;
-  padding: 20px;
+  color: #ff6600;
+  font-size: 36px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-}
-
-nav {
-  background-color: #444;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #ffffff;
-}
-
-nav a:hover {
-  color: #cccccc;
-}
-
-main {
+ CV Website {
+  background-image: url(https://picsum.photos/400/600);
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-section {
-  background-color: #f7f7f7;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  margin-top: 0;
-}
-
-footer {
-  background-color: #333;
   color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  clear: both;
 }
 
-footer p {
-  margin-bottom: 10px;
+ CV Website h1 {
+  font-size: 48px;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #cccccc;
+  }
+  50% {
+    text-shadow: 0 0 20px #cccccc;
+  }
+  100% {
+    text-shadow: 0 0 10px #cccccc;
+  }
 }
 
 .fa {
-  margin-right: 10px;
+  font-size: 24px;
+  margin: 10px;
+  color: #ff0099;
 }
 
-.profile-picture {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+.fa-github {
+  color: #00698f;
+}
+
+.github-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  color: #00698f;
+}
+
+.github-link:hover {
+  color: #0099ff;
+}
+
+ banner {
   background-image: url(https://picsum.photos/200/300);
   background-size: cover;
-  margin: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }
 
-.skills {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ banner h2 {
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #cccccc;
 }
 
-.skills li {
-  margin
+ banner i {
+  font-size: 48px;
+  color: #ffcc00;
+}
+
+i.fa.fa-camera {
+  color: #cc0099;
+}
+
+i.fa.fa-bell {
+  color: #99ff00;
+  animation:
