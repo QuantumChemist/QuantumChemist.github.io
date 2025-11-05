@@ -1,93 +1,88 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ff99cc;
-  background-image: linear-gradient(to bottom, #ff99cc, #ff66b3);
+  font-family: Arial, sans-serif;
+  background-color: #ff69b4;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
 }
 
 h1 {
-  color: #0099ff;
-  text-shadow: 2px 2px 5px #cccccc;
+  color: #008000;
+  text-shadow: 2px 2px 5px #808080;
 }
 
 h2 {
-  color: #ff6600;
+  color: #4b0082;
   font-size: 36px;
   text-align: center;
 }
 
- CV Website {
-  background-image: url(https://picsum.photos/400/600);
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.CV-header {
+  background-color: #6495ed;
+  padding: 20px;
+  text-align: center;
+}
+
+.CV-header i {
   color: #ffffff;
-}
-
- CV Website h1 {
   font-size: 48px;
-  animation: glow 2s infinite;
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px #cccccc;
-  }
-  50% {
-    text-shadow: 0 0 20px #cccccc;
-  }
-  100% {
-    text-shadow: 0 0 10px #cccccc;
-  }
+.CV-about {
+  background-color: #f0e4cc;
+  padding: 20px;
+  text-align: justify;
+}
+
+.CV-about img {
+  float: right;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url(https://picsum.photos/200/300);
+}
+
+.CV-skills {
+  background-color: #ccffcc;
+  padding: 20px;
+  text-align: left;
+}
+
+.CV-skills i {
+  color: #008000;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.CV-projects {
+  background-color: #ffffcc;
+  padding: 20px;
+  text-align: center;
+}
+
+.CV-projects img {
+  width: 400px;
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url(https://picsum.photos/400/600);
+}
+
+.CV-contact {
+  background-color: #ffcccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.CV-contact i {
+  color: #ff0000;
+  font-size: 36px;
+  margin: 10px;
 }
 
 .fa {
-  font-size: 24px;
   margin: 10px;
-  color: #ff0099;
 }
 
-.fa-github {
-  color: #00698f;
-}
-
-.github-link {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 18px;
-  color: #00698f;
-}
-
-.github-link:hover {
-  color: #0099ff;
-}
-
- banner {
-  background-image: url(https://picsum.photos/200/300);
-  background-size: cover;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-}
-
- banner h2 {
-  font-size: 36px;
-  text-shadow: 2px 2px 5px #cccccc;
-}
-
- banner i {
-  font-size: 48px;
-  color: #ffcc00;
-}
-
-i.fa.fa-camera {
-  color: #cc0099;
-}
-
-i.fa.fa-bell {
-  color: #99ff00;
-  animation:
+.CV-social
