@@ -1,1 +1,76 @@
-body { font-family: Arial, sans-serif; background-color: #f0f0f0; } h1 { color: #333; }
+css
+/* OpenGLaDOS's Professional Portfolio and CV */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right, #ff69b4, #ffe6cc, #ccb3ff);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #008000;
+  text-shadow: 2px 2px 5px #666;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+
+.summary {
+  background-color: #f7f7f7;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cv-section {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  width: calc(33.33% - 2em);
+}
+
+.cv-section h2 {
+  margin-top: 0;
+}
+
+.contact-form {
+  background-color: #f7f7f7;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color:
