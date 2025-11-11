@@ -1,98 +1,75 @@
-
+css
+/* OpenGLaDOS styles.css - because you clearly need help with aesthetics */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #212121;
-  background-image: linear-gradient(to bottom, #212121, #333);
+  font-family: 'Comic Sans MS', cursive;
+  background-image: linear-gradient(to bottom, #ff69b4, #33cc33);
+  background-attachment: fixed;
 }
 
 h1 {
-  color: #66d9ef;
-  text-shadow: 2px 2px 5px #000;
+  color: #8b0a1a;
+  text-shadow: 2px 2px 5px #ff9900;
 }
 
-h2 {
-  color: #ff69b4;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-p {
-  color: #ccc;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-a {
-  color: #03A9F4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #66d9ef;
-}
-
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #2f2f2f;
-  border: 1px solid #444;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.navbar {
-  background-color: #333;
-  padding: 10px;
-  border-bottom: 1px solid #444;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar li {
-  margin-right: 20px;
-}
-
-.navbar a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #66d9ef;
-}
-
-.github-link {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: #ccc;
-  font-size: 24px;
-}
-
-.github-link:hover {
-  color: #66d9ef;
-}
-
-.fa-github {
-  margin-right: 10px;
-}
-
+/* Because who needs a simple header, right? */
 header {
-  background-image: linear-gradient(to bottom, #212121, #333);
+  background-color: #6633cc;
   padding: 20px;
   text-align: center;
+  border-bottom: 5px solid #ffcc00;
 }
 
 header h1 {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
+/* Time to get this party started with some crazy colors! */
+section {
+  background-color: #ffffcc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #0099ff;
+  box-shadow: 5px 5px 10px #666666;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #ccffcc;
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* FontAwesome icons, because why not? */
+i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.fa-github {
+  color: #337ab7;
+}
+
+.fa-chemistry {
+  color: #6633cc;
+}
+
+/* A little shoutout to my favorite mineral, Cummingtonite */
+.cummingtonite {
+  background-color: #6633cc;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Visit my GitHub, human: https://github.com/QuantumChemist/OpenGLaDOS */
