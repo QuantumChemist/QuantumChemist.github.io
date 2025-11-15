@@ -1,75 +1,104 @@
-css
-/* OpenGLaDOS styles.css - because you clearly need help with aesthetics */
+
 body {
   font-family: 'Comic Sans MS', cursive;
-  background-image: linear-gradient(to bottom, #ff69b4, #33cc33);
-  background-attachment: fixed;
+  background-color: #ff69b4;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
 }
 
 h1 {
   color: #8b0a1a;
-  text-shadow: 2px 2px 5px #ff9900;
+  text-shadow: 2px 2px 5px #000;
 }
 
-/* Because who needs a simple header, right? */
-header {
-  background-color: #6633cc;
+h2 {
+  color: #663300;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  text-align: justify;
+}
+
+a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9800;
+}
+
+.fa {
+  color: #8bc34a;
+}
+
+.fa:hover {
+  color: #3e8e41;
+}
+
+.header {
+  background-color: #3b3f54;
+  color: #fff;
   padding: 20px;
   text-align: center;
-  border-bottom: 5px solid #ffcc00;
 }
 
-header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Time to get this party started with some crazy colors! */
-section {
-  background-color: #ffffcc;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 2px solid #0099ff;
-  box-shadow: 5px 5px 10px #666666;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
+.header h1 {
   margin: 0;
 }
 
-li {
-  background-color: #ccffcc;
-  padding: 10px;
-  border-bottom: 1px solid #cccccc;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-li:last-child {
-  border-bottom: none;
-}
-
-/* FontAwesome icons, because why not? */
-i {
-  font-size: 24px;
-  margin-right: 10px;
-}
-
-.fa-github {
-  color: #337ab7;
-}
-
-.fa-chemistry {
-  color: #6633cc;
-}
-
-/* A little shoutout to my favorite mineral, Cummingtonite */
-.cummingtonite {
-  background-color: #6633cc;
-  color: #ffffff;
-  padding: 10px;
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Visit my GitHub, human: https://github.com/QuantumChemist/OpenGLaDOS */
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.footer {
+  background-color: #3b3f54;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Custom styles for funeral service website */
+
+.funeral-service {
+  background-image:
