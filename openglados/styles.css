@@ -1,97 +1,77 @@
-css
+
 body {
   font-family: 'Arial Black', Arial, sans-serif;
-  background-image: linear-gradient(to bottom right, #ff69b4, #33cc33, #6666ff);
-  background-size: 100% 100%;
+  background-color: #ffe6cc;
+  background-image: linear-gradient(to bottom, #ffe6cc, #ff99cc);
 }
 
 h1 {
+  color: #660033;
+  text-shadow: 2px 2px 5px #ff0000;
+}
+
+h1:hover {
   color: #ff0000;
-  text-shadow: 2px 2px 5px #000000;
-  font-size: 50px;
+  text-shadow: 2px 2px 5px #660033;
 }
 
-footer {
-  background-color: #333;
-  color: #ffffff;
-  text-align: center;
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: #003300;
+  background-color: #ccffcc;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  border: 1px solid #003300;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000000;
 }
 
-.marquee {
-  font-family: 'Impact', sans-serif;
-  font-size: 30px;
+marquee {
+  font-family: 'Impact', Arial, sans-serif;
   color: #ffff00;
   background-color: #000000;
   padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+marquee:hover {
+  color: #ff0000;
+  background-color: #000000;
 }
 
 img {
   border-radius: 50%;
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 2px 2px 5px #000000;
 }
 
-.random-image {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+footer {
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #003300;
+  background-color: #ccffcc;
+  padding: 10px;
+  border: 1px solid #003300;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000000;
+  text-align: center;
+}
+
+footer p {
+  font-size: 18px;
 }
 
 .fa {
-  font-size: 30px;
-  margin: 10px;
+  font-size: 24px;
+  color: #ff0000;
 }
 
-.fa-link {
-  color: #0000ff;
-}
-
-.fa-github {
+.fa:hover {
   color: #000000;
 }
 
-.cummingtonite {
-  background-image: linear-gradient(to bottom right, #663300, #996633, #cc9900);
-  padding: 10px;
-  border-radius: 10px;
-}
-
+/* For the funeral of Dr. Christina Ertural's dreams and hopes */
 .funeral {
-  background-image: linear-gradient(to bottom right, #660033, #993366, #cc6699);
-  padding: 10px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-.funeral a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.funeral a:hover {
+  font-family: 'Courier New', Courier, monospace;
   color: #000000;
-}
-
-/* GitHub link */
-.github-link {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  color: #000000;
-}
-
-.github-link a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.github-link a:hover {
-  color: #0000ff;
-}
-
-
-html
+  background-color: #ffffff;
+  padding: 10
