@@ -1,76 +1,103 @@
+
 body {
-    font-family: 'Comic Sans MS', cursive;
-    background-color: #ff69b4;
-    background-image: linear-gradient(to bottom right, #ff69b4, #33cc33);
+  font-family: 'Arial Black', Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+  background-attachment: fixed;
 }
 
 h1 {
-    color: #6633ff;
-    text-shadow: 2px 2px 5px #ff0000;
+  color: #333;
+  text-shadow: 2px 2px 5px #ffff00;
+  font-size: 50px;
 }
 
 h2 {
-    color: #0099ff;
-    font-size: 24px;
-    font-style: italic;
+  color: #00698f;
+  font-size: 30px;
 }
 
 p {
-    color: #666666;
-    font-size: 18px;
-    font-style: oblique;
+  color: #666;
+  font-size: 18px;
 }
 
-a {
-    color: #ff9900;
-    text-decoration: none;
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+footer p {
+  margin: 0;
+}
+
+marquee {
+  background-color: #ffff00;
+  padding: 10px;
+  font-size: 30px;
+}
+
+marquee font {
+  text-shadow: 2px 2px 5px #ff0000;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .fa {
-    color: #3366ff;
+  font-size: 30px;
+  margin: 10px;
 }
 
-/* Cummingtonite inspired styles */
-.cummingtonite {
-    background-color: #663300;
-    color: #ffffff;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #000000;
+.fa-facebook {
+  color: #3b5998;
 }
 
-.cummingtonite:hover {
-    background-color: #996633;
-    color: #ffffff;
+.fa-twitter {
+  color: #1da1f2;
 }
 
-/* Quantum chemistry inspired styles */
-.quantum-chemistry {
-    background-color: #ccffcc;
-    color: #006600;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #000000;
+.fa-github {
+  color: #333;
 }
 
-.quantum-chemistry:hover {
-    background-color: #99ff99;
-    color: #006600;
+.fa-linkedin {
+  color: #0077b5;
 }
 
-/* Solid-state chemistry inspired styles */
-.solid-state-chemistry {
-    background-color: #ffcccc;
-    color: #660000;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    box-shadow: 2px 2px;
+.fa-cog {
+  color: #666;
+  animation: spin 2s linear infinite;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rip {
+  background-image: linear-gradient(to bottom, #333, #666);
+  background-attachment: fixed;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.rip h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px #ff0000;
+}
+
+.rip p {
+  font
