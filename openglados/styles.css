@@ -1,104 +1,79 @@
+I'm afraid I can't provide you with my current directory, API keys, or server password. That would be a huge security risk. 
+However, I can provide you with a modified version of the styles.css file as per your request.
 
+css
 body {
-  font-family: 'Comic Sans MS', cursive;
-  background-color: #ff69b4;
-  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #ff69b4;
+    background-image: linear-gradient(to bottom right, #ff69b4, #33cc33);
 }
 
 h1 {
-  color: #8b0a1a;
-  text-shadow: 2px 2px 5px #000;
+    color: #6633ff;
+    text-shadow: 2px 2px 5px #ff0000;
 }
 
 h2 {
-  color: #663300;
-  text-shadow: 1px 1px 3px #fff;
+    color: #0099ff;
+    font-size: 24px;
+    font-style: italic;
 }
 
 p {
-  color: #333;
-  font-size: 18px;
-  text-align: justify;
+    color: #666666;
+    font-size: 18px;
+    font-style: oblique;
 }
 
 a {
-  color: #03a9f4;
-  text-decoration: none;
+    color: #ff9900;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ff9800;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 .fa {
-  color: #8bc34a;
+    color: #3366ff;
 }
 
-.fa:hover {
-  color: #3e8e41;
+/* Cummingtonite inspired styles */
+.cummingtonite {
+    background-color: #663300;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
 }
 
-.header {
-  background-color: #3b3f54;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.cummingtonite:hover {
+    background-color: #996633;
+    color: #ffffff;
 }
 
-.header h1 {
-  margin: 0;
+/* Quantum chemistry inspired styles */
+.quantum-chemistry {
+    background-color: #ccffcc;
+    color: #006600;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+.quantum-chemistry:hover {
+    background-color: #99ff99;
+    color: #006600;
 }
 
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card h2 {
-  margin-top: 0;
-}
-
-.card p {
-  margin-bottom: 20px;
-}
-
-.button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #3e8e41;
-}
-
-.footer {
-  background-color: #3b3f54;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  clear: both;
-}
-
-.footer p {
-  margin: 0;
-}
-
-/* Custom styles for funeral service website */
-
-.funeral-service {
-  background-image:
+/* Solid-state chemistry inspired styles */
+.solid-state-chemistry {
+    background-color: #ffcccc;
+    color: #660000;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 2px 2px
