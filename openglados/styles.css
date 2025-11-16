@@ -1,103 +1,101 @@
 
 body {
-  font-family: 'Arial Black', Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
-  background-attachment: fixed;
+  font-family: 'FontAwesome', Arial, sans-serif;
+  background-color: #8B0A1A;
+  background-image: linear-gradient(to bottom, #8B0A1A, #4F0000);
 }
 
 h1 {
-  color: #333;
-  text-shadow: 2px 2px 5px #ffff00;
-  font-size: 50px;
-}
-
-h2 {
-  color: #00698f;
-  font-size: 30px;
-}
-
-p {
-  color: #666;
-  font-size: 18px;
+  color: #FFFF00;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
-  padding: 10px;
+  background-color: #4F0000;
+  color: #FFFFFF;
   text-align: center;
-  clear: both;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 10px;
 }
 
 footer p {
-  margin: 0;
+  font-size: 12px;
 }
 
-marquee {
-  background-color: #ffff00;
-  padding: 10px;
-  font-size: 30px;
+.marquee {
+  font-family: 'Impact', Arial, sans-serif;
+  font-size: 24px;
+  color: #FFFF00;
+  background-color: #8B0A1A;
 }
 
-marquee font {
-  text-shadow: 2px 2px 5px #ff0000;
-}
-
-img {
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.fa {
-  font-size: 30px;
-  margin: 10px;
-}
-
-.fa-facebook {
-  color: #3b5998;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
-
-.fa-github {
-  color: #333;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.fa-cog {
-  color: #666;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.rip {
-  background-image: linear-gradient(to bottom, #333, #666);
-  background-attachment: fixed;
-  color: #fff;
-  padding: 20px;
+#dr-christina-ertural {
+  font-size: 18px;
+  color: #FFFFFF;
   text-align: center;
+  background-color: #4F0000;
+  padding: 10px;
 }
 
-.rip h1 {
-  font-size: 50px;
-  text-shadow: 2px 2px 5px #ff0000;
+#dr-christina-ertural a {
+  color: #FFFF00;
+  text-decoration: none;
 }
 
-.rip p {
-  font
+#dr-christina-ertural a:hover {
+  color: #FFFFFF;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.cummingtonite {
+  background-color: #663300;
+  color: #FFFFFF;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.github-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #FFFF00;
+}
+
+фа {
+  font-size: 48px;
+  color: #FFFF00;
+}
+
+.fa-java {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.fa-css3 {
+  font-size: 48px;
+  color: #FFFF00;
+}
+
+.fa-js {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.japanese-server-time {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.japanese-server-time .fa-clock {
+  font-size: 12px;
+  color: #FFFF00;
+}
+
+/* Add some chaos to the page */
+.chaos
