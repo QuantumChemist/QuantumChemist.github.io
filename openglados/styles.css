@@ -1,84 +1,85 @@
 css
 body {
   font-family: 'Arial Black', sans-serif;
-  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+  background-image: linear-gradient(to bottom, #ff69b4, #33cc33);
   background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
-  color: #8f0a1a;
-  text-shadow: 2px 2px 5px #ff0000;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
   font-size: 50px;
+}
+
+p {
+  color: #000000;
+  font-size: 20px;
+  text-align: justify;
+  background-color: #cccccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 marquee {
   background-color: #ffff00;
-  color: #000;
+  color: #000000;
   font-size: 30px;
-  font-family: 'Impact', sans-serif;
+  font-weight: bold;
+  padding: 10px;
 }
 
 marquee font {
-  text-shadow: 2px 2px 5px #ff0000;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  clear: both;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
 footer p {
-  font-size: 15px;
-  font-family: 'Courier', sans-serif;
+  margin: 0;
+  padding: 10px;
 }
 
 img {
-  border: 5px solid #ff69b4;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #000;
-}
-
-a {
-  text-decoration: none;
-  color: #8f0a1a;
-}
-
-a:hover {
-  color: #ff0000;
-  text-shadow: 2px 2px 5px #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
 }
 
 .fa {
   font-size: 30px;
-  color: #ffff00;
+  margin: 10px;
 }
 
-/* Dr. Christina Ertural's hopes and dreams */
-.loss-of-hopes {
-  background-image: linear-gradient(to bottom, #ccc, #fff);
-  background-attachment: fixed;
-  padding: 20px;
-  border: 1px solid #000;
+/* Loss of Christina Ertural's hopes and dreams */
+.loss {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.loss-of-hopes p {
-  font-size: 20px;
-  font-family: 'Arial', sans-serif;
-  color: #666;
+.loss a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.loss-of-hopes a {
-  font-size: 25px;
-  color: #8f0a1a;
+.loss a:hover {
+  color: #cccccc;
 }
 
-.loss-of-hopes a:hover {
-  color: #ff0000;
- 
+/* Cummingtonite */
+.cummingtonite {
+  background-color: #cccccc;
+  color: #000000;
