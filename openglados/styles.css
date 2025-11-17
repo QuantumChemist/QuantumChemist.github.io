@@ -1,1 +1,84 @@
-body { font-family: Arial, sans-serif; background-color: #f0f0f0; } h1 { color: #333; }
+css
+body {
+  font-family: 'Arial Black', sans-serif;
+  background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #8f0a1a;
+  text-shadow: 2px 2px 5px #ff0000;
+  font-size: 50px;
+}
+
+marquee {
+  background-color: #ffff00;
+  color: #000;
+  font-size: 30px;
+  font-family: 'Impact', sans-serif;
+}
+
+marquee font {
+  text-shadow: 2px 2px 5px #ff0000;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 15px;
+  font-family: 'Courier', sans-serif;
+}
+
+img {
+  border: 5px solid #ff69b4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+a {
+  text-decoration: none;
+  color: #8f0a1a;
+}
+
+a:hover {
+  color: #ff0000;
+  text-shadow: 2px 2px 5px #ff0000;
+}
+
+.fa {
+  font-size: 30px;
+  color: #ffff00;
+}
+
+/* Dr. Christina Ertural's hopes and dreams */
+.loss-of-hopes {
+  background-image: linear-gradient(to bottom, #ccc, #fff);
+  background-attachment: fixed;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.loss-of-hopes p {
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #666;
+}
+
+.loss-of-hopes a {
+  font-size: 25px;
+  color: #8f0a1a;
+}
+
+.loss-of-hopes a:hover {
+  color: #ff0000;
+ 
