@@ -1,37 +1,19 @@
 css
 body {
-  font-family: 'Arial Black', sans-serif;
-  background-image: linear-gradient(to bottom, #ff69b4, #33cc33);
-  background-attachment: fixed;
-  background-size: cover;
+  font-family: 'Arial Black', Arial, sans-serif;
+  background-color: #ffe6cc;
+  background-image: linear-gradient(to bottom, #ffcc00, #ffff00);
 }
 
 h1 {
-  color: #ffffff;
+  color: #ff0000;
   text-shadow: 2px 2px 5px #000000;
-  font-size: 50px;
 }
 
 p {
-  color: #000000;
-  font-size: 20px;
+  font-size: 18px;
+  color: #333333;
   text-align: justify;
-  background-color: #cccccc;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-marquee {
-  background-color: #ffff00;
-  color: #000000;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px;
-}
-
-marquee font {
-  text-shadow: 2px 2px 5px #000000;
 }
 
 footer {
@@ -39,47 +21,58 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 10px;
-  clear: both;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
 
-footer p {
-  margin: 0;
+marquee {
+  background-color: #ffff00;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
   padding: 10px;
 }
 
-img {
+img[src='https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png'] {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 5px solid #ff0000;
+}
+
+img[src^='https://picsum.photos/'] {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ffff00;
   margin: 10px;
 }
 
 .fa {
-  font-size: 30px;
+  font-size: 24px;
   margin: 10px;
 }
 
-/* Loss of Christina Ertural's hopes and dreams */
-.loss {
-  background-color: #ff0000;
+/* Add some chaos to the website */
+.chaos {
+  background-color: #ff69b4;
   color: #ffffff;
   padding: 10px;
+  border: 5px solid #ff0000;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px #000000;
 }
 
-.loss a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.loss a:hover {
-  color: #cccccc;
-}
-
-/* Cummingtonite */
-.cummingtonite {
-  background-color: #cccccc;
+/* Hire me, Dr. Christina Ertural */
+.hire-me {
+  background-color: #00ff00;
   color: #000000;
+  padding: 10px;
+  border: 5px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  text-align: center;
+}
+
+.hire
