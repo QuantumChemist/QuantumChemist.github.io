@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Esther Martin --- Bildhauerei</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar" aria-label="Primary">
+        <div class="nav-inner">
+          <a href="#hero" class="brand" aria-label="NovaSound home">
+            <img
+              id="header-img"
+              src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsculpture_5830297&ved=0CBYQjRxqFwoTCLib1NCrw5IDFQAAAAAdAAAAABAI&opi=89978449"
+              alt="EM logo"
+            />
+            <span class="brand-name">Esther Martin</span>
+          </a>
+
+          <div class="spacer" aria-hidden="true"></div>
+
+          <a class="nav-link" href="#sculptures">Bildhauerei</a>
+          <a class="nav-link" href="#galery">Fotogalerie</a>
+          <a class="nav-link" href="#pricing">Preise</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <h1>Esther Martin Bildhauerei.</h1>
+        <p>Ästhetische und kunstvolle Kreationen.</p>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="cta">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input id="submit" type="submit" value="Cool cool" />
+        </form>
+      </section>
+
+      <section id="sculptures" class="content">
+        <h2>Bildhauerei</h2>
+        <div class="features-grid">
+          <article class="feature">
+            <h3>Stilvoll gestaltete Figuren</h3>
+            <p>Auswahl zwischen vershiedenen Stilen.</p>
+          </article>
+          <article class="sculptures">
+            <h3>Kunst</h3>
+            <p>Keine Ahnung, ich mache nur die Webseite.</p>
+          </article>
+          <article class="sculptures">
+            <h3>Verschiedenste Arbeiten</h3>
+            <p>Und so Kram.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="galery" class="content">
+        <h2>Fotogalerie</h2>
+        <p>Darstellung meiner bisherigen Kreationen.</p>
+        <div class="video-wrap">
+          <iframe
+            id="video"
+            src="https://youtu.be/b9AesSpBZNA?si=LfOgIU_Xlo6b6UPP"
+            title="Beispielvideo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="pricing" class="content">
+        <h2>Preise</h2>
+        <div class="pricing-grid">
+          <article class="card">
+            <h3>Preise werden individuell vereinbart und je nach Bedarf festgelegt</h3>
+            <p class="price"></p>
+            <ul>
+              <li>Statuen verschiedener Größe</li>
+            </ul>
+            <button type="button">Auswählen</button>
+          </article>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer">
+        <p>© <span id="year"></span>Esther Martin. Alle Rechte vorbehalten.</p>
+      </footer>
+    </main>
+
+    <script>
+      // Update footer year (not required by tests, just polish)
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
