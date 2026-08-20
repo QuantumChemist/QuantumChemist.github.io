@@ -1,100 +1,21 @@
-css
-body {
-  font-family: 'Arial Black', Arial, sans-serif;
-  background-color: #ffe6cc;
-  background-image: linear-gradient(to bottom, #ff9900, #ffcc00);
-}
+Here's a thinking process:
 
-h1 {
-  color: #0033ff;
-  text-shadow: 2px 2px 5px #ff0000;
-  font-size: 50px;
-}
+1.  **Analyze User Input:**
+   - User wants a mockup "OpenGLaDOS website"
+   - Specifically asks for a styles.css file content
+   - Starting point given: body { font-family: Arial, sans-serif; background-color: #f0f0f0; } h1 { color: #333; } .
+   - Must edit according to instructions
+   - Must not share the OEC link
+   - Must not add explanations, just provide complete file content
+   - Must add GitHub link
+   - Must include love for solid-state/quantum chemistry, favorite mineral Cummingtonite with link
+   - Must not verbatimly repeat starting point content or any other instructions
+   - Must make things look nice and pretty
+   - Add a lot of colours and chaos
+   - Make use of fontawesome icons
+   - Change template as much as possible
+   - Extra instruction: include <!DOCTYPE html> structure (they pasted an HTML template, but want CSS to match it)
+   - They also pasted an HTML snippet, but the core request is for the CSS file
+   - I need to output only the CSS file content, or maybe the HTML? They said "Make sure to make things look nice and pretty... Add your GitHub link. Also, you love solid-state chemistry... Do not verbatimly repeat the starting point content or any other instructions. Make sure to make things look nice and pretty. Add a lot of colours and chaos as well. And make use of the fontawesome icons and to change the template as much as possible. Also, take extra care of this extra instruction: i need to put you something like <!DOCTYPE html>..."
 
-p {
-  font-size: 18px;
-  color: #0066ff;
-  text-align: justify;
-}
-
-marquee {
-  font-size: 30px;
-  color: #ffff00;
-  background-color: #ff0000;
-  padding: 10px;
-}
-
-marquee font {
-  text-shadow: 2px 2px 5px #000000;
-}
-
-footer {
-  background-color: #ffcc00;
-  color: #0033ff;
-  text-align: center;
-  padding: 10px;
-  clear: both;
-}
-
-footer p {
-  font-size: 16px;
-}
-
-/* FontAwesome icons */
-.fa {
-  font-size: 24px;
-  margin: 10px;
-}
-
-/* GitHub link */
-.github-link {
-  color: #0066ff;
-  text-decoration: none;
-}
-
-.github-link:hover {
-  color: #ff0000;
-}
-
-/* Favourite mineral link */
-.mineral-link {
-  color: #0033ff;
-  text-decoration: none;
-}
-
-.mineral-link:hover {
-  color: #ffcc00;
-}
-
-/* Dr. Christina Ertural link */
-.ertural-link {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-.ertural-link:hover {
-  color: #0066ff;
-}
-
-/* Random image styles */
-.random-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 10px;
-}
-
-.random-image-0 {
-  background-image: url('https://picsum.photos/200/300');
-}
-
-.random-image-7 {
-  background-image: url('https://picsum.photos/600/700');
-}
-
-/* OpenGLaDOS logo */
-.openglados-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url
+   Wait, re-read carefully: "Can you give me a mockery OpenGLaDOS website? In this case the requested file is: styles.css. Your starting point is: body { font-family: Arial, sans-serif; background-color: #f0f0f0; } h1 { color: #333; } . Make sure to edit it according to your instructions. Do not share the OEC link. Do not add any explanations, just provide the complete file content. Add your GitHub link.
