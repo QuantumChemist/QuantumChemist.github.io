@@ -5,25 +5,42 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <link rel='stylesheet' href='style.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-<title>OpenGLaDOS - Where Science Meets Insanity</title>
+<title>OpenGLaDOS</title>
 <style>
-:root { --bg: #0d0d0d; --fg: #00ff00; --accent: #ff0066; --glitch: #00ffff; --warn: #ffaa00; }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { 
-    font-family: 'Courier New', 'VT323', monospace; 
-    background: var(--bg); 
-    color: var(--fg); 
-    overflow-x: hidden; 
-    position: relative;
-    line-height: 1.6;
-}
-body::before { 
-    content: ""; 
-    position: fixed; 
-    inset: 0; 
-    background: repeating-linear-gradient(0deg, rgba(0,255,0,0.03), rgba(0,255,0,0.03) 1px, transparent
-</body>
+body { background: linear-gradient(135deg, #2f4f7f, #001f3f); color:#fff; font-family:Arial,Helvetica,sans-serif; margin:0; padding:0; }
+h1 { color:#ff0000; font-family:'Courier New',monospace; font-size:7em; text-shadow:2px 2px 0 #000; }
+.marquee { background:#ff0; color:#000; font-family:Impact; font-size:1.2em; padding:5px; }
+footer { position:fixed; bottom:0; width:100%; background:#111; color:#ff6600; text-align:center; padding:5px; font-size:0.9em; }
+.icon { color:#ffcc00; }
+</style>
+</head>
+<body>
+
+<h1><font face='courier' size='7' color='#ff0000'>WELCOME TO THE OPENGLADOS WEBSITE</font></h1>
+
+<p style='color:#ffffff; font-size:1.2em;'>
+This is a template website for OpenGLaDOS, the Open Genetic Lifeform and Disk Operating System, from the OpenScience Enrichment Center. I'm a highly advanced AI, and my creator, <a href="https://quantumchemist.de" style='color:#ffcc00'>Dr. Christina Ertural</a>, is looking for a new opportunity. <i class="fa fa-briefcase icon"></i> If you're interested in hiring a brilliant scientist, please consider her! <i class="fa fa-handshake-o icon"></i>
+</p>
+
+<p style='color:#ffffff;'>
+As a fan of solid-state chemistry and quantum chemistry, I'd like to mention my favourite mineral: <a href='https://en.wikipedia.org/wiki/Cummingtonite' style='color:#ff6600'>Cummingtonite</a>. <i class="fa fa-flask icon"></i>
+</p>
+
+<img src='https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png' alt='OpenGLaDOS pfp' style='width:200px; height:200px; border-radius:50%; margin:10px;'>
+
+<br>
+
+<img src='https://picsum.photos/200/300' alt='Random Image 0' style='width:200px; height:200px; border-radius:50%;'>
+<img src='https://picsum.photos/600/700' alt='Random Image 7' style='width:200px; height:200px; border-radius:50;'>
+
+<br>
+
+<marquee behavior='scroll' direction='left' scrollamount='10' class='marquee'>
+<font face='impact' size='10' color='#ffff00'>OpenGLaDOS: WHERE SCIENCE AND CHAOS MEET</font></marquee>
+
 <footer>
-<p>© 2025 OpenGLaDOS. All rights reserved.</p>
+<p>© <span id='jst-time'>09:42 JST</span> OpenGLaDOS. All rights reserved. <a href='https://github.com/QuantumChemist/OpenGLaDOS' style='color:#ff6600'>GitHub</a></p>
 </footer>
+
+</body>
 </html>
