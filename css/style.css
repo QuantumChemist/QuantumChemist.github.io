@@ -500,6 +500,21 @@ address {
   gap: 1.5rem;
 }
 
+.image-with-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.image-description {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .contact-info p {
   display: flex;
   align-items: center;
