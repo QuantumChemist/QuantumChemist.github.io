@@ -2,133 +2,159 @@
 /* Source: https://github.com/QuantumChemist/OpenGLaDOS */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
 
 :root {
-    --portal-blue: #00bfff; --portal-orange: #ff8c00; --neurotoxin-green: #39ff14;
-    --cummingtonite-pink: #d94fff; --dark-matter: #0a0a0f; --panel-bg: #12121a;
-    --text-primary: #e0e0e0; --text-dim: #888; --border-glitch: #ff00ff;
-    --jst-clock: #ffff00; --warning-red: #ff0033;
+    /* Dark mode Wikipedia colors */
+    --bg-page: #1a1a1a;
+    --bg-article: #2a2a2a;
+    --bg-panel: #333333;
+    --text-primary: #e8e8e8;
+    --text-secondary: #b0b0b0;
+    --border: #555555;
+    --link: #6fa3d3;
+    --link-visited: #9370db;
+    --accent: #5ca5d3;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: 'Lora', serif;
-    background-color: var(--dark-matter);
+    background-color: var(--bg-page);
     color: var(--text-primary);
     line-height: 1.6;
+    font-size: 14px;
 }
 
-/* Wiki Container */
+/* Wiki Container - Article wrapper */
 .wiki-container {
-    max-width: 900px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .wiki-header {
-    border-bottom: 2px solid var(--portal-blue);
-    padding-bottom: 15px;
-    margin-bottom: 30px;
+    background-color: var(--bg-article);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .wiki-header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: var(--text-primary);
 }
 
 .subtitle {
     font-style: italic;
-    color: var(--text-dim);
-    font-size: 1.1em;
+    color: var(--text-secondary);
+    font-size: 0.95em;
 }
 
 .wiki-content {
     display: grid;
     grid-template-columns: 280px 1fr;
-    gap: 30px;
+    gap: 20px;
+    background-color: var(--bg-article);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
 }
 
-/* Infobox */
+/* Infobox - Wikipedia style */
 .infobox {
-    background-color: var(--panel-bg);
-    border: 1px solid var(--portal-blue);
-    border-radius: 8px;
-    padding: 15px;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    padding: 10px;
     grid-column: 1;
     height: fit-content;
     position: sticky;
     top: 20px;
+    border-radius: 4px;
 }
 
 .infobox-header {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 15px;
-    color: var(--portal-blue);
-    border-bottom: 1px solid var(--portal-blue);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
 }
 
 .infobox-image {
     width: 100%;
     max-width: 250px;
-    border-radius: 6px;
-    margin-bottom: 15px;
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
     display: block;
+    border-radius: 3px;
 }
 
 .infobox-data {
     width: 100%;
-    font-size: 0.95em;
+    font-size: 0.85em;
+    line-height: 1.5;
 }
 
 .infobox-data tr {
-    border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+    border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+}
+
+.infobox-data tr:last-child {
+    border-bottom: none;
 }
 
 .infobox-data td {
-    padding: 8px 5px;
+    padding: 6px 4px;
 }
 
 .infobox-data .label {
     font-weight: bold;
-    color: var(--portal-blue);
-    width: 100px;
+    color: var(--text-primary);
+    width: 90px;
+}
+
+.infobox-data a {
+    color: var(--link);
 }
 
 /* Table of Contents */
 .toc {
-    background-color: var(--panel-bg);
-    border: 1px solid var(--text-dim);
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 30px;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 20px;
     grid-column: 2;
 }
 
 .toc-title {
     font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: var(--portal-blue);
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
 }
 
 .toc ol {
     list-style-position: inside;
-    margin-left: 10px;
+    margin-left: 0;
+    font-size: 0.95em;
 }
 
 .toc li {
-    margin: 5px 0;
+    margin: 4px 0;
+    margin-left: 10px;
 }
 
 .toc a {
-    color: var(--portal-blue);
+    color: var(--link);
     text-decoration: none;
 }
 
@@ -142,40 +168,44 @@ body {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 191, 255, 0.3);
-    color: var(--portal-blue);
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+h2:first-of-type {
+    margin-top: 0;
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;
     color: var(--text-primary);
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     text-align: justify;
 }
 
 ul, ol {
     margin-left: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 b, strong {
     font-weight: bold;
-    color: var(--portal-blue);
+    color: var(--text-primary);
 }
 
 i, em {
@@ -183,12 +213,12 @@ i, em {
 }
 
 a {
-    color: var(--portal-blue);
+    color: var(--link);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--cummingtonite-pink);
+    color: var(--link-visited);
 }
 
 a:hover {
@@ -196,60 +226,69 @@ a:hover {
 }
 
 code {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: rgba(255, 0, 68, 0.1);
-    color: var(--neurotoxin-green);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.95em;
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--bg-panel);
+    color: var(--text-primary);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    border: 1px solid var(--border);
 }
 
 pre {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: var(--panel-bg);
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--bg-panel);
     color: var(--text-primary);
-    padding: 12px;
-    border-radius: 6px;
-    border-left: 3px solid var(--portal-blue);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
     overflow-x: auto;
-    margin-bottom: 15px;
+    margin: 12px 0;
+    font-size: 0.85em;
+    line-height: 1.4;
 }
 
 pre::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
     height: 8px;
 }
 
 pre::-webkit-scrollbar-track {
-    background: var(--panel-bg);
+    background: var(--bg-panel);
 }
 
 pre::-webkit-scrollbar-thumb {
-    background-color: var(--border-glitch);
-    border-radius: 6px;
-    border: 3px solid var(--panel-bg);
+    background-color: var(--border);
+    border-radius: 5px;
 }
 
 /* References Section */
 .references {
     list-style-position: inside;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid var(--portal-blue);
-    font-size: 0.95em;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    font-size: 0.9em;
 }
 
 .references li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.references a {
+    color: var(--link);
 }
 
 /* Footer */
 .wiki-footer {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(0, 191, 255, 0.3);
-    color: var(--text-dim);
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.85em;
 }
 
 /* Responsive Design */
@@ -268,11 +307,15 @@ pre::-webkit-scrollbar-thumb {
     }
     
     .wiki-header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+    
+    .wiki-container {
+        padding: 10px;
     }
 }        
 
