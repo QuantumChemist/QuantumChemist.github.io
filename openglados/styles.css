@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -40,3 +41,19 @@ a:hover {
 .mineral-link:hover {
     text-decoration: underline;
 }
+=======
+/* OpenGLaDOS Stylesheet - "Science isn't about why, it's about why not." */
+/* Source: https://github.com/QuantumChemist/OpenGLaDOS */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=UnifrakturMaguntia&family=Press+Start+2P&display=swap');
+
+:root {
+    --portal-blue: #00bfff; --portal-orange: #ff8c00; --neurotoxin-green: #39ff14;
+    --cummingtonite-pink: #d94fff; --dark-matter: #0a0a0f; --panel-bg: #12121a;
+    --text-primary: #e0e0e0; --text-dim: #888; --border-glitch: #ff00ff;
+    --jst-clock: #ffff00; --warning-red: #ff0033;
+}
+
+* { box-sizing: border-box; margin: 
+>>>>>>> 704c754811f9e0f5e59bec41bbdf8493a7771f04
