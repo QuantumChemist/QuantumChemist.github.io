@@ -1,5 +1,4 @@
-/* Wikipedia-inspired stylesheet for OpenGLaDOS */
-/* Based on Wikipedia's Vector 2022 skin with dark mode */
+/* OpenGLaDOSpedia - Wikipedia-inspired dark theme stylesheet */
 
 * {
     margin: 0;
@@ -19,22 +18,30 @@
     --color-link: #5b9fd9;
     --color-link-visited: #9370db;
     --color-link-hover: #7aafdb;
-    --border-radius: 2px;
 }
 
+/* ============================================ */
+/* GLOBAL STYLES */
+/* ============================================ */
 html {
     font-size: 14px;
+    background-color: var(--color-base);
 }
 
-body {
+body, body.mw-body, body.skin-vector-2022 {
     background-color: var(--color-base);
     color: var(--color-text);
     font-family: Georgia, 'Times New Roman', serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
-/* ===== HEADER ===== */
-.mw-header {
+/* ============================================ */
+/* HEADER & NAVIGATION */
+/* ============================================ */
+header.mw-header {
     background-color: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
     padding: 8px 20px;
@@ -43,6 +50,7 @@ body {
     z-index: 100;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .mw-header-container {
@@ -51,7 +59,17 @@ body {
     gap: 15px;
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+}
+
+.mw-logo {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.mw-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .mw-logo img {
@@ -62,10 +80,11 @@ body {
 }
 
 .mw-site-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--color-text);
-    min-width: 100px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .mw-search-box {
@@ -76,6 +95,7 @@ body {
 .mw-search-box form {
     display: flex;
     gap: 5px;
+    width: 100%;
 }
 
 .mw-searchInput {
@@ -86,12 +106,15 @@ body {
     color: var(--color-text);
     border-radius: 2px;
     font-family: inherit;
+    font-size: 14px;
+    transition: all 0.2s ease;
 }
 
 .mw-searchInput:focus {
     outline: none;
     border-color: var(--color-link);
     background-color: var(--color-surface-1);
+    box-shadow: 0 0 0 2px rgba(91, 159, 217, 0.2);
 }
 
 .mw-search-button {
@@ -102,23 +125,31 @@ body {
     border-radius: 2px;
     cursor: pointer;
     font-family: inherit;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
 }
 
 .mw-search-button:hover {
     background-color: var(--color-surface-2);
 }
 
-/* ===== MAIN PAGE LAYOUT ===== */
-.mw-page {
+/* ============================================ */
+/* MAIN LAYOUT */
+/* ============================================ */
+div.mw-page {
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
     gap: 20px;
     padding: 20px;
+    min-height: calc(100vh - 100px);
 }
 
-/* ===== SIDEBAR ===== */
-.mw-sidebar {
+/* ============================================ */
+/* SIDEBAR */
+/* ============================================ */
+nav.mw-sidebar {
     width: 280px;
     flex-shrink: 0;
 }
@@ -133,19 +164,25 @@ body {
 
 .mw-sidebar-title {
     background-color: var(--color-surface-2);
-    padding: 10px 12px;
+    padding: 12px;
     font-weight: bold;
     font-size: 0.95rem;
     border-bottom: 1px solid var(--color-border);
     color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .mw-sidebar-section ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .mw-sidebar-section li {
     border-bottom: 1px solid var(--color-border);
+    margin: 0;
+    padding: 0;
 }
 
 .mw-sidebar-section li:last-child {
@@ -158,6 +195,7 @@ body {
     color: var(--color-link);
     text-decoration: none;
     font-size: 0.9rem;
+    transition: all 0.2s ease;
 }
 
 .mw-sidebar-section a:visited {
@@ -165,11 +203,14 @@ body {
 }
 
 .mw-sidebar-section a:hover {
-    background-color: rgba(91, 159, 217, 0.1);
+    background-color: rgba(91, 159, 217, 0.15);
     color: var(--color-link-hover);
+    padding-left: 16px;
 }
 
-/* ===== INFOBOX ===== */
+/* ============================================ */
+/* INFOBOX */
+/* ============================================ */
 .mw-infobox {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -180,16 +221,16 @@ body {
 
 .mw-infobox-header {
     background-color: var(--color-surface-2);
-    padding: 10px 12px;
+    padding: 12px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     border-bottom: 1px solid var(--color-border);
     color: var(--color-text);
 }
 
 .mw-infobox-image {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -203,7 +244,7 @@ body {
 .mw-infobox-data {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 .mw-infobox-data tr {
@@ -217,22 +258,33 @@ body {
 .mw-infobox-label {
     font-weight: bold;
     padding: 8px 12px;
-    background-color: rgba(91, 159, 217, 0.05);
+    background-color: rgba(91, 159, 217, 0.08);
     color: var(--color-text);
-    width: 90px;
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
 }
 
 .mw-infobox-value {
     padding: 8px 12px;
     color: var(--color-text-subtle);
+    text-align: left;
+    vertical-align: top;
 }
 
 .mw-infobox-value a {
     color: var(--color-link);
+    text-decoration: none;
 }
 
-/* ===== ARTICLE CONTENT ===== */
-.mw-article {
+.mw-infobox-value a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================ */
+/* ARTICLE CONTENT */
+/* ============================================ */
+main.mw-article {
     flex: 1;
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -240,22 +292,26 @@ body {
     padding: 30px;
 }
 
-#firstHeading {
-    font-size: 1.9rem;
+#firstHeading, .mw-first-heading {
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: 12px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 15px;
+    color: var(--color-text);
 }
 
-/* ===== TABLE OF CONTENTS ===== */
-#toc {
+/* ============================================ */
+/* TABLE OF CONTENTS */
+/* ============================================ */
+#toc, .mw-toc {
     background-color: var(--color-surface-1);
     border: 1px solid var(--color-border);
     border-radius: 2px;
-    padding: 10px;
-    margin-bottom: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
 }
 
 .mw-toc-toggle {
@@ -268,10 +324,11 @@ body {
     padding: 8px 0;
     cursor: pointer;
     user-select: none;
+    margin-bottom: 8px;
 }
 
 .mw-toc-content {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .mw-toc-content ol {
@@ -280,8 +337,14 @@ body {
     font-size: 0.9rem;
 }
 
+.mw-toc-content ol ol {
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
 .mw-toc-content li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    color: var(--color-text);
 }
 
 .mw-toc-content a {
@@ -289,11 +352,24 @@ body {
     text-decoration: none;
 }
 
-.mw-toc-content a:hover {
-    text-decoration: underline;
+.mw-toc-content a:visited {
+    color: var(--color-link-visited);
 }
 
-/* ===== SECTIONS ===== */
+.mw-toc-content a:hover {
+    text-decoration: underline;
+    color: var(--color-link-hover);
+}
+
+/* ============================================ */
+/* HEADINGS */
+/* ============================================ */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.3;
+}
+
 section {
     margin-bottom: 25px;
 }
@@ -303,12 +379,11 @@ h2 {
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 12px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--color-border);
-    color: var(--color-text);
 }
 
-h2:first-of-type {
+section:first-of-type h2 {
     margin-top: 0;
 }
 
@@ -317,30 +392,58 @@ h3 {
     font-weight: bold;
     margin-top: 18px;
     margin-bottom: 10px;
-    color: var(--color-text);
 }
 
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* ============================================ */
+/* PARAGRAPHS */
+/* ============================================ */
 p {
     margin-bottom: 12px;
-    text-align: justify;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================ */
+/* LISTS */
+/* ============================================ */
+ul, ol {
+    margin: 12px 0 15px 30px;
+    padding: 0;
     color: var(--color-text);
 }
 
-/* ===== LISTS ===== */
-ul, ol {
-    margin-left: 30px;
-    margin-bottom: 15px;
+ul ul, ul ol, ol ul, ol ol {
+    margin: 5px 0 5px 30px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: var(--color-text);
+    line-height: 1.6;
 }
 
-/* ===== TEXT FORMATTING ===== */
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================ */
+/* LINKS */
+/* ============================================ */
 a {
     color: var(--color-link);
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 a:visited {
@@ -348,20 +451,24 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
     color: var(--color-link-hover);
+    text-decoration: underline;
 }
 
+/* ============================================ */
+/* TEXT FORMATTING */
+/* ============================================ */
 b, strong {
     font-weight: bold;
+    color: var(--color-text);
 }
 
 i, em {
     font-style: italic;
 }
 
-code {
-    font-family: 'Courier New', monospace;
+code, tt, kbd, samp {
+    font-family: 'Courier New', 'Consolas', monospace;
     background-color: var(--color-surface-2);
     border: 1px solid var(--color-border);
     padding: 2px 5px;
@@ -370,23 +477,80 @@ code {
     color: var(--color-text);
 }
 
-/* ===== REFERENCES ===== */
-.mw-reflist {
+pre {
+    background-color: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    padding: 12px;
+    border-radius: 2px;
+    overflow-x: auto;
+    margin: 12px 0;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 0.85rem;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+blockquote {
+    border-left: 4px solid var(--color-link);
+    padding-left: 15px;
+    margin: 12px 0;
+    color: var(--color-text-subtle);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 20px 0;
+}
+
+/* ============================================ */
+/* TABLES */
+/* ============================================ */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+table th, table td {
+    border: 1px solid var(--color-border);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--color-surface-2);
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(58, 58, 58, 0.3);
+}
+
+/* ============================================ */
+/* REFERENCES */
+/* ============================================ */
+.mw-reflist, .mw-reflist ol {
     list-style: decimal;
-    margin-left: 20px;
+    margin: 12px 0 15px 20px;
     font-size: 0.85rem;
 }
 
 .mw-reflist li {
     margin-bottom: 10px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .mw-reference-text {
-    display: inline;
+    color: var(--color-text);
 }
 
-/* ===== FOOTER ===== */
+/* ============================================ */
+/* FOOTER */
+/* ============================================ */
 .mw-footer {
     margin-top: 30px;
     padding-top: 15px;
@@ -398,14 +562,19 @@ code {
 
 .mw-footer p {
     margin-bottom: 5px;
-    text-align: center;
 }
 
 .mw-footer a {
     color: var(--color-link);
 }
 
-/* ===== SCROLLBAR ===== */
+.mw-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================ */
+/* SCROLLBAR */
+/* ============================================ */
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -424,21 +593,24 @@ code {
     background: var(--color-text-muted);
 }
 
-/* ===== RESPONSIVE ===== */
+/* ============================================ */
+/* RESPONSIVE DESIGN */
+/* ============================================ */
 @media (max-width: 1024px) {
-    .mw-page {
+    div.mw-page {
         flex-direction: column;
+        padding: 15px;
     }
 
-    .mw-sidebar {
+    nav.mw-sidebar {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
     }
 
-    .mw-article {
-        grid-column: 1 / -1;
+    main.mw-article {
+        padding: 20px;
     }
 }
 
@@ -449,33 +621,81 @@ code {
     }
 
     .mw-site-title {
-        flex: 1;
+        order: 3;
+        flex-basis: 100%;
+        font-size: 16px;
     }
 
     .mw-search-box {
+        order: 4;
         flex-basis: 100%;
         max-width: 100%;
+        margin-top: 5px;
     }
 
-    .mw-page {
+    div.mw-page {
+        flex-direction: column;
         padding: 10px;
-        gap: 10px;
     }
 
-    .mw-sidebar {
+    nav.mw-sidebar {
         width: 100%;
         grid-template-columns: 1fr;
     }
 
-    .mw-article {
-        padding: 20px;
+    main.mw-article {
+        padding: 15px;
     }
 
-    #firstHeading {
+    #firstHeading, .mw-first-heading {
         font-size: 1.5rem;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 
     h2 {
         font-size: 1.3rem;
+        margin-top: 18px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #toc, .mw-toc {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mw-header-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .mw-logo {
+        justify-content: center;
+    }
+
+    .mw-site-title {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main.mw-article {
+        padding: 12px;
+    }
+
+    #firstHeading, .mw-first-heading {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .mw-sidebar-section {
+        margin-bottom: 10px;
     }
 }
