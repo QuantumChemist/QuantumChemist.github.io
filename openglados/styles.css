@@ -332,7 +332,7 @@ main.mw-article {
 }
 
 .mw-toc-content ol {
-    list-style: decimal;
+    list-style: none;
     margin-left: 20px;
     font-size: 0.9rem;
 }
