@@ -1,52 +1,8 @@
-<<<<<<< HEAD
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    color: #ff6347;
-    text-align: center;
-}
-
-a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.github-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.mineral-link {
-    color: #32cd32;
-    font-weight: bold;
-}
-
-.mineral-link:hover {
-    text-decoration: underline;
-}
-=======
-/* OpenGLaDOS Stylesheet - "Science isn't about why, it's about why not." */
+/* OpenGLaDOS Wikipedia-Style Stylesheet - "Science isn't about why, it's about why not." */
 /* Source: https://github.com/QuantumChemist/OpenGLaDOS */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=UnifrakturMaguntia&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lora:wght@400;700&display=swap');
 
 :root {
     --portal-blue: #00bfff; --portal-orange: #ff8c00; --neurotoxin-green: #39ff14;
@@ -55,5 +11,269 @@ a:hover {
     --jst-clock: #ffff00; --warning-red: #ff0033;
 }
 
-* { box-sizing: border-box; margin: 
->>>>>>> 704c754811f9e0f5e59bec41bbdf8493a7771f04
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--dark-matter);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Wiki Container */
+.wiki-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wiki-header {
+    border-bottom: 2px solid var(--portal-blue);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.wiki-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1.1em;
+}
+
+.wiki-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+/* Infobox */
+.infobox {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--portal-blue);
+    border-radius: 8px;
+    padding: 15px;
+    grid-column: 1;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.infobox-header {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--portal-blue);
+    border-bottom: 1px solid var(--portal-blue);
+    padding-bottom: 10px;
+}
+
+.infobox-image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.infobox-data {
+    width: 100%;
+    font-size: 0.95em;
+}
+
+.infobox-data tr {
+    border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+}
+
+.infobox-data td {
+    padding: 8px 5px;
+}
+
+.infobox-data .label {
+    font-weight: bold;
+    color: var(--portal-blue);
+    width: 100px;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--text-dim);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 30px;
+    grid-column: 2;
+}
+
+.toc-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--portal-blue);
+}
+
+.toc ol {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    color: var(--portal-blue);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.wiki-content > div:nth-child(n+3) {
+    grid-column: 1 / -1;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+    color: var(--portal-blue);
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+b, strong {
+    font-weight: bold;
+    color: var(--portal-blue);
+}
+
+i, em {
+    font-style: italic;
+}
+
+a {
+    color: var(--portal-blue);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--cummingtonite-pink);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: rgba(255, 0, 68, 0.1);
+    color: var(--neurotoxin-green);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+pre {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--panel-bg);
+    color: var(--text-primary);
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid var(--portal-blue);
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+pre::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: var(--panel-bg);
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: var(--border-glitch);
+    border-radius: 6px;
+    border: 3px solid var(--panel-bg);
+}
+
+/* References Section */
+.references {
+    list-style-position: inside;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--portal-blue);
+    font-size: 0.95em;
+}
+
+.references li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.wiki-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 191, 255, 0.3);
+    color: var(--text-dim);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wiki-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .infobox {
+        grid-column: 1;
+        position: static;
+    }
+    
+    .toc {
+        grid-column: 1;
+    }
+    
+    .wiki-header h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}        
+
+
