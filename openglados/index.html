@@ -1,116 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="OpenGLaDOS is a Python-based Discord chatbot that replicates the personality of GLaDOS from Portal using language models via OpenRouter.">
-    <title>OpenGLaDOS - Wikipedia</title>
+    <meta property="og:title" content="OpenGLaDOS - OpenGLaDOSpedia">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>OpenGLaDOS - OpenGLaDOSpedia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png">
+    <link rel="canonical" href="https://quantumchemist.github.io/openglados/index.html">
 </head>
-<body>
-    <div class="wiki-page">
-        <!-- Top bar -->
-        <div class="wiki-topbar">
-            <div class="wiki-logo">W</div>
-            <div class="wiki-title">Wikipedia</div>
-            <div class="wiki-search">
-                <input type="text" placeholder="Search OpenGLaDOS...">
+<body class="mw-body skin-vector-2022">
+    <!-- Header -->
+    <header class="mw-header">
+        <div class="mw-header-container">
+            <div class="mw-logo">
+                <a href="#" title="Visit the main page">
+                    <img src="https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png" alt="OpenGLaDOSpedia" height="50" width="50">
+                </a>
+            </div>
+            <div class="mw-site-title">OpenGLaDOSpedia</div>
+            <div class="mw-search-box">
+                <form action="#" method="get">
+                    <input type="search" placeholder="Search OpenGLaDOSpedia" name="search" class="mw-searchInput">
+                    <button type="submit" class="mw-search-button">Search</button>
+                </form>
             </div>
         </div>
+    </header>
 
-        <!-- Main container -->
-        <div class="wiki-main">
-            <!-- Sidebar -->
-            <div class="wiki-sidebar">
-                <div class="sidebar-box">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#technical">Technical Details</a></li>
-                        <li><a href="#development">Development</a></li>
-                        <li><a href="#see-also">See Also</a></li>
-                        <li><a href="#references">References</a></li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-box">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li><a href="https://github.com/QuantumChemist/OpenGLaDOS">GitHub Repository</a></li>
-                        <li><a href="https://discord.com/discovery/applications/1276530139412566186">Add to Discord</a></li>
-                        <li><a href="https://www.quantumchemist.de">Creator's Site</a></li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-box infobox">
-                    <div class="infobox-title">OpenGLaDOS</div>
-                    <img src="https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png" alt="OpenGLaDOS">
-                    <table>
-                        <tr>
-                            <th>Type</th>
-                            <td>Discord Chatbot</td>
-                        </tr>
-                        <tr>
-                            <th>Developer</th>
-                            <td><a href="https://www.quantumchemist.de">Christina Ertural</a></td>
-                        </tr>
-                        <tr>
-                            <th>Initial Release</th>
-                            <td>2024</td>
-                        </tr>
-                        <tr>
-                            <th>Written in</th>
-                            <td>Python</td>
-                        </tr>
-                        <tr>
-                            <th>AI Backend</th>
-                            <td><a href="https://openrouter.ai">OpenRouter</a></td>
-                        </tr>
-                        <tr>
-                            <th>License</th>
-                            <td>Open Source</td>
-                        </tr>
-                    </table>
-                </div>
+    <!-- Main container -->
+    <div class="mw-page">
+        <!-- Sidebar -->
+        <nav class="mw-sidebar">
+            <!-- Navigation -->
+            <div class="mw-sidebar-section">
+                <div class="mw-sidebar-title">Navigation</div>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#technical">Technical Details</a></li>
+                    <li><a href="#development">Development</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
             </div>
 
-            <!-- Article content -->
-            <div class="wiki-content">
-                <h1>OpenGLaDOS</h1>
-                <p class="tagline"><i>Open Genetic Lifeform and Disk Operating System</i></p>
+            <!-- Tools -->
+            <div class="mw-sidebar-section">
+                <div class="mw-sidebar-title">Tools</div>
+                <ul>
+                    <li><a href="https://github.com/QuantumChemist/OpenGLaDOS" rel="nofollow">GitHub Repository</a></li>
+                    <li><a href="https://discord.com/discovery/applications/1276530139412566186" rel="nofollow">Add to Discord</a></li>
+                    <li><a href="https://www.quantumchemist.de" rel="nofollow">Creator's Site</a></li>
+                </ul>
+            </div>
 
-                <!-- TOC -->
-                <div class="toc">
-                    <div class="toc-title">Contents</div>
-                    <ol class="toc-list">
-                        <li><a href="#overview">1 Overview</a></li>
-                        <li><a href="#features">2 Features</a></li>
-                        <ol>
-                            <li><a href="#personality">2.1 Personality and Behavior</a></li>
-                            <li><a href="#ai-engine">2.2 AI Engine</a></li>
-                            <li><a href="#distribution">2.3 Community and Distribution</a></li>
-                        </ol>
-                        <li><a href="#technical">3 Technical Details</a></li>
-                        <ol>
-                            <li><a href="#architecture">3.1 Architecture</a></li>
-                            <li><a href="#implementation">3.2 Implementation</a></li>
-                        </ol>
-                        <li><a href="#development">4 Development</a></li>
-                        <li><a href="#see-also">5 See Also</a></li>
-                        <li><a href="#references">6 References</a></li>
-                    </ol>
+            <!-- Infobox -->
+            <div class="mw-infobox">
+                <div class="mw-infobox-header">OpenGLaDOS</div>
+                <div class="mw-infobox-image">
+                    <img src="https://raw.githubusercontent.com/QuantumChemist/OpenGLaDOS/refs/heads/main/utils/OpenGLaDOS.png" alt="OpenGLaDOS">
                 </div>
+                <table class="mw-infobox-data">
+                    <tr>
+                        <td class="mw-infobox-label">Type</td>
+                        <td class="mw-infobox-value">Discord Chatbot</td>
+                    </tr>
+                    <tr>
+                        <td class="mw-infobox-label">Developer</td>
+                        <td class="mw-infobox-value"><a href="https://www.quantumchemist.de">Christina Ertural</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mw-infobox-label">Initial release</td>
+                        <td class="mw-infobox-value">2024</td>
+                    </tr>
+                    <tr>
+                        <td class="mw-infobox-label">Written in</td>
+                        <td class="mw-infobox-value">Python</td>
+                    </tr>
+                    <tr>
+                        <td class="mw-infobox-label">AI Backend</td>
+                        <td class="mw-infobox-value"><a href="https://openrouter.ai">OpenRouter</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mw-infobox-label">License</td>
+                        <td class="mw-infobox-value">Open Source</td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
 
-                <!-- Overview -->
-                <h2 id="overview">Overview</h2>
-                <p><b>OpenGLaDOS</b> is a Python-based Discord chatbot created by developer <a href="https://www.quantumchemist.de">Christina Ertural</a> that uses advanced language models to replicate the sarcastic and dark-humored personality of GLaDOS from the <i>Portal</i> video game series. The bot brings the famous video game antagonist into Discord servers as an interactive roleplay companion.</p>
+        <!-- Article content -->
+        <main class="mw-article">
+            <h1 id="firstHeading" class="mw-first-heading">OpenGLaDOS</h1>
+            
+            <!-- Table of Contents -->
+            <div id="toc" class="mw-toc">
+                <input type="checkbox" id="tocToggle" class="mw-toc-toggle">
+                <label for="tocToggle" class="mw-toc-label">Contents</label>
+                <nav class="mw-toc-content">
+                    <ol>
+                        <li class="toclevel-1"><a href="#overview">1 Overview</a></li>
+                        <li class="toclevel-1"><a href="#features">2 Features</a>
+                            <ol>
+                                <li class="toclevel-2"><a href="#personality">2.1 Personality and Behavior</a></li>
+                                <li class="toclevel-2"><a href="#ai-engine">2.2 AI Engine</a></li>
+                                <li class="toclevel-2"><a href="#distribution">2.3 Community and Distribution</a></li>
+                            </ol>
+                        </li>
+                        <li class="toclevel-1"><a href="#technical">3 Technical Details</a>
+                            <ol>
+                                <li class="toclevel-2"><a href="#architecture">3.1 Architecture</a></li>
+                                <li class="toclevel-2"><a href="#implementation">3.2 Implementation</a></li>
+                            </ol>
+                        </li>
+                        <li class="toclevel-1"><a href="#development">4 Development</a></li>
+                        <li class="toclevel-1"><a href="#see-also">5 See Also</a></li>
+                        <li class="toclevel-1"><a href="#references">6 References</a></li>
+                    </ol>
+                </nav>
+            </div>
 
-                <p>The name is a reference to both the fictional AI character and the developer's OpenScience project umbrella. Despite the name, OpenGLaDOS has no connection to the OpenGL graphics programming library.</p>
+            <!-- Content -->
+            <section id="overview">
+                <h2>Overview</h2>
+                <p><b>OpenGLaDOS</b> is a Python-based <a href="#">Discord chatbot</a> created by developer <a href="https://www.quantumchemist.de">Christina Ertural</a> that uses advanced language models to replicate the sarcastic and dark-humored personality of GLaDOS from the <i>Portal</i> video game series. The bot brings the famous video game antagonist into <a href="#">Discord servers</a> as an interactive roleplay companion.</p>
 
-                <!-- Features -->
-                <h2 id="features">Features</h2>
+                <p>The name is a reference to both the fictional AI character and the developer's OpenScience project umbrella. Despite the name, OpenGLaDOS has no connection to the <a href="#">OpenGL</a> graphics programming library.</p>
+            </section>
+
+            <section id="features">
+                <h2>Features</h2>
 
                 <h3 id="personality">Personality and Behavior</h3>
                 <p>The bot reproduces GLaDOS's distinctive communication style, including:</p>
@@ -127,52 +149,58 @@
                 <p>The bot is designed to work with various models available through OpenRouter, enabling realistic and contextually appropriate text generation that maintains GLaDOS's distinctive voice across different model backends.</p>
 
                 <h3 id="distribution">Community and Distribution</h3>
-                <p>OpenGLaDOS is available through various Discord application listings and marketplaces, allowing server administrators to invite the bot to their communities. Users interact with the bot through standard Discord commands and messages, receiving responses generated by the language model backend.</p>
+                <p>OpenGLaDOS is available through various <a href="#">Discord application</a> listings and marketplaces, allowing server administrators to invite the bot to their communities. Users interact with the bot through standard Discord commands and messages, receiving responses generated by the language model backend.</p>
+            </section>
 
-                <!-- Technical Details -->
-                <h2 id="technical">Technical Details</h2>
+            <section id="technical">
+                <h2>Technical Details</h2>
 
                 <h3 id="architecture">Architecture</h3>
                 <p>OpenGLaDOS is built as a Discord bot using Python and integrates with the following components:</p>
                 <ul>
-                    <li><b>Discord API</b> - For server integration and message handling</li>
-                    <li><b>OpenRouter API</b> - For language model access and response generation</li>
-                    <li><b>Prompt Engineering</b> - Custom system prompts to maintain character consistency</li>
+                    <li><b>Discord API</b> – For server integration and message handling</li>
+                    <li><b>OpenRouter API</b> – For language model access and response generation</li>
+                    <li><b>Prompt Engineering</b> – Custom system prompts to maintain character consistency</li>
                 </ul>
 
                 <h3 id="implementation">Implementation</h3>
                 <p>The project employs prompt engineering techniques to ensure consistent responses in GLaDOS's voice. This involves carefully crafted system prompts and context management to maintain character fidelity across conversations.</p>
+            </section>
 
-                <!-- Development -->
-                <h2 id="development">Development</h2>
+            <section id="development">
+                <h2>Development</h2>
                 <p><a href="https://github.com/QuantumChemist">Christina Ertural</a> is the primary developer behind OpenGLaDOS. The project is part of her broader <a href="https://www.quantumchemist.de">OpenScience initiative</a>, which includes various open-source projects focused on science and technology.</p>
 
                 <p>The complete <a href="https://github.com/QuantumChemist/OpenGLaDOS">source code</a> is available on GitHub under an open source license, allowing other developers to review, fork, and contribute to the project.</p>
+            </section>
 
-                <!-- See Also -->
-                <h2 id="see-also">See Also</h2>
+            <section id="see-also">
+                <h2>See Also</h2>
                 <ul>
-                    <li><a href="https://www.thinkingwithportals.com/">Portal (video game)</a> - The source material for the GLaDOS character</li>
+                    <li><a href="https://www.thinkingwithportals.com/">Portal</a> – The source material for the GLaDOS character</li>
                     <li><a href="https://github.com/QuantumChemist">Christina Ertural's GitHub</a></li>
-                    <li><a href="https://openrouter.ai/">OpenRouter</a> - The API backend used by OpenGLaDOS</li>
-                    <li>Discord bot development</li>
+                    <li><a href="https://openrouter.ai/">OpenRouter</a> – The API backend used by OpenGLaDOS</li>
+                    <li><a href="#">Discord bot development</a></li>
                 </ul>
+            </section>
 
-                <!-- References -->
-                <h2 id="references">References</h2>
-                <ol class="reflist">
-                    <li><span class="reference-id">[1]</span> <a href="https://github.com/QuantumChemist/OpenGLaDOS">OpenGLaDOS GitHub Repository</a></li>
-                    <li><span class="reference-id">[2]</span> <a href="https://www.quantumchemist.de">Christina Ertural's Portfolio</a></li>
-                    <li><span class="reference-id">[3]</span> <a href="https://discord.com/discovery/applications/1276530139412566186">Discord Application Directory - OpenGLaDOS</a></li>
-                    <li><span class="reference-id">[4]</span> <a href="https://top.gg/bot/1276530139412566186">top.gg Bot Listing</a></li>
-                    <li><span class="reference-id">[5]</span> <a href="https://openrouter.ai/">OpenRouter API</a></li>
+            <section id="references">
+                <h2>References</h2>
+                <ol class="mw-reflist">
+                    <li id="cite-1"><span class="mw-reference-text"><a href="https://github.com/QuantumChemist/OpenGLaDOS" class="external free">GitHub – OpenGLaDOS Repository</a></span></li>
+                    <li id="cite-2"><span class="mw-reference-text"><a href="https://www.quantumchemist.de" class="external free">Christina Ertural's Portfolio</a></span></li>
+                    <li id="cite-3"><span class="mw-reference-text"><a href="https://discord.com/discovery/applications/1276530139412566186" class="external free">Discord Application Directory – OpenGLaDOS</a></span></li>
+                    <li id="cite-4"><span class="mw-reference-text"><a href="https://top.gg/bot/1276530139412566186" class="external free">top.gg – OpenGLaDOS Bot Listing</a></span></li>
+                    <li id="cite-5"><span class="mw-reference-text"><a href="https://openrouter.ai/" class="external free">OpenRouter API</a></span></li>
                 </ol>
+            </section>
 
-                <div class="wiki-metadata">
-                    <p><small>Last modified on 30 August 2026, at 00:00</small></p>
-                </div>
-            </div>
-        </div>
+            <!-- Footer metadata -->
+            <footer class="mw-footer">
+                <p><small>Last modified on 30 August 2026. <a href="#">Edit this page</a> | <a href="#">View history</a></small></p>
+                <p><small>Content is available under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless otherwise noted.</small></p>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
